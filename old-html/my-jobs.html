@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Finnsmåjobb</title>
+		<!-- Date Picker -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+		<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+		<!-- Bootstrap -->
+		<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/responsive.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.typekit.net/skn0ayd.css">
+		<style type="text/css">
+		</style>
+		<script src="https://kit.fontawesome.com/a335a36105.js"></script>
+	</head>
+	<body class="page profile no-back">
+
+		<!------ MODALS MAY/2021 INVITED HELPERS, OLD CONTACTS AND DELETE JOB   ----->
+		<div class="modal fade" id="invited-helpers" tabindex="-1" role="dialog" aria-labelledby="contact-helpersLabel" aria-hidden="true">
+			<div class="modal-dialog p-0 message-employer-modal">
+				<div class="modal-content ">
+					<div class="modal-header p-3 px-md-5 pt-md-4">
+						<h5 class="modal-title mt-3 mt-md-0"> You can invite 5 helpers</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"><i class="far fa-times-circle" style="color:#fff"></i></span>
+						</button>
+					</div>
+					<div class="modal-body" >
+						<div class="px-3 px-md-5" id="awardUser-form">
+							<p>You can communicate with a total of 5 helpers at once on each job, You can cancel pending invitations and invite someone else.</p>
+	
+							<div class="awardUser-container d-flex justify-content-between align-items-center mb-2 py-2">
+								<div class="d-flex align-items-center">
+									<img src="images/samples/7842e668c271f5b74dad2128f4097db5dc3f5.png" class="user">
+									<div class="personal-info">
+										<span class="name">Fredrik Lien</span>
+										<p class="filsonfont"><i class="fas fa-clock"></i> Pending 01.05.2011</p>
+									</div>
+								</div>
+								<a class="btn btn-danger" href="#"><i class="fas fa-times mr-1"></i> Cancel</a>
+							</div>
+							<div class="awardUser-container d-flex justify-content-between align-items-center mb-2 py-2">
+								<div class="d-flex align-items-center">
+									<img src="images/samples/profile-sample-4.png" class="user">
+									<div class="personal-info">
+										<span class="name">Michael Bulk</span>
+										<p class="maingreen filsonfont"><i class="fas fa-check"></i> Accepted 01.05.2011</p>
+									</div>
+								</div>
+								<a class="btn btn-primary" href="#"><i class="fas fa-comments mr-1"></i> Go to chat</a>
+							</div>
+							<div class="awardUser-container d-flex justify-content-between align-items-center mb-2 py-2">
+								<div class="d-flex align-items-center">
+									<img src="images/samples/profile-sample-8.png" class="user">
+									<div class="personal-info">
+										<span class="name">Stine Tveit</span>
+										<p class="filsonfont"><i class="fas fa-clock"></i> Pending 01.05.2011</p>
+									</div>
+								</div>
+								<a class="btn btn-danger" href="#"><i class="fas fa-times mr-1"></i> Cancel</a>
+							</div>
+							<div class="awardUser-container d-flex justify-content-between align-items-center mb-2 py-2">
+								<div class="d-flex align-items-center">
+									<img src="images/samples/profile-sample-4.png" class="user">
+									<div class="personal-info">
+										<span class="name">Michael Bulk</span>
+										<p class="maingreen filsonfont"><i class="fas fa-check"></i> Accepted 01.05.2011</p>
+									</div>
+								</div>
+								<a class="btn btn-primary" href="#"><i class="fas fa-comments mr-1"></i> Go to chat</a>
+							</div>
+							<div class="awardUser-container d-flex justify-content-between align-items-center mb-2 py-2">
+								<div class="d-flex align-items-center">
+									<i class="fal fa-user-plus user"></i>
+									<div class="personal-info">
+										<span class="name">1 more available</span>
+									</div>
+								</div>
+								<a class="btn btn-outline-primary" href="#"><i class="fas fa-share ml-1"></i> Invite </a>
+							</div>
+						</div>
+					</div>
+								
+					<div class="modal-footer d-block text-center gradient-bg py-4 mt-2">
+						<button type="button" data-dismiss="modal" class="btn btn-primary-white px-5"><i class="fas fa-share"></i> Invite Others</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="modal fade" id="contact-helpers" tabindex="-1" role="dialog" aria-labelledby="contact-helpersLabel" aria-hidden="true">
+			<div class="modal-dialog p-0 message-employer-modal">
+				<div class="modal-content ">
+					<div class="modal-header p-3 px-md-5 pt-md-4">
+						<h5 class="modal-title mt-3 mt-md-0"> Reconnect with your old contacts</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"><i class="far fa-times-circle" style="color:#fff"></i></span>
+						</button>
+					</div>
+					<div class="modal-body" >
+						<div class="px-3 px-md-5" id="awardUser-form">
+							<p>You can easely invite your old contacts to your new projects thru their helpeer profiles.</p>
+	
+							<div class="awardUser-container d-flex justify-content-between align-items-center mb-2 py-2">
+								<div class="d-flex align-items-center">
+									<img src="images/samples/7842e668c271f5b74dad2128f4097db5dc3f5.png" class="user">
+									<div class="personal-info">
+										<span class="name">Fredrik Lien</span>
+										<p class="maingreen filsonfont"><i class="fas fa-user-check"></i> Was your helper</p>
+									</div>
+								</div>
+								<a class="btn btn-outline-primary" href="#">See Profile <i class="fas fa-external-link ml-1"></i></a>
+							</div>
+							<div class="awardUser-container d-flex justify-content-between align-items-center mb-2 py-2">
+								<div class="d-flex align-items-center">
+									<img src="images/samples/profile-sample-4.png" class="user">
+									<div class="personal-info">
+										<span class="name">Michael Bulk</span>
+										<p class="filsonfont"><i class="fas fa-hand-paper"></i> Was interested</p>
+									</div>
+								</div>
+								<a class="btn btn-outline-primary" href="#">See Profile <i class="fas fa-external-link ml-1"></i></a>
+							</div>
+							<div class="awardUser-container d-flex justify-content-between align-items-center mb-2 py-2">
+								<div class="d-flex align-items-center">
+									<img src="images/samples/profile-sample-8.png" class="user">
+									<div class="personal-info">
+										<span class="name">Stine Tveit</span>
+										<p class="maingreen filsonfont"><i class="fas fa-user-check"></i> Was your helper</p>
+									</div>
+								</div>
+								<a class="btn btn-outline-primary" href="#">See Profile <i class="fas fa-external-link ml-1"></i></a>
+							</div>
+							<div class="awardUser-container d-flex justify-content-between align-items-center mb-2 py-2">
+								<div class="d-flex align-items-center">
+									<img src="images/samples/profile-sample-4.png" class="user">
+									<div class="personal-info">
+										<span class="name">Michael Bulk</span>
+										<p class="filsonfont"><i class="fas fa-hand-paper"></i> Was interested</p>
+									</div>
+								</div>
+								<a class="btn btn-outline-primary" href="#">See Profile <i class="fas fa-external-link ml-1"></i></a>
+							</div>
+						</div>
+					</div>
+								
+					<div class="modal-footer d-block text-center gradient-bg py-4 mt-2">
+						<button type="button" data-dismiss="modal" class="btn btn-primary-white px-5"><i class="fas fa-user-plus"></i> See More</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade " id="delete-job" tabindex="-1" role="dialog" aria-labelledby="contact-helpersLabel" aria-hidden="true">
+			<div class="modal-dialog p-0 message-employer-modal" >
+				<div class="modal-content ">
+					<div class="modal-header gradient-bg p-3 px-md-4 pb-5">
+						<i class="fas fa-trash-alt overlay"></i><i class="fas fa-minus-circle"></i> 
+						<h5 class="modal-title mt-3 mt-md-0" id="inspectionModalLabel">Do you really want to permanently delete this job?</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"><i class="far fa-times-circle" style="color:#fff"></i></span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="px-3 px-md-4 py-4">
+							<div class="d-md-flex job-info">
+								<div class="position-relative mr-md-4">
+									<img src="images/samples/sample-03-sm.png" alt="" class="job-img">
+									<span class="user-info">
+										<img src="images/samples/profile-sample-2.png" alt="">
+										Gabi
+									</span>
+								</div>
+								<div>
+									<div class="personal-info mb-2 mt-3 mt-md-0">
+										<span class="name"><b>Washing house</b>
+											<br><small>for</small></span>
+										<span class="name maingreen"><b>1250 kr</b></span>
+									</div>
+									<span class="job-data badge">Visits <b>43</b></span>
+									<span class="job-data badge ml-2">Interested <b>3</b></span>
+								</div>
+							</div>
+							<p>Your contact list on the job will be deleted. Delete only if you are sure you don’t want to reconnect with your old contacts.</p>
+							<d class="modal-footer text-center">
+								<button type="button" class="btn btn-danger"><i class="fal fa-trash-alt"></i> Delete Job</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!------ END OF MODALS MAY/2021   ----->
+
+
+
+
+
+		<!-- body code goes here -->
+		<div class="modal fade" id="re-publish-job">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<a class="navbar-brand" href="#">
+							<img src="images/logo.svg" alt="MinSmåjobb" style="width: 223.19px;height: 38.56px;">
+						</a>
+						<button type="button" class="close" aria-label="Close" data-dismiss="modal">
+							<svg xmlns="http://www.w3.org/2000/svg" width="39.456" height="39.456" viewBox="0 0 39.456 39.456">  <g id="Grupo_88" data-name="Grupo 88" transform="translate(19.728) rotate(45)">    <path id="Trazado_87" data-name="Trazado 87" d="M16.206,9.231H12.719V5.744a1.744,1.744,0,0,0-3.487,0V9.231H5.744a1.744,1.744,0,0,0,0,3.487H9.231v3.487a1.744,1.744,0,0,0,3.487,0V12.719h3.487a1.744,1.744,0,0,0,0-3.487Z" transform="translate(2.975 2.975)" fill="rgba(255,255,255,0.44)"/>    <path id="Trazado_88" data-name="Trazado 88" d="M13.95,0A13.95,13.95,0,1,0,27.9,13.95,13.95,13.95,0,0,0,13.95,0Zm0,24.412A10.462,10.462,0,1,1,24.412,13.95,10.462,10.462,0,0,1,13.95,24.412Z" fill="rgba(255,255,255,0.44)"/>  </g></svg>
+						</button>
+					</div>	
+					<div class="modal-body">
+						<div class="white-box information-popup">
+							<div class="display-results">
+								<div class="row result">
+									<div class="col-md-3 image offset-2">
+										<div class="wrap"><img src="images/samples/sample-02.jpg" alt=""></div>
+									</div>
+									<div class="col-md-5">
+										<h1>Washing house</h1>
+										<div class="information flex flex-wrap">
+											<div class="info location"><a href="#" class="address"><i class="fas fa-map-marker-alt"></i> Oslo</a></div>
+											<div class="info category"><a href="" class="caegory-btn"><i class="fas fa-th-large"></i> Washing</a></div>
+											<div class="info date"><a href="#" class="date-link"><i class="fas fa-check-circle"></i>3rd June 2019</a></div>
+										</div>
+										<p class="price">1250 kr</p>
+									</div>
+								</div>
+							</div>
+							<div class="requestInfo-publish">
+								<div class="row">
+									<div class="col-8 offset-2">
+										<hr>
+										<h2>You’re about to repost this Job</h2>
+										<p>You’re about to repost a done project, please select a new date for the due, if you want to change more details before re posting this job, please click <a href="#"><i class="fas fa-edit"></i> edit job</a></p>
+										<form action="">
+											<div class="form-row form-group">
+												<div class="col-md-6">
+													<label for="time">Time</label>
+													<select name="time" id="">
+														<option value="Is it urgent?" disabled selected>Is it urgent?</option>
+														<option value="As soon as possible/ergant">As soon as possible/ergant</option>
+														<option value="Before a date">Before a date</option>
+														<option value="On a date">On a date</option>
+														<option value="To be agreed">To be agreed</option>
+													</select>
+												</div>
+												<div class="col-md-6">
+													<label for="dateStart">Date</label>
+													<input id="datepicker" placeholder="Click and Select a Date" type="date"/>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="buttons inline">
+								<a href="edit-job.html" class="btn btn-primary"><i class="fas fa-edit"></i> Edit Job</a>
+								<a href="#" class="btn btn-secondary" role="button" data-toggle="modal" data-target="#re-publish-job"><i class="fas fa-redo-alt"></i> Re post this job</a>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="landing">
+			<nav class="navbar navbar-expand-lg container top">
+				<a class="navbar-brand" href="#">
+					<img src="images/logo.svg" alt="MinSmåjobb" style="width: 223.19px;height: 38.56px;">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Vår tjeneste</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Kundeservice</a>
+						</li>
+						<li class="nav-item login">
+							<a href="log-in.html" class="nav-link"><i class="fas fa-user"></i>Log In<i class="fas fa-chevron-down"></i></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<nav class="navbar navbar-expand-lg container loggedin-menu">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent2">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-plus-circle"></i>Publish a job</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-search"></i>Browse jobs</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link"><i class="far fa-comment"></i>Messages</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 profile-information centered">
+							<div class="profile-picture">
+								<div class="picture-holder user-4322321"></div>
+								<a href="#" class="addpicture"><i class="fas fa-camera"></i></a>
+							</div>
+							<div class="rating-info">
+								<!-- RATING COMES HERE-->
+										<div class="r-updated d-flex">
+											<ul class="ratinglist list-unstyled mx-auto">
+												<li><img src="images/rating/green/rating-10.svg" alt=""></li>
+												<li><img src="images/rating/green/rating-10.svg" alt=""></li>
+												<li><img src="images/rating/green/rating-10.svg" alt=""></li>
+												<li><img src="images/rating/green/rating-03.svg" alt=""></li>
+												<li><img src="images/rating/green/rating-00.svg" alt=""></li>
+												<li class="rating-number">3.3</li>
+											</ul>
+										</div>
+										<!-- end of the rating-->
+								<div class="personal-info">
+									<a href="mailto:chris.evans19@icloud.com" class="mail">chris.evans19@icloud.com</a>
+									<span class="number">45830500</span>
+								</div>
+							</div>
+					</div>
+					<div class="col-md-9 my-jobs">
+						<h1 class="title">My Jobs</h1>
+						<div class="d-flex my-jobs-type">
+							<h2><i class="fas fa-user-tie"></i> As an employer</h2>
+							<h2><i class="fas fa-hand-paper"></i> As a helper</h2>
+						</div>
+						<ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Active <div class="unreadedmessages-alert">3</div></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Expired jobs <div class="unreadedmessages-alert">3</div></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="pills-offered-tab" data-toggle="pill" href="#pills-offered" role="tab" aria-controls="pills-offered" aria-selected="false">Offered help <div class="unreadedmessages-alert">3</div></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="pills-won-tab" data-toggle="pill" href="#pills-won" role="tab" aria-controls="pills-won" aria-selected="false">Won <div class="unreadedmessages-alert">3</div></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="pills-lost-tab" data-toggle="pill" href="#pills-lost" role="tab" aria-controls="pills-lost" aria-selected="false">Lost help <div class="unreadedmessages-alert">3</div></a>
+							</li>
+						</ul>
+						<div class="tab-content" id="pills-tabContent">
+							<div class="tab-pane fade show active active-jobs" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+								<div class="display-results">
+									<div class="row result">
+										<div class="col-md-4 col-lg-3 image">
+											<div class="wrap"><img src="images/samples/sample-02.jpg" alt=""></div>
+										</div>
+										<div class="col-md-8 col-lg-6">
+											<h1>Bring this to my house</h1>
+											<div class="information">
+												<div class="info location"><a href="#" class="address"><i class="fas fa-map-marker-alt"></i> Oslo</a></div>
+												<div class="info category"><a href="" class="caegory-btn"><i class="fas fa-th-large"></i> Transport</a></div>
+												<div class="info date"><a href="#" class="date-link"><i class="far fa-calendar-alt"></i>As soon as possible</a></div>
+											</div>
+											<p class="price">1250 kr</p>
+										</div>
+										<div class="col-md-12 col-lg-3">
+											<a href="edit-job-transport.html" class="btn btn-primary"><i class="fas fa-edit"></i> Edit Job</a>
+											<div class="text-center text-md-right active-job-info">
+												<div class="d-flex justify-content-end my-2">
+													<div class="job-data badge">Visits <b>43</b></div>
+													<div class="job-data badge mx-2">Interested <b>3</b></div>
+													<div class="job-data badge ">Invited <b>1</b></div>
+												</div>
+												<p class="expiration-date mb-1"><i class="fas fa-business-time maingreen"></i> Expires <b>10.05.2021</b></p>
+												<p>You can invite helpers by browsing <a href="#">helper profiles</a></p>
+											</div>
+										</div>
+									</div>
+									<div class="row result">
+										<div class="col-md-4 col-lg-3 image">
+											<div class="wrap"><img src="images/samples/sample-02.jpg" alt=""></div>
+										</div>
+										<div class="col-md-8 col-lg-6">
+											<h1>Washing house</h1>
+											<div class="information">
+												<div class="info location"><a href="#" class="address"><i class="fas fa-map-marker-alt"></i> Oslo</a></div>
+												<div class="info category"><a href="" class="caegory-btn"><i class="fas fa-th-large"></i> Washing</a></div>
+												<div class="info date"><a href="#" class="date-link"><i class="far fa-calendar-alt"></i>23/07/19</a></div>
+											</div>
+											<p class="price">1250 kr</p>
+										</div>
+										<div class="col-md-12 col-lg-3">
+											<a href="edit-job-washing.html" class="btn btn-primary"><i class="fas fa-edit"></i> Edit Job</a>
+											<div class="text-center text-md-right active-job-info">
+												<div class="d-flex justify-content-end my-2">
+													<div class="job-data badge">Visits <b>43</b></div>
+													<div class="job-data badge mx-2">Interested <b>3</b></div>
+													<div class="job-data badge ">Invited <b>1</b></div>
+												</div>
+												<p class="danger-text mb-0"><i class="fas fa-user-lock"></i> This job accessible by invited helpers only</p>
+												<a href="#" role="button" data-toggle="modal" data-target="#invited-helpers">See Invited Helpers</a>
+												<p class="expiration-date my-1"><i class="fas fa-business-time maingreen"></i> Expires <b>10.05.2021</b></p>
+											</div>
+
+											
+
+										</div>
+									</div>
+									<div class="row result">
+										<div class="col-md-4 col-lg-3 image">
+											<div class="wrap"><img src="images/samples/sample-02.jpg" alt=""></div>
+										</div>
+										<div class="col-md-8 col-lg-6">
+											<h1>Do other thing in here</h1>
+											<div class="information">
+												<div class="info location"><a href="#" class="address"><i class="fas fa-map-marker-alt"></i> Oslo</a></div>
+												<div class="info category"><a href="" class="caegory-btn"><i class="fas fa-th-large"></i> Other</a></div>
+												<div class="info date"><a href="#" class="date-link"><i class="far fa-calendar-alt"></i>22/06/19</a></div>
+											</div>
+											<p class="price">1250 kr</p>
+										</div>
+										<div class="col-md-12 col-lg-3">
+											<a href="edit-job.html" class="btn btn-primary"><i class="fas fa-edit"></i> Edit Job</a>
+											<div class="text-center text-md-right active-job-info">
+												<div class="d-flex justify-content-end my-2">
+													<div class="job-data badge">Visits <b>43</b></div>
+													<div class="job-data badge mx-2">Interested <b>3</b></div>
+													<div class="job-data badge ">Invited <b>1</b></div>
+												</div>
+												<p class="expiration-date mb-1"><i class="fas fa-business-time maingreen"></i> Expires <b>10.05.2021</b></p>
+												<p>You can invite helpers by browsing <a href="#">helper profiles</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade expired-jobs" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+								<div class="display-results">
+									<div class="row result">
+										<div class="col-md-4 col-lg-3 image">
+											<div class="wrap"><img src="images/samples/sample-02.jpg" alt=""></div>
+										</div>
+										<div class="col-md-5">
+											<h1>Washing house</h1>
+											<div class="information flex flex-wrap">
+												<div class="info location"><a href="#" class="address"><i class="fas fa-map-marker-alt"></i> Oslo</a></div>
+												<div class="info location"><a href="" class="caegory-btn"><i class="fas fa-th-large"></i> Washing</a></div>
+												<div class="info date"><a href="#" class="date-link"><i class="fas fa-check-circle"></i>3rd June 2019</a></div>
+											</div>
+											<div class="d-flex align-items-center flex-wrap">
+												<p class="price">1250 kr</p>
+												<div class="ml-2">
+													<div class="job-data badge">Visits <strong>43</strong></div>
+													<div class="job-data badge mx-2">Interested <b>3</b></div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-12 col-lg-4">
+											<span class="views"><div class="profileimage user-4322321"></div> <a href="#">Gabi</a> completed this job</span>
+											<a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#re-publish-job"><i class="fas fa-redo-alt"></i> Re post this job</a>
+											<div class="d-flex justify-content-center">
+												<a href="#" class="mr-3 modal-link" role="button" data-toggle="modal" data-target="#contact-helpers"><i class="fal fa-users"></i>Contact</a>
+												<a href="#" class="modal-link pink" role="button" data-toggle="modal" data-target="#delete-job"><i class="fal fa-trash-alt"></i>Delete job</a>
+											</div>
+										</div>
+									</div>
+									<div class="row result">
+										<div class="col-md-4 col-lg-3 image">
+											<div class="wrap"><img src="images/samples/sample-02.jpg" alt=""></div>
+										</div>
+										<div class="col-md-5">
+											<h1>Washing house</h1>
+											<div class="information flex flex-wrap">
+												<div class="info location"><a href="#" class="address"><i class="fas fa-map-marker-alt"></i> Oslo</a></div>
+												<div class="info location"><a href="" class="caegory-btn"><i class="fas fa-th-large"></i> Washing</a></div>
+												<div class="info date"><a href="#" class="date-link"><i class="fas fa-check-circle"></i>3rd June 2019</a></div>
+											</div>
+											<div class="d-flex align-items-center flex-wrap">
+												<p class="price">1250 kr</p>
+												<div class="ml-2">
+													<div class="job-data badge">Visits <strong>43</strong></div>
+													<div class="job-data badge mx-2">Interested <b>3</b></div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-12 col-lg-4">
+											<span class="views"><div class="profileimage user-4322321"></div> <a href="#">Gabi</a> completed this job</span>
+											<a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#re-publish-job"><i class="fas fa-redo-alt"></i> Re post this job</a>										</div>
+									</div>
+									<div class="row result">
+										<div class="col-md-4 col-lg-3 image">
+											<div class="wrap"><img src="images/samples/sample-02.jpg" alt=""></div>
+										</div>
+										<div class="col-md-5">
+											<h1>Washing house</h1>
+											<div class="information flex flex-wrap">
+												<div class="info location"><a href="#" class="address"><i class="fas fa-map-marker-alt"></i> Oslo</a></div>
+												<div class="info location"><a href="" class="caegory-btn"><i class="fas fa-th-large"></i> Washing</a></div>
+												<div class="info date"><a href="#" class="date-link"><i class="fas fa-check-circle"></i>3rd June 2019</a></div>
+											</div>
+											<div class="d-flex align-items-center flex-wrap">
+												<p class="price">1250 kr</p>
+												<div class="ml-2">
+													<div class="job-data badge">Visits <strong>43</strong></div>
+													<div class="job-data badge mx-2">Interested <b>3</b></div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-12 col-lg-4">
+											<span class="views"><div class="profileimage user-4322321"></div> <a href="#">Gabi</a> completed this job</span>
+											<a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#re-publish-job"><i class="fas fa-redo-alt"></i> Re post this job</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade pills-offered" id="pills-offered" role="tabpanel" aria-labelledby="pills-offered-tab">
+								<div class="display-results">
+									<div class="row result  pink-tooltip">
+										<div class="col-md-4 col-lg-3 image">
+											<div class="wrap"><img src="images/samples/sample-02.jpg" alt=""></div>
+										</div>
+										<div class="col-md-8 col-lg-6">
+											<h1>Washing house</h1>
+											<div class="information flex flex-wrap">
+												<div class="info date" ><a href="#" class="date-link" data-toggle="tooltip" data-container=".pink-tooltip" data-placement="bottom" title="Job expires"  ><i class="fas fa-hourglass-start" ></i></i>10.10.2020</a></div>
+												<div class="info category"><a href="" class="caegory-btn"   data-toggle="tooltip" data-placement="bottom" title="Competitors"><i class="fas fa-users"></i> 3</a></div>
+												<div class="info location green-tooltip"><a href="#" class="address" data-container=".green-tooltip" data-toggle="tooltip" data-placement="bottom" title="Fee"><i class="fas fa-comment-dollar"></i> 59.-</a></div>
+											</div>
+											<div class="d-flex info-job">
+												<p>Transaction ID: <span>1266735621</span></p>
+												<p>Released in  <span>3 Days</span></p>
+											</div>
+										</div>
+										<div class="col-md-12 col-lg-3">
+											<a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#re-publish-job"><i class="fas fa-comment"></i> Chat</a>
+											<a href="#" class="btn btn-secondary" role="button"><i class="fas fa-money-bill-wave-alt"></i> 1200 kr.</a>
+										</div>
+									</div>
+									<div class="row result">
+										<div class="col-md-4 col-lg-3 image">
+											<div class="wrap"><img src="images/samples/sample-02.jpg" alt=""></div>
+										</div>
+										<div class="col-md-8 col-lg-6">
+											<h1>Bring some boxes to my daug...</h1>
+											<div class="information flex flex-wrap">
+												<div class="info date"><a href="#" class="date-link"  data-container=".pink-tooltip" data-toggle="tooltip" data-placement="bottom"   title="Job expires"><i class="fas fa-hourglass-start"></i>10.10.2020</a></div>
+												<div class="info category"><a href="" class="caegory-btn"   data-toggle="tooltip" data-placement="bottom" title="Competitors"><i class="fas fa-users"></i> 3</a></div>
+												<div class="info location"><a href="#" class="address" data-toggle="tooltip" data-placement="bottom" title="Fee" ><i class="fas fa-comment-dollar"></i> 59.-</a></div>
+											</div>
+											<div class="d-flex info-job">
+												<p>Transaction ID: <span>1266735621</span></p>
+												<p>Released in  <span>3 Days</span></p>
+											</div>
+										</div>
+										<div class="col-md-12 col-lg-3">
+											<a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#re-publish-job"><i class="fas fa-comment"></i> Chat</a>
+											<a href="#" class="btn btn-secondary" role="button"><i class="fas fa-money-bill-wave-alt"></i> 1200 kr.</a>
+										</div>
+									</div>
+									<div class="row result">
+										<div class="col-md-4 col-lg-3 image">
+											<div class="wrap"><img src="images/samples/sample-02.jpg" alt=""></div>
+										</div>
+										<div class="col-md-8 col-lg-6">
+											<h1>HELP! With my garden</h1>
+											<div class="information flex flex-wrap">
+												<div class="info date"><a href="#" class="date-link" data-toggle="tooltip" data-placement="bottom" title="Job expires"><i class="fas fa-hourglass-start"></i>10.10.2020</a></div>
+												<div class="info category"><a href="" class="caegory-btn"  data-toggle="tooltip" data-placement="bottom" title="Competitors"><i class="fas fa-users"></i> 3</a></div>
+												<div class="info location"><a href="#" class="address" data-toggle="tooltip" data-placement="bottom" title="Fee"><i class="fas fa-comment-dollar"></i> 59.-</a></div>
+											</div>
+											<div class="d-flex info-job">
+												<p>Transaction ID: <span>1266735621</span></p>
+												<p>Released in  <span>3 Days</span></p>
+											</div>
+										</div>
+										<div class="col-md-12 col-lg-3">
+											<a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#re-publish-job"><i class="fas fa-comment"></i> Chat</a>
+											<a href="#" class="btn btn-secondary" role="button"><i class="fas fa-money-bill-wave-alt"></i> 1200 kr.</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade pills-won" id="pills-won" role="tabpanel" aria-labelledby="pills-won-tab">
+								<div class="display-results">
+									<div class="row result">
+										<div class="col-md-4 col-lg-3 image">
+											<div class="wrap"><img src="images/samples/sample-02.jpg" alt=""></div>
+										</div>
+										<div class="col-md-8 col-lg-6">
+											<h1>Washing house</h1>
+											<div class="information flex flex-wrap">
+												<div class="info location"><a href="#" class="date-link" data-toggle="tooltip" data-placement="bottom" title="Value"><i class="fas fa-money-bill-wave-alt" ></i> 1200 kr.</a></div>
+												<div class="info fee"><a href="" class="caegory-btn" data-toggle="tooltip" data-placement="bottom" title="Fee"><i class="fas fa-comment-dollar"></i> 59.-</a></div>
+												<div class="info category"><a href="" class="caegory-btn" data-toggle="tooltip" data-placement="bottom" title="Date"><i class="fas fa-calendar-check"></i> 05.10.2020</a></div>
+											</div>
+											<div class="d-flex info-job">
+												<p>Transaction ID: <span>1266735621</span></p>
+												<p>Status: <span>Collected</span></p>
+											</div>
+											<div class="info-owner"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Job owner"><i class="fas fa-user-tie"></i> carter.lambert</a></div>
+										</div>
+										<div class="col-md-12 col-lg-3">
+											<a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#re-publish-job"><i class="fas fa-comment"></i> Chat <span>12 days left <i class="fal fa-clock"></i></span></a>
+											<a href="#" class="btn btn-secondary btn-rate" role="button"><i class="fas fa-star"></i> Rate the user!</a>
+											
+										</div>
+									</div>
+									<div class="row result">
+										<div class="col-md-4 col-lg-3 image">
+											<div class="wrap"><img src="images/samples/sample-02.jpg" alt=""></div>
+										</div>
+										<div class="col-md-8 col-lg-6">
+											<h1>I forgot My Keys</h1>
+											<div class="information flex flex-wrap">
+												<div class="info location"><a href="#" class="date-link"  data-toggle="tooltip" data-placement="bottom" title="Value"><i class="fas fa-money-bill-wave-alt"></i> 1200 kr.</a></div>
+												<div class="info fee"><a href="" class="caegory-btn" data-toggle="tooltip" data-placement="bottom" title="Fee"><i class="fas fa-comment-dollar"></i> 59.-</a></div>
+												<div class="info category"><a href="" class="caegory-btn" data-toggle="tooltip" data-placement="bottom" title="Date"><i class="fas fa-calendar-check"></i> 05.10.2020</a></div>
+											</div>
+											<div class="d-flex info-job">
+												<p>Transaction ID: <span>1266735621</span></p>
+												<p>Status: <span>Collected</span></p>
+											</div>
+											<div class="info-owner"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Job owner"><i class="fas fa-user-tie"></i> carter.lambert</a></div>
+										</div>
+										<div class="col-md-12 col-lg-3">
+											<a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#re-publish-job"><i class="fas fa-comment"></i> Chat <span>12 days left <i class="fal fa-clock"></i></span></a>
+											<div class="rating-info">
+												<div class="ratign">
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star"></span>
+													<p>Your rating at this job</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row result">
+										<div class="col-md-4 col-lg-3 image">
+											<div class="wrap"><img src="images/samples/sample-02.jpg" alt=""></div>
+										</div>
+										<div class="col-md-8 col-lg-6">
+											<h1>Washing house</h1>
+											<div class="information flex flex-wrap">
+												<div class="info location"><a href="#" class="date-link" data-toggle="tooltip" data-placement="bottom" title="Value"><i class="fas fa-money-bill-wave-alt"></i> 1200 kr.</a></div>
+												<div class="info fee"><a href=""  data-toggle="tooltip" data-placement="bottom" title="Fee"><i class="fas fa-comment-dollar"></i> 59.-</a></div>
+												<div class="info category"><a href="" class="caegory-btn" data-toggle="tooltip" data-placement="bottom" title="Date"><i class="fas fa-calendar-check"></i> 05.10.2020</a></div>
+											</div>
+											<div class="d-flex info-job">
+												<p>Transaction ID: <span>1266735621</span></p>
+												<p>Status: <span>Collected</span></p>
+											</div>
+											<div class="info-owner"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Job owner"><i class="fas fa-user-tie"></i> carter.lambert</a></div>
+										</div>
+										<div class="col-md-12 col-lg-3">
+											<a href="#" class="btn btn-primary expired" role="button" data-toggle="modal" data-target="#re-publish-job"><i class="fas fa-comment-slash"></i> Chat expired</a>
+											<div class="rating-info">
+												<div class="ratign">
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star"></span>
+													<p>Your rating at this job</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade pills-lost" id="pills-lost" role="tabpanel" aria-labelledby="pills-lost-tab">
+								<div class="display-results">
+									<div class="row result">
+										<div class="col-md-4 col-lg-3 image">
+											<div class="wrap"><img src="images/samples/sample-02.jpg" alt=""></div>
+										</div>
+										<div class="col-md-8 col-lg-6">
+											<h1>Washing house</h1>
+											<div class="information flex flex-wrap">
+												<div class="info location"><a href="#" class="date-link" data-toggle="tooltip" data-placement="bottom" title="Value"><i class="fas fa-money-bill-wave-alt"></i> 1200 kr.</a></div>
+												<div class="info category"><a href="" class="caegory-btn" data-toggle="tooltip" data-placement="bottom" title="Fee"><i class="fas fa-comment-dollar"></i> 59.-</a></div>
+												<div class="info"><a href="#" class="address" data-toggle="tooltip" data-placement="bottom" title="Date"><i class="fas fa-calendar-check"></i> 05.10.2020</a></div>
+											</div>
+											<div class="d-flex information info-job">
+												<p>Transaction ID: <span>1266735621</span></p>
+												<p>Status: <span>Freed</span></p>
+											</div>
+											<div class="information info-owner"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Job owner"><i class="fas fa-user-tie"></i> carter.lambert</a></div>
+										</div>
+										<div class="col-md-12 col-lg-3">
+											<a href="#" class="btn btn-danger" role="button" data-toggle="modal" data-target="#re-publish-job"><i class="fal fa-trash-alt"></i> Delete</a>
+										</div>
+									</div>
+									<div class="row result">
+										<div class="col-md-4 col-lg-3 image">
+											<div class="wrap"><img src="images/samples/sample-02.jpg" alt=""></div>
+										</div>
+										<div class="col-md-8 col-lg-6">
+											<h1>Washing house</h1>
+											<div class="information flex flex-wrap">
+												<div class="info location"><a href="#" class="date-link" data-toggle="tooltip" data-placement="bottom" title="Value"><i class="fas fa-money-bill-wave-alt"></i> 1200 kr.</a></div>
+												<div class="info category"><a href="" class="caegory-btn" data-toggle="tooltip" data-placement="bottom" title="Fee"><i class="fas fa-comment-dollar"></i> 59.-</a></div>
+												<div class="info"><a href="#" class="address" data-toggle="tooltip" data-placement="bottom" title="Date"><i class="fas fa-calendar-check"></i> 05.10.2020</a></div>
+											</div>
+											<div class="d-flex info-job information">
+												<p>Transaction ID: <span>1266735621</span></p>
+												<p>Status: <span>Freed</span></p>
+											</div>
+											<div class="info-owner information"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Job owner"><i class="fas fa-user-tie"></i> carter.lambert</a></div>
+										</div>
+										<div class="col-md-12 col-lg-3">
+											<a href="#" class="btn btn-danger" role="button" data-toggle="modal" data-target="#re-publish-job"><i class="fal fa-trash-alt"></i> Delete</a>
+										</div>
+									</div>
+									<div class="row result">
+										<div class="col-md-4 col-lg-3 image">
+											<div class="wrap"><img src="images/samples/sample-02.jpg" alt=""></div>
+										</div>
+										<div class="col-md-8 col-lg-6">
+											<h1>Washing house</h1>
+											<div class="information flex flex-wrap">
+												<div class="info location"><a href="#" class="date-link" data-toggle="tooltip" data-placement="bottom" title="Value"><i class="fas fa-money-bill-wave-alt"></i> 1200 kr.</a></div>
+												<div class="info category"><a href="" class="caegory-btn" data-toggle="tooltip" data-placement="bottom" title="Fee"><i class="fas fa-comment-dollar"></i> 59.-</a></div>
+												<div class="info"><a href="#" class="address" data-toggle="tooltip" data-placement="bottom" title="Date"><i class="fas fa-calendar-check"></i> 05.10.2020</a></div>
+											</div>
+											<div class="d-flex info-job information">
+												<p>Transaction ID: <span>1266735621</span></p>
+												<p>Status: <span>Freed</span></p>
+											</div>
+											<div class="info-owner information"><a href="#" data-toggle="tooltip" data-placement="bottom" title="Job owner"><i class="fas fa-user-tie"></i> carter.lambert</a></div>
+										</div>
+										<div class="col-md-12 col-lg-3">
+											<a href="#" class="btn btn-danger" role="button" data-toggle="modal" data-target="#re-publish-job"><i class="fal fa-trash-alt"></i> Delete</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="how-does-it-work">
+			<div class="container">
+				
+				<div class="legal">
+					<p><strong class="highlight">Finnsmåjobb</strong> er for privatpersoner som hjelper privatpersoner. Skattereglene er klare for denne type arbeid og du kan betale for småjobber uten å betale skatt.</p>
+					<ul class="list-unstyled">
+						<li>* Maks 6000.- til den samme personen pr. år</li>
+						<li>* Maks 60 000.- totalt pr. år</li>
+						<li>* Arbeidet må utføres ved hjemmet eller fritidsbolig.</li>
+					</ul>
+					<p>Les mer på: <a href="https://www.skatteetaten.no/person/skatt/hjelp-til-riktig-skatt/arbeid-trygd-og-pensjon/hobby-ekstrainntekt-og-smajobber/smajobber-og-tjenester/" target="_blank">skatteetaten.no</a></p>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<h5>Do</h5>
+						<ul class="list-unstyled">
+							<li><a href="">Publish a job</a></li>
+							<li><a href="">Browse jobs</a></li>
+							<li><a href="">Messages</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<h5>Explore</h5>
+						<ul class="list-unstyled">
+							<li><a href="">Our service</a></li>
+							<li><a href="">Customer care</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h5>Connect</h5>
+						<ul class="list-unstyled">
+							<li>
+								<ul class="list-inline">
+									<li class="list-inline-item social_facebook"><a href="#">
+										<svg xmlns="http://www.w3.org/2000/svg" width="23.5" height="23.5" viewBox="0 0 23.5 23.5">
+										  <g id="Facebook" transform="translate(0)">
+											<path id="Trazado_31" data-name="Trazado 31" d="M21.3,0H2.2A2.2,2.2,0,0,0,0,2.2V21.3a2.2,2.2,0,0,0,2.2,2.2H12.6V14.4H9.5V10.9h3.1V8.2c0-3,1.8-4.7,4.5-4.7h2.8V6.9H18c-1.5,0-1.7.7-1.7,1.7v2.3h3.5l-.5,3.5H16.2v9.1h5.1a2.2,2.2,0,0,0,2.2-2.2V2.2A2.2,2.2,0,0,0,21.3,0Z" fill="#fff"/>
+										  </g>
+										</svg></a>
+
+									</li>
+									<li class="list-inline-item social_twitter"><a href="#">
+										<svg xmlns="http://www.w3.org/2000/svg" width="25.1" height="20.366" viewBox="0 0 25.1 20.366">
+										  <g id="twitter" transform="translate(-42 -1.445)">
+											<g id="twitter-icon">
+											  <path id="Trazado_32" data-name="Trazado 32" d="M67.1,3.8a10.3,10.3,0,0,1-3,.8,5.2,5.2,0,0,0,2.3-2.9A10.3,10.3,0,0,1,63.1,3a5.2,5.2,0,0,0-8.8,4.7A14.6,14.6,0,0,1,43.7,2.3a5.2,5.2,0,0,0,1.6,6.9A5.1,5.1,0,0,1,43,8.5a5.2,5.2,0,0,0,4.1,5.1,5.2,5.2,0,0,1-2.3.1,5.2,5.2,0,0,0,4.8,3.6A10.4,10.4,0,0,1,42,19.5a14.7,14.7,0,0,0,22.6-13,10.5,10.5,0,0,0,2.5-2.7Z" fill="#fff"/>
+											</g>
+										  </g>
+										</svg></a>
+									</li>
+									<li class="list-inline-item social_instagram"><a href="#">
+										<svg xmlns="http://www.w3.org/2000/svg" width="22.265" height="22.876" viewBox="0 0 22.265 22.876">
+										  <g id="Instagram_mono" data-name="Instagram mono" transform="translate(11.133 11.438)">
+											<g id="Instagram_mono-2" data-name="Instagram mono" transform="translate(-11.133 -11.438)">
+											  <path id="Trazado_34" data-name="Trazado 34" d="M15.787,22.876H6.478A6.5,6.5,0,0,1,0,16.4V6.478A6.5,6.5,0,0,1,6.478,0h9.309a6.5,6.5,0,0,1,6.478,6.478V16.4A6.493,6.493,0,0,1,15.787,22.876Zm0-1.714A4.783,4.783,0,0,0,20.551,16.4V6.478a4.783,4.783,0,0,0-4.764-4.764H6.478A4.783,4.783,0,0,0,1.714,6.478V16.4a4.783,4.783,0,0,0,4.764,4.764Z" fill="#fff"/>
+											  <path id="Trazado_35" data-name="Trazado 35" d="M117.859,115.434a6.13,6.13,0,1,1-1.8-4.339A6.13,6.13,0,0,1,117.859,115.434Zm-6.163-4.01a4.015,4.015,0,1,0,4.015,4.015A4.015,4.015,0,0,0,111.7,111.424Z" transform="translate(-100.559 -104.082)" fill="#fff"/>
+											  <circle id="Elipse_6" data-name="Elipse 6" cx="1.451" cy="1.451" r="1.451" transform="translate(15.945 3.671)" fill="#fff"/>
+											</g>
+										  </g>
+										</svg></a>
+
+									</li>
+								</ul>
+							</li>
+							<li><a href="mailto:contact@finnsmajobb.no" class="mail">contact@finnsmajobb.no</a></li>
+						</ul>
+					</div>
+					<div class="col-md-5">
+						<div class="logo-footer">
+							<img src="images/footer-logo.svg" alt="MinSmåjobb" style="width: 170.23px; height: 78.38px;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+	<script>
+		$('#datepicker').datepicker({
+		uiLibrary: 'bootstrap4'
+		});
+
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		});
+	</script>
+  </body>
+</html>

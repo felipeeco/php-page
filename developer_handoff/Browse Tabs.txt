@@ -1,0 +1,29 @@
+/* STYLES FOR THE TABS IN BROWSE*/ 
+.tabs-brw{
+	background: #f5f5f5;
+	border: 0;
+}
+.tabs-brw{
+	background: #f5f5f5;padding: 18px 0 0 0;border: 0;
+}
+.tabs-brw {}
+.tabs-brw .nav-item .nav-link{
+	font-family: filson-soft, sans-serif;
+	font-weight: normal;
+	font-size: 23px;
+	line-height: 25px;
+	text-align: left;
+	color: #bcbcbc;
+    padding: 15px 30px;
+	border: 0px;
+    
+}
+.tabs-brw .nav-item .nav-link.active{
+	font-weight: bold;
+	color: #3fc698;border: 0;border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.tabs-brw .nav-item .nav-link:hover{
+    border: 0;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Get Notified</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/skn0ayd.css">
+	<script src="https://kit.fontawesome.com/a335a36105.js"></script>
+  </head>
+  <body>
+  	<!-- body code goes here -->
+	<header>
+		<div class="container">
+	 	  <div class="icon-holder">
+				<i class="fas fa-check-circle"></i>
+			</div>
+		  <div class="title-holder">
+				<h1>Done</h1>
+			</div>
+	  </div>
+</header>
+  <div class="container">
+	  <h1>You are almost set up for notifications.</h1>
+	  <p>We have sent you a SMS and a e-mail with links to confirm that the e-mail and mobilenumber is correct.</p>
+	  <div class="register-status">
+	  	<div class="row">
+	  		<div class="col">
+				<div class="row">
+					<div class="col-2">
+						<i class="fas fa-check-circle"></i>
+					</div>
+					<div class="col-10">
+						<h3>Confirmed Phone Number</h3>
+						<p>This phone has been verified</p>
+				</div>
+				</div>
+				<div class="row">
+					<div class="col-2">
+						<i class="fas fa-check-circle"></i>
+					</div>
+					<div class="col-10">
+						<h3>Confirmed E-mail</h3>
+						<p>This e-mail has been verified</p>
+					</div>
+				</div>
+			</div>
+	  	</div>
+	  </div>
+	  <p>You can now receive notifications regarding to the categories you selected. </p>
+	  <p>You can also change the setting and explore more existing jobs in our website</p>
+	  <a href="#" class="btn btn-light login">Log In</a>
+	  <br>
+</div>
+	
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.3.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+	  <script>
+	  	$("#selectall").click(function () {
+		  $(".check").prop('checked', $(this).prop('checked'));
+	  	});
+	  </script>
+  </body>
+</html>

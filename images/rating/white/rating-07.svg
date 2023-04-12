@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28.241" height="26.977" viewBox="0 0 28.241 26.977">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Trazado_1024" data-name="Trazado 1024" d="M16.218-12.187l3.447,6.976L27.379-4.09a1.685,1.685,0,0,1,.935,2.876l-5.58,5.379,1.32,7.666a1.689,1.689,0,0,1-2.449,1.776l-6.9-3.571-6.9,3.62a1.689,1.689,0,0,1-2.45-1.776l1.32-7.666L1.1-1.212a1.686,1.686,0,0,1,.935-2.876L9.747-5.21l3.447-6.976A1.688,1.688,0,0,1,16.218-12.187Z" transform="translate(588.299 147.5)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="rating-07" transform="translate(-588.885 -134.375)" clip-path="url(#clip-path)">
+    <rect id="Rectángulo_1137" data-name="Rectángulo 1137" width="32.372" height="28.775" transform="translate(587.293 133.701)" fill="#fff" opacity="0.32"/>
+    <path id="Unión_14" data-name="Unión 14" d="M-8217.661-20848.023v-29h2.855v29Zm-2.851,0v-29h2.851v29Zm-2.855,0v-29h2.855v29Zm-2.855,0v-29h2.855v29Zm-2.851,0h-2.562v-29h5.412v29Zm-5.412,0v-29h2.851v29Z" transform="translate(8823.371 21010.725)" fill="#fff"/>
+    <rect id="Rectángulo_1145" data-name="Rectángulo 1145" width="2.854" height="29" transform="translate(608.565 133.701)" fill="#fff" opacity="0"/>
+    <rect id="Rectángulo_1146" data-name="Rectángulo 1146" width="2.854" height="29" transform="translate(611.419 133.701)" fill="#fff" opacity="0"/>
+    <rect id="Rectángulo_1147" data-name="Rectángulo 1147" width="2.854" height="29" transform="translate(614.272 133.701)" fill="#fff" opacity="0"/>
+  </g>
+</svg>

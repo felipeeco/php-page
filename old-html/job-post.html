@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Finnsmåjobb</title>
+		<!-- Date Picker -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+	<!-- Bootstrap -->
+		<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/responsive.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.typekit.net/skn0ayd.css">
+		<script src="https://kit.fontawesome.com/a335a36105.js"></script>
+		<link rel="stylesheet" href="vendor/slick/slick.css">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
+	</head>
+	<body class="page job-post no-back">
+		<!-- body code goes here -->
+
+		<!-- NEW MODAL JUNE/2021 -->
+		<div class="modal fade sendofferModal" id="send-offer" tabindex="-1" role="dialog" aria-labelledby="send-offerLabel" aria-hidden="true">
+			<div class="modal-dialog message-employer-modal p-0">
+				<div class="modal-content">
+					<div class="modal-header d-block text-center">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"><i class="far fa-times-circle"></i></span>
+						</button>
+						<h5 class="modal-title" >Discuss the job for free! Fee is charged only if you get the job or agree on inspection.</h5>
+					</div>
+					<div class="modal-body">
+						<div class="row px-4 px-md-5 mt-3 job-info-container">
+							<div class="col-4 mb-2 px-2">
+								<div class="job-info text-center px-3 py-2 white-box">
+									<i class="fas fa-comment-lines"></i>
+									<p>Discuss job <strong>FREE</strong></p>
+								</div>
+							</div>
+							<div class="col-4 mb-2 px-2">
+								<div class="job-info text-center px-3 py-2 white-box">
+									<i class="fas fa-user-tie"></i>
+									<p>Agree inspection <strong>155.-</strong></p>
+								</div>
+							</div>
+							<div class="col-4 mb-2 px-2">
+								<div class="job-info text-center px-3 py-2 white-box">
+									<i class="fas fa-user-check"></i>
+									<p>You get the job <strong>355.-*</strong></p>
+								</div>
+							</div>
+							<div class="col-12">
+								<p class="text-white text-center"><small><i>*Befaringsgebyr kommer aldri i tillegg til oppdragsgebyr</i></small></p>
+							</div>
+						</div>
+						
+						<div class="gradient-bg px-3 px-md-5 pb-3">
+							<form action="">
+								<div class="form-group">
+									<div class="form-check white-box d-flex align-items-center">
+										<input class="form-check-input" type="radio" name="reserverJob" id="inlineCheckbox1" value="option1">
+										<label class="form-check-label d-md-flex align-items-center ml-2" for="inlineCheckbox1">
+											<div><img src="images/icons/strex-logo.png" width="100"></div>
+											<h4>Fees on my phone bill <span>Get your fees on your next phone bill</span></h4>
+										</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="form-check white-box d-flex align-items-center">
+										<input class="form-check-input" type="radio" name="reserverJob" id="inlineCheckbox2" value="option2">
+										<label class="form-check-label d-md-flex align-items-center ml-2" for="inlineCheckbox2">
+											<div><img src="images/icons/vipps-logo.png" width="100"></div>
+											<h4>Reserve money by Vipps <span>355.- will be reserved on your account till a helper is awarded or the job expire (Max 30 days)</span></h4>
+										</label>
+									</div>
+								</div>
+								<div class="form-group mt-4">
+									<div class="form-check dark-bg">
+										<input class="form-check-input" type="checkbox" name="acceptInfo" id="inlineCheckbox3" value="option3">
+										<label class="form-check-label pl-2" for="inlineCheckbox3">I understand that its strightly forbidden to exchange contact information in the chat. If inspection is required you MUST use the incpaction function. Violation of our rools will result in inspection fees to be widrawn and your account can be suspended without any notice.</label>
+									</div>
+								</div>
+								<div class="text-center">
+									<button type="submit" class="btn btn-primary btn-white" >Neste <i class="fas fa-chevron-right"></i></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div> 
+		</div>
+
+
+
+		<div class="modal fade" id="add-funds">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<a class="navbar-brand" href="#">
+							<img src="images/logo.svg" alt="MinSmåjobb" style="width: 223.19px;height: 38.56px;" />
+						</a>
+						<button type="button" class="close" aria-label="Close" data-dismiss="modal">
+							<svg xmlns="http://www.w3.org/2000/svg" width="39.456" height="39.456" viewBox="0 0 39.456 39.456">  <g id="Grupo_88" data-name="Grupo 88" transform="translate(19.728) rotate(45)">    <path id="Trazado_87" data-name="Trazado 87" d="M16.206,9.231H12.719V5.744a1.744,1.744,0,0,0-3.487,0V9.231H5.744a1.744,1.744,0,0,0,0,3.487H9.231v3.487a1.744,1.744,0,0,0,3.487,0V12.719h3.487a1.744,1.744,0,0,0,0-3.487Z" transform="translate(2.975 2.975)" fill="rgba(255,255,255,0.44)"/>    <path id="Trazado_88" data-name="Trazado 88" d="M13.95,0A13.95,13.95,0,1,0,27.9,13.95,13.95,13.95,0,0,0,13.95,0Zm0,24.412A10.462,10.462,0,1,1,24.412,13.95,10.462,10.462,0,0,1,13.95,24.412Z" fill="rgba(255,255,255,0.44)"/>  </g></svg>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid form-content">
+							<div class="row">
+								<div class="col-md-5 order-md-1 info">
+									<h3>Pay</h3>
+									<hr>
+									<div class="ad-sample">
+										<h4>We will only charge you the fee if you get the job.</h4>
+										<ul class="list-unstyled alerts">
+											<li>It is not allowed to share contact information before a job is assigned.</li>
+											<li>If you do shear or receive contact information before the job is assigned we will asume you plan to do the job and we will charge the fee of 75.- from your card.</li>
+											<li>The fee of 75.- will be changed from your card <strong>ONLY</strong> if you get the job. - If someone else get the job, there is no fees.</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-md-7 order-md-2 form">
+									<h1><svg xmlns="http://www.w3.org/2000/svg" width="38.138" height="29.226" viewBox="0 0 38.138 29.226">  <g id="Grupo_188" data-name="Grupo 188" transform="translate(-10.2 -18)">    <path id="Trazado_168" data-name="Trazado 168" d="M24.305,18h6.467c1.866,0,3.776.043,5.642.087.955.043,1.91.087,2.864.174a4.859,4.859,0,0,1,2.864,1.085,5.009,5.009,0,0,1,1.779,3.342c.043.3.043.564.087.868.13,1.128.13,2.3.174,3.472.043,2.474.043,4.9,0,7.378a7.692,7.692,0,0,0-2-.651c0-1.476.043-2.995,0-4.47H12.24c0,2.257,0,4.557.043,6.814.043.825.043,1.693.13,2.517a3.285,3.285,0,0,0,.043.651,3.24,3.24,0,0,0,1.649,2.3,2.181,2.181,0,0,0,1.042.26c.174,0,.347.043.521.043.694.043,1.389.087,2.127.13q5.013.13,10.025.13c2.43,0,4.817,0,7.248-.087a5.861,5.861,0,0,0,1.042,2c-2.127.043-4.253.087-6.38.087-3.125,0-6.293,0-9.418-.043-1.476-.043-2.951-.043-4.427-.174-.347,0-.651-.087-1-.087a4.868,4.868,0,0,1-3.038-1.432,5.185,5.185,0,0,1-1.432-3.342,7.1,7.1,0,0,0-.087-.955c-.087-1.649-.13-3.3-.13-4.9V29.414a1.75,1.75,0,0,0,0-.477c0-.911,0-1.779.043-2.691.043-1,.043-1.953.174-2.951a5.26,5.26,0,0,1,1.866-3.906A4.592,4.592,0,0,1,15.148,18.3c1.085-.087,2.213-.13,3.3-.174,1.823-.043,3.646-.087,5.512-.087A.955.955,0,0,1,24.305,18m-6.467,2.127c-.825.043-1.649.043-2.474.13a2.8,2.8,0,0,0-.868.13,2.96,2.96,0,0,0-1.562,1.345,3.236,3.236,0,0,0-.434,1.649c-.043.434-.087.868-.087,1.3H42.142a6.475,6.475,0,0,0-.087-.911c0-.174-.043-.3-.043-.477a3.187,3.187,0,0,0-1.042-2.344,2.578,2.578,0,0,0-1.649-.694c-.174,0-.347-.043-.521-.043-.651-.043-1.3-.087-1.953-.087-1.693-.043-3.342-.087-5.034-.087-1.866,0-3.732-.043-5.642,0C23.35,20.04,20.573,20.04,17.838,20.127Z" fill="#465b61"/>    <path id="Trazado_169" data-name="Trazado 169" d="M24.659,55.249a7,7,0,0,1,2.127.087,1.179,1.179,0,0,1,.911.521,1.516,1.516,0,0,1,.217.564,3.226,3.226,0,0,1,.13,1.128,7.011,7.011,0,0,1-.087,1.345l-.13.521a1.015,1.015,0,0,1-.694.694c-.174.043-.3.043-.477.087a2.867,2.867,0,0,1-1.042.13,6.57,6.57,0,0,1-1.3-.087c-.217-.087-.434-.043-.608-.13a1.1,1.1,0,0,1-.651-1,7.707,7.707,0,0,1-.087-2,6.429,6.429,0,0,1,.13-.825,1.08,1.08,0,0,1,.738-.868c.13-.043.3-.043.477-.087A.468.468,0,0,1,24.659,55.249Z" transform="translate(-7.211 -21.061)" fill="#465b61"/>    <path id="Trazado_170" data-name="Trazado 170" d="M76.985,57.881a7.375,7.375,0,0,1,3.857.7,6.851,6.851,0,0,1,3.1,3.035,7.113,7.113,0,0,1-6.828,10.369A7.111,7.111,0,0,1,73,70.21a6.789,6.789,0,0,1-1.96-2.845,6.993,6.993,0,0,1,2.4-8.093,6.659,6.659,0,0,1,3.541-1.391m0,3.1v3.1H74.076v1.707h2.908v3.351h1.834V65.785h2.908V64.077H78.818v-3.1Z" transform="translate(-36.402 -24.773)" fill="#465b61"/>  </g></svg> Add a Credit Card</h1>
+									<form autocomplete="on" style="margin-top: 30px" class="credit-card">
+										<div class="form-group">
+											<label for="cc-number">Credit Card Number</label>
+											<input id="cc-number" name="cc-number" type="tel" class="form-control cc-number identified none" required="" pattern="[0-9]{16}" placeholder="0000-0000-0000-0000">
+										</div>
+										<div class="form-row">
+											<div class="col-md-4">
+												<div class="form-group">
+													<label for="Month">Month</label>
+													<input type="text" class="form-control" placeholder="MM" name="Month">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<label for="Year">Year</label>
+													<input type="text" class="form-control" placeholder="YY" name="Year">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-group">
+													<label for="CCV">CCV Code</label>
+													<input type="text" class="form-control" placeholder="123" name="CCV">
+												</div>
+											</div>
+										</div>
+										<div class="form-group form-check">
+											<input type="checkbox" class="form-check-input" id="exampleCheck1">
+											<label class="form-check-label" for="exampleCheck1">I agree to <a href="#">user agreements</a></label>
+										</div>
+										<div class="form-group form-check">
+											<input type="checkbox" class="form-check-input" id="exampleCheck2">
+											<label class="form-check-label" for="exampleCheck2">Remember this card</label>
+										</div>
+										<button type="button" class="btn btn-primary mr-auto"  id="thank">Add this Credit Card</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="landing">
+			<nav class="navbar navbar-expand-lg container top">
+				<a class="navbar-brand" href="#">
+					<img src="images/logo.svg" alt="MinSmåjobb" style="width: 223.19px;height: 38.56px;" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Vår tjeneste</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Kundeservice</a>
+						</li>
+						<li class="nav-item login">
+							<a href="log-in.html" class="nav-link"><i class="fas fa-user"></i>Log In<i class="fas fa-chevron-down"></i></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<nav class="navbar navbar-expand-lg container loggedin-menu">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent2">
+					<!--I have set a new way to call the icons-->
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="new-job-1.html"><i class="fa-regular fa-circle-plus"></i> Publish a job</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fa-regular fa-magnifying-glass"></i> Browse jobs</a><!-- please take a look at the new way to call the icon -->
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link"><i class="fa-regular fa-comment"></i> Messages</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link"><i class="fa-regular fa-suitcase"></i> My Jobs</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-lg-8">
+						<div id="job-post-slider">
+							<a href="http://placehold.it/2000x2000"><img src="http://placehold.it/2000x2000" alt="" data-id="image01"></a>
+							<a href="images/samples/sample-05.png"><img src="images/samples/sample-05.png" alt="" data-id="image01"></a>
+							<a href="images/samples/sample-03.jpg"><img src="images/samples/sample-03.jpg" alt="" data-id="image01"></a>
+							<a href="images/samples/sample-03.png"><img src="images/samples/sample-03.png" alt="" data-id="image01"></a>
+						</div>
+					
+						<div class="work-descriptopn">
+							<a href="#" class="address"><i class="fas fa-map-marker-alt"></i> Viken, Oslo</a>
+							<h1>Wash car</h1>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis Leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+						</div>
+						<div class="banner-information">
+							<div class="iconlottie-animation-panel">
+							<script
+                    src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://assets7.lottiefiles.com/packages/lf20_hjfggbrf.json" background="transparent" speed="1" style="width: 60px; height: 60px;" loop  autoplay></lottie-player></div>
+							<div class="information-text"><h3>Interessert i dette oppdraget?</h3><p><small>Våre tjenester er tilgjengelig for alle som følger vårt regelverk og er hyggelig, ærlig og forpliktende i sin oppførsel. Tilgang til våre tjenester forbeholder at du setter deg inn i, og følger vårt regelverk.</small></p></div>
+							<div class="action"><a href="" class="btn btn-primary">Send tilbud</a></div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-lg-4 profile-information">
+							<div class="employer-details">
+								<div class="user-info d-flex flex-wrap">
+									<div class="profile-picture position-relative align-self-start">
+										<img src="images/no-profile-pic.jpg" alt="">
+										<i class="fas fa-circle user-status online" aria-hidden="true"></i>
+									</div>
+									<div class="rating-info">
+										<h1>Stine Tveit</h1>
+										<div class="ratign">
+											<span class="fa fa-star checked" aria-hidden="true"></span>
+											<span class="fa fa-star checked" aria-hidden="true"></span>
+											<span class="fa fa-star checked" aria-hidden="true"></span>
+											<span class="fa fa-star checked" aria-hidden="true"></span>
+											<span class="fa fa-star" aria-hidden="true"></span>
+										</div>
+										<p><small>Based on 3 reviews</small></p>
+										<p><small>Responce rate: Good <i class="fas fa-check"></i></small></p>
+									</div>
+								</div>
+								<div class="job-info-container d-flex">
+									<div class="job-time">
+										<span>NY!</span> 
+									</div>
+									<!-- <div class="job-time">
+										<span>2 <small class="d-block">days</small></span>
+										
+									</div> -->
+									<div class="ml-2">
+										<h2>New today!</h2>
+										<small>3km from you</small>
+									</div>
+								</div>
+								<ul class="d-flex flex-wrap job-info">
+									<li><i class="fas fa-broom"></i> Rengjøring</li>
+									<li><i class="fas fa-calendar-alt"></i> Tidspunkt avtales</li>
+									<li><i class="fal fa-file-search"></i> Inspection wanted</li>
+									<li><span>3</span> Competitions</li>
+									<li><img src="images/icons/pro-badge-white.svg" alt="Professional"></i> Professional needed</li>
+								</ul>
+							</div>
+							<div class="payment-information">
+								<div class="d-block">
+									<p>Betaling</p>
+									<h2>TILBUD ØNSKES</h2>
+									<h3>Budget: <strong>200.- <i class="fas fa-circle"></i> 5000.-</strong></h3>
+								</div>
+								<div class="d-none">
+									<h3 class="bigger">Timebetaling</h3>
+									<h2 class="bigger">500.- /time</h2>
+								</div>
+								<div class="d-none">
+									<h3 class="bigger">Betaling</h3>
+									<h2 class="bigger-2">500.-</h2>
+								</div>
+								<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#send-offer"> Send tilbud</a>
+								<a href="#" class="btn btn-danger"> <i class="fas fa-flag"></i> Report</a>
+								<p class="footer-info">Its complestly free to descuss the job on our chat. Fee Will be deducted only if you get the job or agree to communication outside our chat. - Thanks for supporting our fair fee policy.</p>
+							</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<h5>Do</h5>
+						<ul class="list-unstyled">
+							<li><a href="">Publish a job</a></li>
+							<li><a href="">Browse jobs</a></li>
+							<li><a href="">Messages</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<h5>Explore</h5>
+						<ul class="list-unstyled">
+							<li><a href="">Our service</a></li>
+							<li><a href="">Customer care</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h5>Connect</h5>
+						<ul class="list-unstyled">
+							<li>
+								<ul class="list-inline">
+									<li class="list-inline-item social_facebook"><a href="#">
+										<svg xmlns="http://www.w3.org/2000/svg" width="23.5" height="23.5" viewBox="0 0 23.5 23.5">
+										  <g id="Facebook" transform="translate(0)">
+											<path id="Trazado_31" data-name="Trazado 31" d="M21.3,0H2.2A2.2,2.2,0,0,0,0,2.2V21.3a2.2,2.2,0,0,0,2.2,2.2H12.6V14.4H9.5V10.9h3.1V8.2c0-3,1.8-4.7,4.5-4.7h2.8V6.9H18c-1.5,0-1.7.7-1.7,1.7v2.3h3.5l-.5,3.5H16.2v9.1h5.1a2.2,2.2,0,0,0,2.2-2.2V2.2A2.2,2.2,0,0,0,21.3,0Z" fill="#fff"/>
+										  </g>
+										</svg></a>
+
+									</li>
+									<li class="list-inline-item social_twitter"><a href="#">
+										<svg xmlns="http://www.w3.org/2000/svg" width="25.1" height="20.366" viewBox="0 0 25.1 20.366">
+										  <g id="twitter" transform="translate(-42 -1.445)">
+											<g id="twitter-icon">
+											  <path id="Trazado_32" data-name="Trazado 32" d="M67.1,3.8a10.3,10.3,0,0,1-3,.8,5.2,5.2,0,0,0,2.3-2.9A10.3,10.3,0,0,1,63.1,3a5.2,5.2,0,0,0-8.8,4.7A14.6,14.6,0,0,1,43.7,2.3a5.2,5.2,0,0,0,1.6,6.9A5.1,5.1,0,0,1,43,8.5a5.2,5.2,0,0,0,4.1,5.1,5.2,5.2,0,0,1-2.3.1,5.2,5.2,0,0,0,4.8,3.6A10.4,10.4,0,0,1,42,19.5a14.7,14.7,0,0,0,22.6-13,10.5,10.5,0,0,0,2.5-2.7Z" fill="#fff"/>
+											</g>
+										  </g>
+										</svg></a>
+									</li>
+									<li class="list-inline-item social_instagram"><a href="#">
+										<svg xmlns="http://www.w3.org/2000/svg" width="22.265" height="22.876" viewBox="0 0 22.265 22.876">
+										  <g id="Instagram_mono" data-name="Instagram mono" transform="translate(11.133 11.438)">
+											<g id="Instagram_mono-2" data-name="Instagram mono" transform="translate(-11.133 -11.438)">
+											  <path id="Trazado_34" data-name="Trazado 34" d="M15.787,22.876H6.478A6.5,6.5,0,0,1,0,16.4V6.478A6.5,6.5,0,0,1,6.478,0h9.309a6.5,6.5,0,0,1,6.478,6.478V16.4A6.493,6.493,0,0,1,15.787,22.876Zm0-1.714A4.783,4.783,0,0,0,20.551,16.4V6.478a4.783,4.783,0,0,0-4.764-4.764H6.478A4.783,4.783,0,0,0,1.714,6.478V16.4a4.783,4.783,0,0,0,4.764,4.764Z" fill="#fff"/>
+											  <path id="Trazado_35" data-name="Trazado 35" d="M117.859,115.434a6.13,6.13,0,1,1-1.8-4.339A6.13,6.13,0,0,1,117.859,115.434Zm-6.163-4.01a4.015,4.015,0,1,0,4.015,4.015A4.015,4.015,0,0,0,111.7,111.424Z" transform="translate(-100.559 -104.082)" fill="#fff"/>
+											  <circle id="Elipse_6" data-name="Elipse 6" cx="1.451" cy="1.451" r="1.451" transform="translate(15.945 3.671)" fill="#fff"/>
+											</g>
+										  </g>
+										</svg></a>
+
+									</li>
+								</ul>
+							</li>
+							<li><a href="mailto:contact@finnsmajobb.no" class="mail">contact@finnsmajobb.no</a></li>
+						</ul>
+					</div>
+					<div class="col-md-5">
+						<div class="logo-footer">
+							<img src="images/footer-logo.svg" alt="MinSmåjobb" style="width: 170.23px; height: 78.38px;"/>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+	<script src="vendor/slick/slick.min.js"></script>
+	<script src="vendor/magnific-popup/magnific-popup.min.js"></script>
+	
+	<script>
+		$('.carouselExampleIndicators').carousel()
+
+		$('#job-post-slider').slick({
+			dots: false,
+			autoplay: true,
+			autoplaySpeed: 8000,
+			prevArrow: '<span class="slider-arrow left"><i class="fas fa-chevron-circle-left"></i></span>',
+			nextArrow:'<span class="slider-arrow right"><i class="fas fa-chevron-circle-right"></i></span>',
+			infinite: true,
+			speed: 500,
+			fade: true,
+			cssEase: 'linear'
+			});
+
+			$('#job-post-slider').magnificPopup({
+				type: 'image',
+				delegate: 'a',
+				gallery:{
+					enabled:true,
+					arrowMarkup: '<button class="mfp-arrow slider-arrow %dir%"></button>',
+					tCounter: '',
+				},
+				callbacks: {
+					buildControls: function() {
+					this.contentContainer.append(this.arrowLeft.add(this.arrowRight));
+					},
+        		    open: function (){   
+						$('.mfp-figure').append('<span class="zoomImg" onclick="magnificZoom()"><i class="fas fa-search-plus"></i></span>');
+					},
+				}
+			});
+			
+			function magnificZoom() {
+				$('.mfp-figure figure').toggleClass('zoom');
+				$('.mfp-image-holder .mfp-close').toggleClass('hasZoom');
+			}
+			$(window).on('load', function() {
+        $('#send-offer').modal('show');
+    });
+
+	</script>
+  </body>
+</html>

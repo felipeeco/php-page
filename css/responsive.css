@@ -1,0 +1,1021 @@
+@charset "UTF-8";
+/* 
+CSS Document
+Version: 6.9 - Sep 2022
+- Added Employer Rating Close Button Update
+*/
+
+@media screen and (max-width: 767px){
+	.landing{
+	background-size: 150% ;
+    background-position: 0px bottom !important;
+	}
+    
+   	.rating-info{
+		text-align: center;
+	}
+	
+	.services div{
+		margin: 0 0 20px;
+	}
+	
+	.how-does-it-work .process .step{
+		margin-bottom: 50px;
+	}
+	
+	.how-does-it-work .process .step .icon{
+		float: none;
+		height: auto;
+		margin-right: 0px;
+	}
+	
+	.how-does-it-work .process p, .how-does-it-work .process h4{
+		text-align: center;
+	}
+	.modal-open .modal {padding: 0 !important}
+	.modal.show .modal-dialog {
+    min-width: auto;
+	}
+	.form-group .states{
+    column-count: 2;
+    }
+    .picture-holder{
+    width: 150px;
+    height: 150px;
+    padding-top: 0;
+        }
+    .profile-picture .addpicture {
+        /* width: 40px; */
+    /* height: 40px; */
+    /* background: #3fc698; */
+    /* border-radius: 100px; */
+    /* color: white; */
+    /* display: block; */
+	/* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+	transform: translate(0px,0px);margin: -22px auto 50px;
+}
+    .rating-info .personal-info{
+        text-align: center ;
+        width: 100%;
+        transform: translate(0px,0px);
+        margin: 0 0 10px;
+    }
+
+
+	
+.var-tjeneste.page .content{
+    background: url(../images/map.jpg) no-repeat bottom left;
+    background-size: 190%;
+    height: auto;
+}
+	
+	.var-tjeneste.page .offset-md-7{margin-bottom: 105%;}
+	
+	.navbar.navbar-expand-lg.container.top{padding: 1.5rem 1rem;
+		
+	}
+	
+	.navbar-nav .nav-link{
+
+}
+.navbar-nav.mr-auto.d-block.d-sm-none {margin: 22px 0 0;}
+.navbar-nav .login a {text-align: center;padding: 20px; min-width: 150px; max-width:200px; margin:auto;}
+
+.navbar-nav .nav-link{
+    font-size: 20px;
+    text-align: left;
+    padding: 10px 20px 15px;
+}
+
+    .navbar .nav-item.active{
+        background: rgba(255, 255, 255, 0.09);
+        border: none;
+    }
+
+.row .col-md-6.welcome-message .alert.alert-secondary {
+	padding: 15px 15px 250px 15px;
+}
+	
+	.add-msg, .add-msg p{	
+		text-align: left;
+		display: flex;
+	}
+	.add-msg p{
+		display: inline-block;
+	}
+	
+	.result .image{
+		display: none;
+	}
+	.display-results .information.flex{
+		display: block;
+	}
+	.display-results .result{
+		padding-bottom: 10px;
+	}
+	.display-results{
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+	
+	.browse.page .content{
+		padding: 20px 0 0;
+	}
+	.form-check{
+		padding-top: 20px;
+	}
+
+	.type-jobs .form-check {
+		padding-top: 5px;
+	}
+	.modal .white-box .btn{
+		min-width: auto;
+	}
+	.dropdown .dropdown-menu{
+        background: none;box-shadow: none;border: 0;color: white;		
+	}
+    .dropdown-menu a.dropdown-item{
+       /* color: white !important;
+        text-align: left !important;padding: 9px 0 !important;font-size: 16px !important;*/
+		
+		/*CHECK IF THIS AFFECTS SOMEHTING, THIS IS FOR THE DROPDOWN IN THE CHAR*/
+    }
+    .login .dropdown.show {
+        width: 80%;
+        /* height: 257px; */
+        border-radius: 14px;
+        background: rgba(0, 0, 0, 0.16);
+        padding: 20px;margin: auto;
+    }
+	.unreadmessage .notification{
+		display: inline-block;
+		font-size: 10px;
+		text-align: left;
+		color: #3fc698;
+		transform: translateY(-4px);
+
+	}
+
+	.estimate-inspection .estimate-slider { margin: 0 -15px; }
+	.estimate-inspection .estimate-slider img {	border-radius: 0px;	}
+
+	.estimate-inspection .job-info-wrapper .job-info-content img { width: 100%;}
+	.estimate-inspection .job-info-wrapper .job-info-content .job-address {font-size: 16px;}
+	.estimate-inspection .job-info-bottom .job-info-wrapper h4 {font-size: 15px}
+	.estimate-inspection .job-info-bottom .job-info-wrapper h4 span {margin: 8px 0;}
+	.estimate-inspection .job-info-bottom .job-info-wrapper {text-align: center;}
+	#offer-help_modal .modal-body, .subscription-modal .modal-body { padding: 0 15px !important;}
+	.subscription-modal .content-bg { margin: 0 -15px; padding: 30px 10%;}
+	#offer-help_modal .modal-dialog .btn {min-width: 100% !important;}
+	#offer-help_modal .modal-body .tab-content {padding: 18px;}
+	.estimate-inspection-modal .form-price {flex-wrap: wrap;}
+	.estimate-inspection-modal .form-group .d-flex .form-control {flex: 0 0 100%;}
+	.estimate-inspection-modal .form-group .d-flex .form-check {flex: 0 0 45%;}
+	.estimate-inspection-modal .form-group .form-check .form-check-label.working-hours {
+		display: inline-block;
+		width: 60%;
+		position: relative;
+    	top: 10px;
+	}
+	.form-middle-info {padding: 45px 20px 20px;}
+	
+	.estimate-inspection-modal ul.nav li, 
+	.estimate-inspection-modal ul.nav li a, 
+	.estimate-inspection-modal ul.nav li button { 
+		width: 100%;
+		margin-bottom: 5px
+	}
+	
+	.estimate-inspection-modal .whitebox ul.nav button { margin: 0}
+	#request-inspection-modal .form-group {padding: 0 20px;margin-bottom: 25px;}
+	
+	#job-details_modal .modal-left {
+		padding: 30px 20px;
+		border-radius: 10px 10px 0 0 ;
+	}
+	
+	#job-details_modal .modal-right {
+		margin-left: 0;
+		padding: 20px 15px;
+	}
+
+	#job-details_modal .modal-right .center-icon {
+		position: initial;
+		display: inline;
+	}
+	#job-details_modal .modal-right .right-info p {
+		display: inline;
+	}
+	.message-employer-modal .modal-title { margin-top: 25px;	}
+	.message-employer-modal .modal-header .close {
+		right: 15px;
+		opacity: .7;
+		z-index: 90;
+		top: 15px;
+	}
+	.message-employer-modal .modal-header .close i{ 
+		color: #465B61 !important;
+	}
+	
+	#send-estimate-modal .modal-header .close i,
+	#request-inspection-modal .modal-header .close i {
+		color: #ccc;
+	}
+
+	/* WEBSITE UPDATE PAGE */
+	#update-page {min-height: auto;max-height: 100vh;}
+	#update-page .update-wrapper h2 { font-size: 29px; }
+	#update-page .update-wrapper p { font-size: 15px; }
+	#update-page .update-wrapper  .update-btn i {  
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.profile-settings-form .nav-pills .nav-link {
+		font-size: 17px;
+	}
+	.profile-settings-form .col-md-6 label {
+		margin-top: 20px;
+	}
+	#public-profile-container .form-check {padding-top: 0}
+	#public-profile-container h2 {margin-top: 10px;}
+
+	.reports-info .form-group button {
+		color: #fff;
+		display: block;
+		position: relative !important;
+		background: #3FC698;
+		padding: 10px 19px;
+		width: 100%;
+		margin-top: 15px;
+	}
+	.reports-info table.reports-table {
+		display: block;
+		width: 100%;
+		overflow-x: auto;
+	}
+	#awardUser-form img.user {margin-right: 10px;width: 38px;height: 38px;}
+	#awardUser-form .rating-info, #awardUser-form .rating-info .personal-info {text-align: left;}
+    #awardUser-form .rating-info .personal-info .name {text-align: left;font-size: 18px;line-height: 1;}
+	 #awardUser-form .awardlabel {flex: 30%;text-align: right;}
+	 #awardUser-form label {font-size: 16px;}
+	 #awardUser-form input[type="checkbox"]:checked ~ label {width: 130px;}
+	 #awardUser-form .rating-info .ratign span {font-size: 13px;}
+	 #delete-job .job-info img.job-img {
+		width: 100%;
+		height: 150px;
+	 }
+
+	 .modal .chattregler .rules-block:before  {height: 50%;}
+	 .modal .chattregler p.number { line-height: 0.8;}
+	 .modal .chattregler  .footer-btn {
+		 position: fixed !important;
+		 bottom: 0px;
+		 width: calc(100% - 1rem);
+		 left: 0.5rem;
+		 padding: 15px 15%;
+		 background: linear-gradient(90deg, #3FC698 0%, #3FB6C6 100%);
+		 box-shadow: 0 -15px 27px 11px rgb(0 0 0 / 15%);
+	 }
+	 .modal .chattregler .dark-bg p:last-of-type {margin-bottom: 80px;}
+	 .modal#chattregler .modal-content {
+		max-height: calc(100vh - 50px) !important;
+		overflow: scroll;
+	 }
+
+	 .my-jobs  .my-jobs-type {display: block !important;}
+	 .my-jobs .nav-pills .nav-item:nth-of-type(3),
+	 .my-jobs .nav-pills .nav-item:nth-of-type(4),
+	 .my-jobs .nav-pills .nav-item:nth-of-type(5) {
+		 margin-top: 40px;
+	 }
+	 .my-jobs .my-jobs-type h2:nth-of-type(2) {
+		position: relative;
+		bottom: -65px;
+		margin-bottom: -30px;
+	 }
+	 .nav-pills .nav-link#pills-profile-tab:before {height: 0px;}
+
+	/** RATING MODAL EMPLOYER **/
+	
+	#employerRating .pwa .rating-info h1{
+		text-align: left;
+	}
+
+	#employerRating .pwa .r-updated.white{
+		display: block;
+		margin: 0;
+	}
+
+	.pwa .rating-info{
+		text-align: left;
+	}
+
+	#employerRating .pwa .profile-picture img{
+		width: 96px;
+	}
+
+	#employerRating .pwa .profile-picture{
+		width: auto;
+		margin: 0  10px 0 0;
+	}
+
+	#employerRating .user-info{
+		min-height: 0 !important;
+		
+	}
+
+	.ratingfilter{
+		position: relative;
+		margin-bottom: 20px;
+	}
+	
+	#employerRating button.close{
+    position: fixed;
+	right: 35px;
+	overflow: visible;
+	padding: 10px;
+/*         background: rgba(0, 0, 0, 0.19); */
+	color: rgba(255, 255, 255, 0.77);
+	display: block;
+	z-index: 20;
+	text-shadow: none;
+	border-radius: 5px;
+	opacity: 1;
+	top: 40px;
+	backdrop-filter: blur(10px);
+	backdrop-filter: blur(10.599200248718262px);
+	-webkit-backdrop-filter: blur(10.599200248718262px);
+	background-color: rgba(0, 0, 0, 0.19);
+}
+
+    #employerRating button.close:hover{
+     color: rgba(255, 255, 255, 0.77);
+    text-shadow: none;
+}
+
+	#employerRating .ratinggrid{
+		margin: 0;
+		height: auto;
+		overflow:inherit;
+	}
+	
+	
+	.middle-section{
+		width: 70%;
+	}
+/*	END EMPLOYER MODAL*/
+	
+	/*SUPPORT FOR LOGGIN SIDENAV**/
+	
+	.not-logged-in{
+		background-image: url('../images/login_image_pwa.png');
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: 140%;
+	}
+	
+	#mySidenav {
+    padding: 20px;
+	}
+
+	.loggin-pwa-sidenav {
+		margin-top: 100px;
+	}
+
+	.loggin-pwa-sidenav h1, .loggin-pwa-sidenav p{
+		color: white ;
+	}
+
+	.loggin-pwa-sidenav input[type=text], .loggin-pwa-sidenav input[type=password]{
+		background: white;
+		border-radius: 0  30px 30px 0;
+		font-family: var(--secondaryFont);
+/*		font-size: 16px;*/
+/*		padding: 14px 14px 14px 0px;*/
+	}
+	.loggin-pwa-sidenav input:focus{
+		border: 0px;
+	}
+	
+	.loggin-pwa-sidenav .form-check input.form-check-input{
+		background: transparent;
+	}
+	
+	.loggin-pwa-sidenav .form-check label.form-check-label{
+		color: white;
+	}
+	
+	.login-links a{
+		color: var(--green);
+		font-size: 17px;
+		font-family: var(--mainFont);
+	}
+	
+	.input-group-text{
+/*
+		color: var(--green);
+    	background: white;
+		border: none;
+		border-radius: 30px 0px 0px 30px;
+*/
+	}
+}
+
+@media screen and (max-width: 991px){
+	.helper-user .row .col-md-3, .helper-user .row .col-md-5, .helper-user .row .col-md-4{
+		/* width: 100%; */flex: 100%;max-width: 100%;
+	}
+	
+	.helpers-list .list .helper-user img{
+		width: 70px;margin: 0 auto 10px;display: block;
+	}
+	
+	.helpers-list .list .helper-user h5{
+		text-align: center;line-height: 7px;
+	}
+	.helpers-list .list .helper-user .rating-info .ratign{
+		text-align: center;
+	}
+	#send-estimate-modal .message-employer-modal,
+	#request-inspection-modal .message-employer-modal,
+	#job-details_modal .message-employer-modal,
+	#offer-help_modal .message-employer-modal {
+		max-width: 600px;
+	}
+	#offer-help_modal .modal-dialog .btn { min-width: 230px;}
+	
+	.contact-conversation .contact-details h5 {
+		font-size: 15px;
+		line-height: 1.1;
+	}
+	.contact-conversation .contact-details .jobtitle {
+		font-size: 14px;
+		line-height: 1;
+	}
+	.contact-conversation .offer-message {
+		float: none;
+		margin-left: 60px;
+	}
+	.chat-input button.send-msg {
+		bottom: 16px;
+    	right: 2px;
+	}
+	.side-helper-info-container .helper-job-list {
+		max-height: none;
+		padding-bottom: 20px;
+		margin-bottom: 80px;
+	}
+
+
+	.full-list-info {display: none}
+
+	.helper-info-container {
+		padding: 20px;
+		margin-bottom: 30px;
+	}
+	.ratinggrid {
+		margin-bottom: -40px;
+	}
+	.job-post .profile-information .user-info {
+		justify-content: center;
+	}
+	.job-post .profile-information .user-info .rating-info {
+		margin-top: 20px;
+		text-align: left;
+	}
+	.job-post .profile-information .job-info-container {
+		padding: 10px
+	}
+	.job-post .profile-information .payment-information .btn {
+		min-width: 100%;
+		padding: 10px 5px
+	}
+	.job-post .profile-information .payment-information .btn-danger {
+		margin: 15px 0;
+	}
+	.form-check.payment-check {background: linear-gradient(90deg, #d9d9d9 12%, #fff 10%);}
+	.form-check.payment-check.checked {background: linear-gradient(90deg, #3FC698 0%, #3FB6C6 12%, #fff 10%);}
+}
+
+@media only screen and (min-width:320px) and (max-width:599px)  {
+	.content.messages .conversations{
+	/*height:auto !important;*/
+    overflow: scroll;
+    position: relative;
+	background: #f7f7f7;
+
+}
+.content.messages .chatbox .chat-screen .bubbles{
+    overflow: scroll;
+    position: relative;
+    height:auto !important;
+}
+
+#dropdownMenuLink{text-align: center !important;}
+
+#mySidenav{display: none;}
+
+.estimate-inspection .estimate-slider .slick-dots li { width: 38px }
+.kundeservice .intro-content .whitebox { 
+    min-width: 100%; width: 100%;
+}
+
+.kundeservice .faq-section #faqAccordion .card-header h2 button {
+	padding: .75rem .75rem;
+}
+
+.kundeservice .faq-section #faqAccordion .card-header button:before {
+	right: 5px;
+}
+}
+
+/*menu for portrait ipad*/
+@media only screen and (min-width:768px) and (max-width:992px)  {
+    .navbar-nav{
+        flex-direction: row !important;
+        margin: 10px 0 0;
+    }
+    
+	.navbar-nav li:not(:last-of-type){
+		margin-right: 20px;
+	}
+
+	.loggedin-menu .navbar-nav .nav-link {
+		padding-right: 10px;
+	} 
+    .contact-conversation .contact-details{
+        width: 79px;
+        word-break: all;
+    }
+    .unreadedmessages-alert{
+        margin: 0;
+    }
+    .nofixed-project.greybox-holder .payment-information h1{
+        font-size: 15px;
+        line-height: 15px;
+    }
+    
+    .nofixed-project.greybox-holder .payment-information{
+        padding: 0;
+    }
+    .my-jobs .tab-content .display-results .result .information .info a{
+		font-size: 14px !important;
+		/* line-height: 23px !important; */
+		width: 100%;
+		display: block;
+		float: none;
+		clear: both;
+        margin: 0 0 -10px 0 ;
+        padding: 0;
+}
+    .display-results .information.flex{
+        display: block;
+    }
+    
+    .my-jobs .tab-content .display-results .result .btn-primary, .my-jobs .tab-content .active-jobs .display-results .result span, .my-jobs .tab-content .active-jobs .display-results .result .helpers{
+		width: 31%;
+        padding: 10px 0px;
+        margin: 10px 10px 0 0;float: left;
+    }
+	.navbar-nav .nav-link{
+		font-size: 17px;
+	}
+	.rating-info{
+		text-align: center;
+	}
+	
+	.row .col-md-6.welcome-message .alert.alert-secondary {
+		padding: 15px 15px 250px 15px;
+	}
+
+	.my-jobs .nav-pills {flex-wrap: nowrap}
+	.my-jobs .nav-pills .nav-link {
+	 font-size: 18px;
+	 margin-right: 5px;
+	}
+	.my-jobs .my-jobs-type h2 {
+		flex: 0 0 46%;
+  }
+  .nav-pills .nav-link#pills-profile-tab {margin-right: 20px;}
+  .nav-pills .nav-link#pills-profile-tab:before{right: -10px}
+
+}
+
+@media only screen and (min-width:768px)  {
+	
+	.floating-notification i{
+		float: left;
+	}
+	.picture-holder-rating{
+		height: 28px;
+		width: 29px;
+		float: left;
+		margin-right: 14px;
+		background-size: contain;
+		border-radius: 15px;
+	}
+	.floating-notification h5{
+		
+	}
+	.pills-payment .form-info.right {margin-left: -2rem;}
+	
+}
+
+@media (max-width: 1200px){ 
+
+	.publishjob-info-payment, .payment-info {
+		width: 480px;
+	}
+	.payment-info-input div:nth-of-type(2) label:before {
+		left: 67.5%;
+	}
+	.publish-job-inputs .custom-control:nth-of-type(2) input:nth-of-type(3) {
+		left: 160px !important;
+	}
+	.publish-job-inputs .custom-control:nth-of-type(3) input:nth-of-type(3) {
+		left: 57px !important;
+	}
+	.payment-info label {
+		font-size: 15px !important;
+	}
+}
+@media (max-width: 991px){
+	
+.characteristics .text-information-display h2, .characteristics .text-information-display h3{
+	text-align: center;
+}
+	
+	.characteristics .text-information-display{
+		margin-top: 20px;
+	}
+	.ad-panel{
+		margin-bottom: 10px;
+	}
+	.online-icon .fas{
+		text-align: center;		
+			margin: -11px 0 0;
+	font-size: 23px;
+	}
+
+}
+
+@media only screen and (min-width:320px) and (max-width:768px)  {
+    .success-message .white-box a{
+
+    }
+    .modal.show .modal-dialog .btn{
+		width: 100%;
+    }
+	.modal.show .modal-dialog .btn {
+        /*font-size: 16px;*/
+		/*maing buttons look extremely small*/
+	}
+
+	.chat-input button {
+    border: none;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient( #3fc698 0%, #37d0fa 100%);
+	border-radius: 100px;
+	color:
+    white;
+    font-size: 19px;
+	}
+	 .newjob-content .hero-image{border-radius: 0;height: 245px;margin-bottom: -150px;
+        
+    }
+    .newjob-content .hero-image h1, .newjob-content .hero-image h2 {
+    text-shadow: 0px 0px 17px rgba(0, 0, 0, 1);
+	}
+
+	.job-post .profile-information ul.job-info {
+		flex-direction: unset !important;
+	}
+
+	.message-employer-modal .report-user-content {margin: 0;}
+	#reportUserModal .modal-footer {display: block;}
+	 #awardUser-form .btn-outline-primary {flex: 0 0 45%;margin-left: 10px;}
+	 #invited-helpers .modal-body .btn {width: auto;margin-left: 10px;}
+
+}
+
+
+@media (max-width: 1200px){
+	
+	.chat-input button.send-msg {
+		bottom: 16px;
+    	right: 2px;
+	}
+	.profile-information .profile-picture img {
+		width: 42px;
+		height: 42px;
+	}
+
+	.ratign span {
+		margin-right: 0;
+	}
+	.nofixed-project.greybox-holder .rating-info .ratign span {
+		font-size: 14px;
+	}
+	.nofixed-project.greybox-holder .profile-information h1 {
+		font-size: 16px;
+	}
+	.nofixed-project.greybox-holder .service-info .job-title {
+		font-size: 22px;
+	}
+	.chat-input button.send-msg {
+		width: 34px;
+		height: 34px;
+		font-size: 14px;
+	}
+	.chat-input .footer-btn button,
+	.chat-input .footer-btn button#footer-menu-dropdown i {
+		font-size: 24px;
+	}
+	.chat-input .footer-btn {
+		/* right: 38px; */
+		/* bottom: 15px; */
+		height: 100%;
+    	align-items: flex-end;
+	}
+	.glyphicon.glyphicon-share-alt {
+	    margin-top: 5px !important;
+	    /* float: left; */
+	    margin-left: 7px;
+	    color: #fff !important;
+	    background-color: #3fc698;
+	    width: 34px;
+	    height: 34px;
+	    border-radius: 50px;
+	    display: inline-block;
+	    /* position: absolute; */
+	    bottom: 18px;
+	    right: 0;
+	    text-align: center;
+	    line-height: 34px;
+	}
+	.myicon01 { margin-top:9px; margin-left:8px; float:left;}
+
+	.chat-input .footer-btn .dropdown-menu button {
+		width: 100%;
+		height: auto;
+		text-align: right;
+	}
+
+	.message-employer-modal .modal-footer .btn {
+		width: 100%;
+	}
+	.message-employer-modal .modal-footer .btn.btn-primary-white {width: auto;}
+
+	.chat-input textarea { 
+		bottom: 0;
+		width: 91vw;
+		position: inherit; 
+	}
+	.kundeservice .faq-section .qr-code .qr-code-btn img {
+		max-width: 120px;
+	}
+	.content.messages .chatbox .chat-input {
+		width: 100%;
+	}
+	.content.messages .chatbox .chat-screen .bubbles {
+		height: calc(100vh - 300px);
+	}
+	.content.messages .chatbox .message-footer  {
+		bottom: 15px;
+	}
+	.job-post .profile-information ul.job-info {
+		flex-direction: column;
+	}
+
+	.profile-settings-form .nav {
+		flex-wrap: nowrap;
+	}
+	.my-jobs .my-jobs-type h2 {  flex: 0 0 41%;}
+
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+	.content.messages .container {
+	max-width: 100%;
+	padding: 0 3%;
+	}
+	.project-info .counter-offer-btn {
+		display: block !important;
+	}
+	.project-info .counter-offer-btn .btn {
+		width: 100%;
+		margin-bottom: 10px !important;
+	}
+	.nofixed-project.greybox-holder .profile-information {
+		display: block !important;
+	}
+	.nofixed-project.greybox-holder .profile-information h1 .profile-badge {
+		width: 25px !important;
+    	margin-top: -2px;
+	}
+	.profile-information .user-status {
+		right: 35%;
+    	bottom: -1px;
+	}
+	.project-info .counter-offer-propose .proposal .price {
+		font-size: 24px;
+	}
+	.content.messages .chatbox .chat-screen .bubbles {
+		height: calc(100vh - 335px);
+	}
+	.frame > div.input-chat:last-of-type  {
+        position: fixed !important;
+        margin: 0;
+        width: 100%;
+        display: block;
+        border: none;
+		bottom: 0 !important;
+		background: white;
+	}
+	.input-chat .msj-rta {
+        float: none;
+        width: 95%;
+        margin: 0 auto 10px !important;
+        border-radius: 0;
+        border-bottom:  1px solid #ccc;
+        display: flex;
+        padding: 10px 10px 5px;
+        position: relative;
+	}
+	.chat-input textarea {
+        width: auto !important;
+        padding: 0;
+        border-bottom: 0;
+	}
+	.publishjob-info-payment, .payment-info {
+		width: 350px !important;
+	}
+	input.custom-control-input:checked ~ input.hide {
+		transform: translateY(187px) !important
+	}
+	.payment-info-input div label:before {
+		bottom: -150px;
+		font-size: 15px
+	}
+	.payment-info-input.payment-third div label:before, .payment-info-kr label:before {
+		bottom: -150px;
+		font-size: 15px;
+	}
+
+	.payment-info label {
+		font-size: 12px !important;
+	}
+	.publish-job-inputs .custom-control:nth-of-type(2) input:nth-of-type(3) {
+		left: 95px !important;
+	}
+	.publish-job-inputs .custom-control:nth-of-type(3) input:nth-of-type(3) {
+		left: -7px !important;
+	}
+	.payment-info-input div:nth-of-type(2) label:before {
+		left: 72%
+	}
+	
+	.job-search-inputs {
+		margin-top: 25px;
+	}
+	.display-results a.btn.btn-primary,
+	.display-results span.price {
+		min-width: 50px;
+	}
+	.display-results span.price {
+		font-size: 17px;
+		word-break: break-all;
+		padding: 5px;
+	}
+
+	.display-results h1 {
+		line-height: 1.1;
+		font-size: 24px;
+	}
+	#searchjobfilter .col-4 {
+		flex: 0 0 44%;
+		max-width: 44%;
+	}
+	
+	#searchjobfilter .col-8 {
+		flex: 0 0 56%;
+		max-width: 56%;
+	}
+	.job-location-form, .job-location-info ~ .job-name-form, .job-name-form {
+		width: 50%;
+	}
+	.job-location-form .form-group label:nth-child(1), .job-name-form .form-group label:nth-child(1) {
+		font-size: 16px ;
+	}
+	.display-results .image .wrap {height: 150px;}
+	.display-results .information .info {margin-bottom: 10px;}
+	.my-jobs .tab-content .active-jobs .display-results .result p.price {margin-top: 15px;}
+	.rating-info .personal-info a.mail {position: relative; left: -15px}
+	.my-jobs .tab-content .expired-jobs .display-results .result span.views,
+	.my-jobs .tab-content .expired-jobs .display-results .result .btn-primary {
+		width: auto;
+		display: inline-block;
+		height: 39px;
+		line-height: 39px;
+		padding: 0;
+		margin: 10px 5px 5px 0;
+		float: none;
+		padding-right: 10px;
+	}
+	.my-jobs .tab-content .expired-jobs .display-results .result span.views .profileimage {margin: 0}
+	.my-jobs .tab-content .expired-jobs .display-results .result .btn-primary  { font-size: 15px;padding-left: 10px; }
+}
+	@media (max-width: 548px) {
+		.publishjob-info-payment, .payment-info {
+			width: calc(100vw - 80px) !important;
+		}
+		 input.custom-control-input:checked ~ input.hide {
+			transform: translateY(187px) !important
+		}
+		.publishjob-info-payment p {
+			font-size: 12px;
+		}
+
+		.publish-job-inputs .custom-radio label {
+			font-size: 13px !important;
+			margin-right: 0px;
+		}
+		.payment-info-input div label:before {
+			bottom: -150px;
+			font-size: 15px
+		}
+		.payment-info-input.payment-third div label:before, .payment-info-kr label:before {
+			bottom: -150px;
+			font-size: 15px;
+		}
+		.payment-info label {
+			font-size: 12px !important;
+		}
+		.publish-job-inputs .custom-control:nth-of-type(2) input:nth-of-type(3) {
+			left: 95px !important;
+		}
+		.publish-job-inputs .custom-control:nth-of-type(3) input:nth-of-type(3) {
+			left: -7px !important;
+		}
+		.payment-info-input div:nth-of-type(2) label:before {
+			left: 72%
+		} 
+
+	}
+		@media (max-width: 420px) {
+			.publishjob-info-payment, .payment-info {
+				width: calc(100vw - 50px) !important;
+				left: -10px
+			}
+			.marginForInput >  label {
+				position: relative;
+				top: 20px;
+			}
+			input.custom-control-input:checked ~ input.hide {
+				transform: translateY(200px) !important;
+			}
+			.payment-info-input div label:before, .payment-info-input.payment-third div label:before, .payment-info-kr label:before {
+				bottom: -165px;
+			}
+
+			.publish-job-modal.modal.show .modal-dialog .btn {
+				font-size: 14px;
+				margin-bottom: 10px;
+			}
+
+			.profile-settings-form .nav-pills .nav-link {
+				font-size: 14px;
+			}
+
+		}
+
+		@media (min-width: 450px) and (max-width: 557px) {
+			.publish-job-inputs .custom-control:nth-of-type(2) input:nth-of-type(3){
+				left: 166px !important;
+			}
+			.publish-job-inputs .custom-control:nth-of-type(3) input:nth-of-type(3) {
+				left: 45px !important;
+			}
+		}
+
+		@media (max-width: 378px ) {
+			.payment-info-input div:nth-of-type(2) label:before {
+				left: 80% !important;
+			}
+			#awardUser-form .btn-outline-primary {
+				font-size: 15px;		
+ 		}
+		 .modal .chattregler .rules-block p strong {font-size: 16px;}
+		 .modal .chattregler .rules-block:nth-of-type(2):before {height: 40%;}
+	}
+	
+
+@media (min-width: 1570px) {
+  .landing {
+    background-size: contain !important;
+  }
+}

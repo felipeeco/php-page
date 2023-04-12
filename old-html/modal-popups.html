@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Finnsmåjobb</title>
+		<!-- Date Picker -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+		<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+		<!-- Bootstrap -->
+		<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+        <!--<link href="https://minsmajobb.no/assets/frontend/css/custom-style.css?ver=4.1.20323" rel="stylesheet">
+        <!--<link href="css/style.css" rel="stylesheet">
+		<link href="css/responsive.css" rel="stylesheet">-->
+		<link href="css/style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+		<link href="css/custom-style.css" rel="stylesheet">
+		<link href="css/pwa.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://use.typekit.net/skn0ayd.css">
+		<style type="text/css">
+		</style>
+		<script src="https://kit.fontawesome.com/a335a36105.js"></script>
+	</head>
+	<body class="page profile no-back">
+		<!-- body code goes here -->
+		<!--Default-->
+		<div class="modal fade" id="default">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" aria-label="Close" data-dismiss="modal"><i class="fas fa-times-circle" style="font-weight: normal"></i></button>
+					</div>	
+					<div class="modal-body">
+						<div class="white-box information-popup">
+							<span class="icon"><i class="fas fa-question-circle" style="font-weight: bolder"></i></span>
+							<h2>Do you really want to do this?</h2>
+							<p>There’s no way to know what’s gonna happen if you do this choice </p>
+							<div class="btns">
+								<a href="#" class="btn btn-danger"><i class="fas fa-times" style="font-weight: normal"></i> Don’t Do it</a>
+								<a href="#" class="btn btn-primary"><i class="fas fa-check" style="font-weight: normal"></i>  Do it</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Strex – 1-->
+		<div class="modal fade" id="strex1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" aria-label="Close" data-dismiss="modal"><i class="fas fa-times-circle" style="font-weight: normal"></i></button>
+					</div>	
+					<div class="modal-body">
+						<div class="grey-box content-popup">
+							<h1><i class="fas fa-comment-dollar" style="font-weight: normal"></i>  Please select your preferred fee</h1>
+							<p>Please read the following choices. It is important how do you communicate with the job owner.</p>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="options-suscription one white-box">
+										<div class="header">
+											<h2>Fee when you get a job only <i class="fas fa-check-circle selected" style="font-weight: bolder"></i></h2>
+										</div>
+										<div class="price-information">
+											<div class="form-check">
+											  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+											  <label class="form-check-label" for="exampleRadios1">39.- </label>
+											</div>
+										</div>
+										<p>We will charge you only if you are a word job, but you are not allowed to exchange any contact information in the chat before you awarded. Contact information like number phone full name email social media links and so on will result in the fee being charged without any exceptions. This will also include if you agree to meet on an address in the chat. You must ask job owner to award you before you can exchange any kind of contact information or agreed to meet</p>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="options-suscription two white-box active">
+										<div class="header">
+											<h2>Inspection/open chat <i class="fas fa-check-circle selected" style="font-weight: bolder"></i></h2>
+										</div>
+										<div class="price-information">
+											<div class="form-check">
+											  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked>
+											  <label class="form-check-label" for="exampleRadios2">29.- </label>
+											</div>
+										</div>
+										<p>We will charge you only if you are a word job, but you are not allowed to exchange any contact information in the chat before you awarded. Contact information like number phone full name email social media links and so on will result in the fee being charged without any exceptions. This will also include if you agree to meet on an address in the chat. You must ask job owner to award you before you can exchange any kind of contact information or agreed to meet</p>
+									</div>
+								</div>
+							</div>
+							<div class="text-right">
+								<a href="#" class="btn btn-primary pull-right">Next  <i class="fas fa-chevron-right" style="font-weight: bolder"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Strex – 2-->
+		<div class="modal fade" id="strex2">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" aria-label="Close" data-dismiss="modal"><i class="fas fa-times-circle" style="font-weight: normal"></i></button>
+					</div>	
+					<div class="modal-body">
+						<div class="grey-box content-popup">
+							<h1 class="mb-5"><i class="fas fa-comment-dollar" style="font-weight: normal"></i> Payment options <img src="images/strex-logo.png" width="100" height="43"></h1>
+							<div class="form-check white-box">
+							  <input class="form-check-input" type="radio" name="exampleRadiosLIST" id="exampleRadios1List" value="Poption1" checked>
+							  <label class="form-check-label" for="exampleRadios1List">
+							  	<h2>Strex</h2>
+								<p>Face will be clicked and sent it to you on your monthly phone bill. This normally require a phone subscription</p>
+							  </label>
+							</div>
+							<div class="form-check white-box">
+							  <input class="form-check-input" type="radio" name="exampleRadiosLIST" id="exampleRadios2List" value="Poption2">
+							  <label class="form-check-label" for="exampleRadios2List">
+								<h2>Use Vipps Instead</h2>
+							  </label>
+							</div>
+							<div class="al-right btns">
+								<a href="#" class="btn btn-secondary pull-right"><i class="fas fa-chevron-left" style="font-weight: bolder"></i> Back</a>
+								<a href="#" class="btn btn-primary pull-right">Next  <i class="fas fa-chevron-right" style="font-weight: bolder"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Strex – 3-->
+		<div class="modal fade" id="strex3">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" aria-label="Close" data-dismiss="modal"><i class="fas fa-times-circle" style="font-weight: normal"></i></button>
+					</div>	
+					<div class="modal-body">
+						<div class="grey-box content-popup">
+							<h1><i class="fas fa-comment-dollar" style="font-weight: normal"></i> Strex Set Up <!--<img src="images/strex-logo.png" width="100" height="43">--></h1>
+							<br><br>
+							<div class="row">
+								<div class="col-lg-2 d-none d-lg-block"><i class="fas fa-sms giant" style="font-weight: normal"></i></div>
+								<div class="col-lg-10">
+									<p>It was shortly get an SMS from Strex. Please follow the instructions in a SMS before you continue</p>
+									<p>This process is only needed this first time, and next time you open contact on a job this is Don without any confirmation SMS from Strex</p>
+									<p>Continue when you reply the  Strex SMS</p>
+								</div>
+							</div>
+							<p></p>
+							<div class="al-right btns">
+								<a href="#" class="btn btn-secondary pull-right"><i class="fas fa-chevron-left" style="font-weight: bolder"></i> Back</a>
+								<a href="#" class="btn btn-primary pull-right">Next  <i class="fas fa-chevron-right" style="font-weight: bolder"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Strex – 3-->
+		<div class="modal fade" id="strex4">
+			<div class="modal-dialog modal-md">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" aria-label="Close" data-dismiss="modal"><i class="fas fa-times-circle" style="font-weight: normal"></i></button>
+					</div>	
+					<div class="modal-body">
+						<div class="grey-box content-popup">
+							<h1><i class="fas fa-check" style="font-weight: normal"></i> You are all set up <!--<img src="images/strex-logo.png" width="100" height="43">--></h1>
+							<br>
+							<p>The payments and future payments will be charged to your phone bill unless you turn off Strex from your settings, or manually select the when you are open a contact on a jobs</p>
+							<div class="text-right">
+								<a href="#" class="btn btn-primary pull-right">Next  <i class="fas fa-chevron-right" style="font-weight: bolder"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Strex – 5-->
+		<div class="modal fade" id="strex5">
+			<div class="modal-dialog modal-md">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" aria-label="Close" data-dismiss="modal"><i class="fas fa-times-circle" style="font-weight: normal"></i></button>
+					</div>	
+					<div class="modal-body">
+						<div class="grey-box content-popup">
+							<h1><i class="fas fa-times" style="font-weight: normal"></i> Something went wrong <!--<img src="images/strex-logo.png" width="100" height="43">--></h1>
+							<br>
+							<p>It seems your subscription maybe black for them for payment through strikes. Please check your settings of your phone provider and contact your phone provider support to open for Strex Payments</p>
+							<div class="al-right btns">
+								<a href="#" class="btn btn-primary pull-right">Use Vipps  <i class="fas fa-chevron-right" style="font-weight: bolder"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Invite Helper Modal – 1-->
+		<div class="modal fade" id="invite1">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">	
+					<div class="modal-header">
+						<button type="button" class="close" aria-label="Close" data-dismiss="modal"><i class="fas fa-times-circle" style="font-weight: normal"></i></button>
+					</div>
+					<div class="modal-body">
+						<div class="header">
+							<h1><img src="images/samples/7842e668c271f5b74dad2128f4097db5dc3f5.png" alt="">Kontakt <strong>Ole andreas</strong></h1>
+						</div>
+						<div class="grey-box content-popup">
+							<p style="color: #9A9A9A">Du kan lage en helt ny jobb til denne hjelperen eller invitere han eller henne til å titte på en jobb du allerede har laget. Forespørselen vil bli sendt som SMS og respons er vanligvis veldig raskt.</p>
+							<p>Det er helt gratis å kontakte hjelpere <br>Be om hjelp til:</p>
+						<div class="btns">
+							<a href="#" class="btn btn-dark pull-right"><i class="fas fa-check" style="font-weight: bolder"></i> Publisert jobb </a>
+							<a href="#" class="btn btn-primary pull-right"><i class="fas fa-plus-circle" style="font-weight: bolder"></i> Ny jobb</a>
+						</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Invite Helper Modal – 2-->
+		<div class="modal fade" id="invite2">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">	
+					<div class="modal-header">
+						<button type="button" class="close" aria-label="Close" data-dismiss="modal"><i class="fas fa-times-circle" style="font-weight: normal"></i></button>
+					</div>
+					<div class="modal-body">
+						<div class="header">
+							<h1 class="longtext"><img src="images/samples/7842e668c271f5b74dad2128f4097db5dc3f5.png" alt=""><div class="break">Lag en ny småjobb til <br><strong>Ole andreas</strong></div></h1>
+						</div>
+						<div class="grey-box content-popup">
+							<div class="form-check white-box">
+							  <input class="form-check-input" type="radio" name="exampleRadiosList2" id="exampleRadios1List2" value="Poption1" checked>
+							  <label class="form-check-label" for="exampleRadios1List2">
+							  	<h2>Kun for inviterte</h2>
+								<p>Denne jobben er kun for inviterte (Hjelpere jeg kontakter)</p>
+							  </label>
+							</div>
+							<div class="form-check white-box">
+							  <input class="form-check-input" type="radio" name="exampleRadiosList2" id="exampleRadios2List2" value="Poption2">
+							  <label class="form-check-label" for="exampleRadios2List2">
+								<h2>Alle</h2>
+								  <p>kan tilby hjelp til denne småjobben</p>
+							  </label>
+							</div>
+							<div class="al-right btns">
+								<a href="#" class="btn btn-secondary pull-right"><i class="fas fa-chevron-left" style="font-weight: bolder"></i> Back</a>
+								<a href="#" class="btn btn-primary pull-right">Next  <i class="fas fa-chevron-right" style="font-weight: bolder"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Invite Helper Modal – 3-->
+		<div class="modal fade" id="invite3">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">	
+					<div class="modal-header">
+						<button type="button" class="close" aria-label="Close" data-dismiss="modal"><i class="fas fa-times-circle" style="font-weight: normal"></i></button>
+					</div>
+					<div class="modal-body">
+						<div class="header">
+							<h1><img src="images/samples/7842e668c271f5b74dad2128f4097db5dc3f5.png" alt="">Lag en ny småjobb til <strong>Ole andreas</strong></h1>
+						</div>
+						<div class="grey-box content-popup">
+							<form action="https://minsmajobb.no/user/login/check_user_login" method="post" id="loginFrm">
+								<div class="row">
+									<div class="form-group col-md">
+										<label for="email_or_mobile">Epost / Mobil</label>
+										<input type="text" name="email_or_mobile" id="email_or_mobile" placeholder="epost eller mobilnummer">
+										<span class="help-block error-message"></span>
+									</div>
+									<div class="form-group col-md">
+										<label for="password">Passord</label>
+										<input type="password" name="password" id="password" placeholder="skriv passordet">
+										<span class="help-block error-message"></span>
+									</div>
+								</div>
+								<a href="https://minsmajobb.no/forgot-password">Glemt passordet?</a>
+							</form>
+							<div class="al-right btns">
+								<a href="#" class="btn btn-secondary pull-right"><i class="fas fa-chevron-left" style="font-weight: bolder"></i> Back</a>
+								<a href="#" class="btn btn-primary pull-right">Logg inn  <i class="fas fa-chevron-right" style="font-weight: bolder"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Invite Helper Modal – 4-->
+		<div class="modal fade" id="invite4">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">	
+					<div class="modal-header">
+						<button type="button" class="close" aria-label="Close" data-dismiss="modal"><i class="fas fa-times-circle" style="font-weight: normal"></i></button>
+					</div>
+					<div class="modal-body">
+						<div class="header">
+							<h1 class="longtext"><img src="images/samples/7842e668c271f5b74dad2128f4097db5dc3f5.png" alt=""><div class="break"><strong>Kontackt Nameapplicant om <br> Følgende småjobb </strong></div></h1>
+						</div>
+						<div class="grey-box content-popup">
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
+							<form action="" class="selectjob">
+								<div class="form-check white-box">
+								  <input class="form-check-input" type="radio" name="jobsSelection" id="job1" value="Poption1" checked>
+								  <label class="form-check-label" for="job1">
+									<h1>Shovel snow  <a href="#"><i class="fas fa-external-link-alt" style="font-weight: normal"></i></a></h1>
+								  </label>
+								</div>
+								<div class="form-check white-box">
+								  <input class="form-check-input" type="radio" name="jobsSelection" id="job2" value="Poption2">
+								  <label class="form-check-label" for="job2">
+									<h1>Take my sofa to my mother bcuz she needs it  <a href="#"><i class="fas fa-external-link-alt" style="font-weight: normal"></i></a></h1>
+								  </label>
+								</div>
+								<div class="form-check white-box">
+								  <input class="form-check-input" type="radio" name="jobsSelection" id="job3" value="Poption2">
+								  <label class="form-check-label" for="job3">
+									<h1>Clean my room   <a href="#"><i class="fas fa-external-link-alt" style="font-weight: normal"></i></a></h1>
+								  </label>
+								</div>
+								<div class="form-check white-box">
+								  <input class="form-check-input" type="radio" name="jobsSelection" id="job4" value="Poption2">
+								  <label class="form-check-label" for="job4">
+									<h1>Water are my plans because I'm going…   <a href="#"><i class="fas fa-external-link-alt" style="font-weight: normal"></i></a></h1>
+								  </label>
+								</div>
+								<div class="form-check white-box">
+								  <input class="form-check-input" type="radio" name="jobsSelection" id="job5" value="Poption2">
+								  <label class="form-check-label" for="job5">
+									<h1>Help me with my math homework  <a href="#"><i class="fas fa-external-link-alt" style="font-weight: normal"></i></a></h1>
+								  </label>
+								</div>
+								<div class="text-center">
+									<ul class="pagination pagination-1"> 
+									<li class="active"> <a href="javascript:;" class="paginate_button">1</a> </li><li> <a href="javascript:;" currentpage="2">2</a> </li><li> <a href="javascript:;" currentpage="3">3</a> </li><li> <a href="javascript:;" currentpage="4">4</a> </li><li> <a href="javascript:;" currentpage="2">&gt;</a> </li><li> <a href="javascript:;" currentpage="6">&gt;&gt;</a> </li>	 
+									</ul>
+								</div>
+							</form>
+							<div class="al-right btns">
+								<a href="#" class="btn btn-secondary pull-right"><i class="fas fa-chevron-left" style="font-weight: bolder"></i> Back</a>
+								<a href="#" class="btn btn-primary pull-right">Send  <i class="fas fa-paper-plane" style="font-weight: bolder"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="landing">
+			<nav class="navbar navbar-expand-lg container top">
+				<a class="navbar-brand" href="#">
+					<img src="images/logo.svg" alt="MinSmåjobb" style="width: 223.19px;height: 38.56px;">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Vår tjeneste</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Kundeservice</a>
+						</li>
+						<li class="nav-item login">
+							<a href="log-in.html" class="nav-link"><i class="fas fa-user"></i>Log In<i class="fas fa-chevron-down"></i></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<nav class="navbar navbar-expand-lg container loggedin-menu">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent2">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-plus-circle"></i>Publish a job</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-search"></i>Browse jobs</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link"><i class="far fa-comment"></i>Messages</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="content notfound">
+			<div class="container" style="height: calc(100vh - 459px);">
+			<h1>Modal Test</h1>
+				<a href="" data-toggle="modal" data-target="#default">default</a><br>
+				<a href="" data-toggle="modal" data-target="#strex1">strex1</a><br>
+				<a href="" data-toggle="modal" data-target="#strex2">strex2</a><br>
+				<a href="" data-toggle="modal" data-target="#strex3">strex3</a><br>
+				<a href="" data-toggle="modal" data-target="#strex4">strex4</a><br>
+				<a href="" data-toggle="modal" data-target="#strex5">strex5</a><br>
+				<hr>
+				<a href="" data-toggle="modal" data-target="#invite1">invite1</a><br>
+				<a href="" data-toggle="modal" data-target="#invite2">invite2</a><br>
+				<a href="" data-toggle="modal" data-target="#invite3">invite3</a><br>
+				<a href="" data-toggle="modal" data-target="#invite4">invite4</a><br>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<h5>Do</h5>
+						<ul class="list-unstyled">
+							<li><a href="">Publish a job</a></li>
+							<li><a href="">Browse jobs</a></li>
+							<li><a href="">Messages</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<h5>Explore</h5>
+						<ul class="list-unstyled">
+							<li><a href="">Our service</a></li>
+							<li><a href="">Customer care</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h5>Connect</h5>
+						<ul class="list-unstyled">
+							<li>
+								<ul class="list-inline">
+									<li class="list-inline-item social_facebook"><a href="#">
+										<svg xmlns="http://www.w3.org/2000/svg" width="23.5" height="23.5" viewBox="0 0 23.5 23.5">
+										  <g id="Facebook" transform="translate(0)">
+											<path id="Trazado_31" data-name="Trazado 31" d="M21.3,0H2.2A2.2,2.2,0,0,0,0,2.2V21.3a2.2,2.2,0,0,0,2.2,2.2H12.6V14.4H9.5V10.9h3.1V8.2c0-3,1.8-4.7,4.5-4.7h2.8V6.9H18c-1.5,0-1.7.7-1.7,1.7v2.3h3.5l-.5,3.5H16.2v9.1h5.1a2.2,2.2,0,0,0,2.2-2.2V2.2A2.2,2.2,0,0,0,21.3,0Z" fill="#fff"/>
+										  </g>
+										</svg></a>
+
+									</li>
+									<li class="list-inline-item social_twitter"><a href="#">
+										<svg xmlns="http://www.w3.org/2000/svg" width="25.1" height="20.366" viewBox="0 0 25.1 20.366">
+										  <g id="twitter" transform="translate(-42 -1.445)">
+											<g id="twitter-icon">
+											  <path id="Trazado_32" data-name="Trazado 32" d="M67.1,3.8a10.3,10.3,0,0,1-3,.8,5.2,5.2,0,0,0,2.3-2.9A10.3,10.3,0,0,1,63.1,3a5.2,5.2,0,0,0-8.8,4.7A14.6,14.6,0,0,1,43.7,2.3a5.2,5.2,0,0,0,1.6,6.9A5.1,5.1,0,0,1,43,8.5a5.2,5.2,0,0,0,4.1,5.1,5.2,5.2,0,0,1-2.3.1,5.2,5.2,0,0,0,4.8,3.6A10.4,10.4,0,0,1,42,19.5a14.7,14.7,0,0,0,22.6-13,10.5,10.5,0,0,0,2.5-2.7Z" fill="#fff"/>
+											</g>
+										  </g>
+										</svg></a>
+									</li>
+									<li class="list-inline-item social_instagram"><a href="#">
+										<svg xmlns="http://www.w3.org/2000/svg" width="22.265" height="22.876" viewBox="0 0 22.265 22.876">
+										  <g id="Instagram_mono" data-name="Instagram mono" transform="translate(11.133 11.438)">
+											<g id="Instagram_mono-2" data-name="Instagram mono" transform="translate(-11.133 -11.438)">
+											  <path id="Trazado_34" data-name="Trazado 34" d="M15.787,22.876H6.478A6.5,6.5,0,0,1,0,16.4V6.478A6.5,6.5,0,0,1,6.478,0h9.309a6.5,6.5,0,0,1,6.478,6.478V16.4A6.493,6.493,0,0,1,15.787,22.876Zm0-1.714A4.783,4.783,0,0,0,20.551,16.4V6.478a4.783,4.783,0,0,0-4.764-4.764H6.478A4.783,4.783,0,0,0,1.714,6.478V16.4a4.783,4.783,0,0,0,4.764,4.764Z" fill="#fff"/>
+											  <path id="Trazado_35" data-name="Trazado 35" d="M117.859,115.434a6.13,6.13,0,1,1-1.8-4.339A6.13,6.13,0,0,1,117.859,115.434Zm-6.163-4.01a4.015,4.015,0,1,0,4.015,4.015A4.015,4.015,0,0,0,111.7,111.424Z" transform="translate(-100.559 -104.082)" fill="#fff"/>
+											  <circle id="Elipse_6" data-name="Elipse 6" cx="1.451" cy="1.451" r="1.451" transform="translate(15.945 3.671)" fill="#fff"/>
+											</g>
+										  </g>
+										</svg></a>
+
+									</li>
+								</ul>
+							</li>
+							<li><a href="mailto:contact@finnsmajobb.no" class="mail">contact@finnsmajobb.no</a></li>
+						</ul>
+					</div>
+					<div class="col-md-5">
+						<div class="logo-footer">
+							<img src="images/footer-logo.svg" alt="MinSmåjobb" style="width: 170.23px; height: 78.38px;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+	<script type="text/javascript">
+		$(window).on('load',function(){
+			$('#myModal').modal('show');
+		});
+		
+		$(document).ready(function(){
+			$("input[name='exampleRadios']").click(function(){
+
+				var value = $( this ).val();
+
+						//Remove the class option-checked
+				$( ".options-suscription" ).removeClass( "active" );
+
+				switch( value ) {
+					case 'option1':
+							$( ".options-suscription.one" ).addClass( "active" );
+						break;
+					case 'option2':
+							$( ".options-suscription.two" ).addClass( "active" );
+						break;
+				}
+
+			});
+		});
+	</script>
+  </body>
+</html>

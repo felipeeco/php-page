@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">		
+		<meta name="theme-color" content="#465b61">
+		<title>Finnsmåjobb</title>
+		<!-- Date Picker -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+	<!-- Bootstrap -->
+		<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/updates.css" rel="stylesheet">
+		<link href="css/responsive.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.typekit.net/skn0ayd.css">
+		<script src="https://kit.fontawesome.com/a335a36105.js"></script>
+		<link rel="stylesheet" href="vendor/slick/slick.css">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
+	</head>
+	<body class="page job-post no-back">
+		<!-- body code goes here -->
+		<div class="modal fade" id="employerRating">
+			<div class="modal-dialog" style="max-width: 810px">
+				<div class="modal-content">
+					<div class="modal-header">
+						<a class="navbar-brand" href="#">
+							<img src="images/logo.svg" alt="MinSmåjobb" style="width: 223.19px;height: 38.56px;" />
+						</a>
+						<button type="button" class="close" aria-label="Close" data-dismiss="modal">
+							<svg xmlns="http://www.w3.org/2000/svg" width="39.456" height="39.456" viewBox="0 0 39.456 39.456">  <g id="Grupo_88" data-name="Grupo 88" transform="translate(19.728) rotate(45)">    <path id="Trazado_87" data-name="Trazado 87" d="M16.206,9.231H12.719V5.744a1.744,1.744,0,0,0-3.487,0V9.231H5.744a1.744,1.744,0,0,0,0,3.487H9.231v3.487a1.744,1.744,0,0,0,3.487,0V12.719h3.487a1.744,1.744,0,0,0,0-3.487Z" transform="translate(2.975 2.975)" fill="rgba(255,255,255,0.44)"/>    <path id="Trazado_88" data-name="Trazado 88" d="M13.95,0A13.95,13.95,0,1,0,27.9,13.95,13.95,13.95,0,0,0,13.95,0Zm0,24.412A10.462,10.462,0,1,1,24.412,13.95,10.462,10.462,0,0,1,13.95,24.412Z" fill="rgba(255,255,255,0.44)"/>  </g></svg>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid form-content">
+							<div class="row">
+								<div class="col-md-4 order-md-1 info">
+<!--									<div class="user-info d-flex flex-wrap">-->
+									<div class="user-info">
+										<div class="profile-picture position-relative align-self-start">
+											<img src="images/no-profile-pic.jpg" alt="">
+										</div>
+										<div class="rating-info">
+											<h1>Stine Tveit</h1>
+											<div class="r-updated white">
+												<ul class="ratinglist list-unstyled">
+													<li><img src="images/rating/white/rating-10.svg" alt=""></li>
+													<li><img src="images/rating/white/rating-10.svg" alt=""></li>
+													<li><img src="images/rating/white/rating-10.svg" alt=""></li>
+													<li><img src="images/rating/white/rating-03.svg" alt=""></li>
+													<li><img src="images/rating/white/rating-00.svg" alt=""></li>
+													<li class="rating-number">3.3</li>
+												</ul>
+											</div>
+											<div class="reviews-number small-text"><i class="fa-solid fa-comment"></i> 45 reviews</div>
+											<!--<p><small>Responce rate: Good <i class="fas fa-check"></i></small></p>-->
+										</div>
+										<div class="ratingfilter" style="width: 100%;">
+											<h4>Filter rating</h4>
+												<div class="white-box">
+													<a href="#">
+														<div class="row-rating">
+															<div class="side-label">
+																<div class="stars"><img src="images/rating/green/rating-10.svg" alt=""><img src="images/rating/green/rating-10.svg" alt=""><img src="images/rating/green/rating-10.svg" alt=""><img src="images/rating/green/rating-10.svg" alt=""><img src="images/rating/green/rating-10.svg" alt=""></div>
+															</div>
+															<div class="middle-section">
+																<div class="bar-container">
+																	<div class="bar-5"></div>
+																</div>
+															</div>
+															<div class="side-numbers right">
+																<div>150</div>
+															</div>
+														</div>
+													</a>
+													<a href="#">
+														<div class="row-rating">
+															<div class="side-label">
+																<div class="stars"><img src="images/rating/green/rating-10.svg" alt=""><img src="images/rating/green/rating-10.svg" alt=""><img src="images/rating/green/rating-10.svg" alt=""><img src="images/rating/green/rating-10.svg" alt=""><img src="images/rating/green/rating-00.svg" alt=""></div>
+															</div>
+															<div class="middle-section">
+																<div class="bar-container">
+																	<div class="bar-5"></div>
+																</div>
+															</div>
+															<div class="side-numbers right">
+																<div>150</div>
+															</div>
+														</div>
+													</a>
+													<a href="#">
+														<div class="row-rating">
+															<div class="side-label">
+																<div class="stars"><img src="images/rating/green/rating-10.svg" alt=""><img src="images/rating/green/rating-10.svg" alt=""><img src="images/rating/green/rating-10.svg" alt=""><img src="images/rating/green/rating-00.svg" alt=""><img src="images/rating/green/rating-00.svg" alt=""></div>
+															</div>
+															<div class="middle-section">
+																<div class="bar-container">
+																	<div class="bar-5"></div>
+																</div>
+															</div>
+															<div class="side-numbers right">
+																<div>150</div>
+															</div>
+														</div>
+													</a>
+													<a href="#">
+														<div class="row-rating">
+															<div class="side-label">
+																<div class="stars"><img src="images/rating/green/rating-10.svg" alt=""><img src="images/rating/green/rating-10.svg" alt=""><img src="images/rating/green/rating-00.svg" alt=""><img src="images/rating/green/rating-00.svg" alt=""><img src="images/rating/green/rating-00.svg" alt=""></div>
+															</div>
+															<div class="middle-section">
+																<div class="bar-container">
+																	<div class="bar-5"></div>
+																</div>
+															</div>
+															<div class="side-numbers right">
+																<div>150</div>
+															</div>
+														</div>
+													</a>
+													<a href="#">
+														<div class="row-rating">
+															<div class="side-label">
+																<div class="stars"><img src="images/rating/green/rating-10.svg" alt=""><img src="images/rating/green/rating-00.svg" alt=""><img src="images/rating/green/rating-00.svg" alt=""><img src="images/rating/green/rating-00.svg" alt=""><img src="images/rating/green/rating-00.svg" alt=""></div>
+															</div>
+															<div class="middle-section">
+																<div class="bar-container">
+																	<div class="bar-5"></div>
+																</div>
+															</div>
+															<div class="side-numbers right">
+																<div>150</div>
+															</div>
+														</div>
+													</a>
+													
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-8 order-md-2 form">
+									<h1>Jimmy’s Ratings</h1>
+									<hr>
+									<div class="ratinggrid">
+										<div class="row">
+											<div class="w-100">
+												<div class="row">
+													<div class="col-2">
+														<img src="images/samples/profile-sample-5.png" alt="" width="100%">
+													</div>
+													<div class="col-10">
+														<div class="ratign">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="reviewwcontent">
+															<h2><a href="#">Cleaning house</a></h2>
+															<p>Sample</p>
+															<span class="date"><i class="fas fa-calendar"></i> Date: 10.10.2020</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="w-100">
+												<div class="row">
+													<div class="col-2">
+														<img src="images/samples/profile-sample-3.png" alt="" width="100%">
+													</div>
+													<div class="col-10">
+														<div class="ratign">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="reviewwcontent">
+															<h2><a href="#">Washing my car after an adventure</a></h2>
+															<p>I had troubles getting the job done because always wanted more and more for the same price 🙁</p>
+															<span class="date"><i class="fas fa-calendar"></i> Date: 10.10.20</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="w-100">
+												<div class="row">
+													<div class="col-2">
+														<img src="images/samples/profile-sample-7.png" alt="" width="100%">
+													</div>
+													<div class="col-10">
+														<div class="ratign">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="reviewwcontent">
+															<h2><a href="#">HELP! With my garden</a></h2>
+															<p>Nice fording on his backyard, I loved the tulips 🌷 but I’d like you to considere not extra fork for same price</p>
+															<span class="date"><i class="fas fa-calendar"></i> Date: 10.10.20</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="w-100">
+												<div class="row">
+													<div class="col-2">
+														<img src="images/samples/profile-sample-8.png" alt="" width="100%">
+													</div>
+													<div class="col-10">
+														<div class="ratign">
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star checked"></span>
+															<span class="fa fa-star"></span>
+														</div>
+														<div class="reviewwcontent">
+															<h2><a href="#">Send some left boxes to my ex</a></h2>
+															<p>Good communication and all was fast, Id love to work with you again!</p>
+															<span class="date"><i class="fas fa-calendar"></i> Date: 10.10.20</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="landing">
+			<nav class="navbar navbar-expand-lg container top">
+				<a class="navbar-brand" href="#">
+					<img src="images/logo.svg" alt="MinSmåjobb" style="width: 223.19px;height: 38.56px;" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Vår tjeneste</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Kundeservice</a>
+						</li>
+						<li class="nav-item login">
+							<a href="log-in.html" class="nav-link"><i class="fas fa-user"></i>Log In<i class="fas fa-chevron-down"></i></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<nav class="navbar navbar-expand-lg container loggedin-menu">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent2">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-plus-circle"></i>Publish a job</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="#"><i class="fas fa-search"></i>Browse jobs</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link"><i class="far fa-comment"></i>Messages</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-lg-8">
+						<div id="job-post-slider">
+							 
+							<a href="images/samples/sample-05.png"><img src="images/samples/sample-05.png" alt="" data-id="image01"></a>
+							 
+						</div>
+					
+						<div class="work-descriptopn">
+							<a href="#" class="address"><i class="fas fa-map-marker-alt"></i> Viken, Oslo</a>
+							<h1>Wash car</h1>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis Leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-lg-4 profile-information">
+							<div class="employer-details">
+								<div class="user-info d-flex flex-wrap">
+									<div class="profile-picture position-relative align-self-start">
+										<img src="images/no-profile-pic.jpg" alt="">
+										<i class="fas fa-circle user-status online" aria-hidden="true"></i>
+									</div>
+									<div class="rating-info">
+										<h1>Stine Tveit</h1>
+										<div class="r-updated white">
+											<ul class="ratinglist list-unstyled">
+												<li><img src="images/rating/white/rating-10.svg" alt=""></li>
+												<li><img src="images/rating/white/rating-10.svg" alt=""></li>
+												<li><img src="images/rating/white/rating-10.svg" alt=""></li>
+												<li><img src="images/rating/white/rating-03.svg" alt=""></li>
+												<li><img src="images/rating/white/rating-00.svg" alt=""></li>
+												<li class="rating-number">3.3</li>
+											</ul>
+										</div>
+										<p><small>Based on 3 reviews</small></p>
+										<p><small>Responce rate: Good <i class="fas fa-check"></i></small></p>
+									</div>
+								</div>
+								<div class="job-info-container d-flex">
+									<div class="job-time">
+										<span>NY!</span> 
+									</div>
+									<!-- <div class="job-time">
+										<span>2 <small class="d-block">days</small></span>
+										
+									</div> -->
+									<div class="ml-2">
+										<h2>New today!</h2>
+										<small>3km from you</small>
+									</div>
+								</div>
+								<ul class="d-flex flex-wrap job-info">
+									<li><i class="fas fa-broom"></i> Rengjøring</li>
+									<li><i class="fas fa-calendar-alt"></i> Tidspunkt avtales</li>
+									<li><i class="fal fa-file-search"></i> Inspection wanted</li>
+									<li><span>3</span> Competitions</li>
+									<li><img src="images/icons/pro-badge-white.svg" alt="Professional"> Professional needed</li>
+								</ul>
+							</div>
+							<div class="payment-information">
+								<div class="d-block">
+									<p>Betaling</p>
+									<h2>TILBUD ØNSKES</h2>
+									<h3>Budget: <strong>200.- <i class="fas fa-circle"></i> 5000.-</strong></h3>
+								</div>
+								<div class="d-none">
+									<h3 class="bigger">Timebetaling</h3>
+									<h2 class="bigger">500.- /time</h2>
+								</div>
+								<div class="d-none">
+									<h3 class="bigger">Betaling</h3>
+									<h2 class="bigger-2">500.-</h2>
+								</div>
+								<a href="#" class="btn btn-primary"> Contact</a>
+								<a href="#" class="btn btn-danger"> <i class="fas fa-flag"></i> Report</a>
+								<p class="footer-info">Its complestly free to descuss the job on our chat. Fee Will be deducted only if you get the job or agree to communication outside our chat. - Thanks for supporting our fair fee policy.</p>
+							</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<h5>Do</h5>
+						<ul class="list-unstyled">
+							<li><a href="">Publish a job</a></li>
+							<li><a href="">Browse jobs</a></li>
+							<li><a href="">Messages</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<h5>Explore</h5>
+						<ul class="list-unstyled">
+							<li><a href="">Our service</a></li>
+							<li><a href="">Customer care</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h5>Connect</h5>
+						<ul class="list-unstyled">
+							<li>
+								<ul class="list-inline">
+									<li class="list-inline-item social_facebook"><a href="#">
+										<svg xmlns="http://www.w3.org/2000/svg" width="23.5" height="23.5" viewBox="0 0 23.5 23.5">
+										  <g id="Facebook" transform="translate(0)">
+											<path id="Trazado_31" data-name="Trazado 31" d="M21.3,0H2.2A2.2,2.2,0,0,0,0,2.2V21.3a2.2,2.2,0,0,0,2.2,2.2H12.6V14.4H9.5V10.9h3.1V8.2c0-3,1.8-4.7,4.5-4.7h2.8V6.9H18c-1.5,0-1.7.7-1.7,1.7v2.3h3.5l-.5,3.5H16.2v9.1h5.1a2.2,2.2,0,0,0,2.2-2.2V2.2A2.2,2.2,0,0,0,21.3,0Z" fill="#fff"/>
+										  </g>
+										</svg></a>
+
+									</li>
+									<li class="list-inline-item social_twitter"><a href="#">
+										<svg xmlns="http://www.w3.org/2000/svg" width="25.1" height="20.366" viewBox="0 0 25.1 20.366">
+										  <g id="twitter" transform="translate(-42 -1.445)">
+											<g id="twitter-icon">
+											  <path id="Trazado_32" data-name="Trazado 32" d="M67.1,3.8a10.3,10.3,0,0,1-3,.8,5.2,5.2,0,0,0,2.3-2.9A10.3,10.3,0,0,1,63.1,3a5.2,5.2,0,0,0-8.8,4.7A14.6,14.6,0,0,1,43.7,2.3a5.2,5.2,0,0,0,1.6,6.9A5.1,5.1,0,0,1,43,8.5a5.2,5.2,0,0,0,4.1,5.1,5.2,5.2,0,0,1-2.3.1,5.2,5.2,0,0,0,4.8,3.6A10.4,10.4,0,0,1,42,19.5a14.7,14.7,0,0,0,22.6-13,10.5,10.5,0,0,0,2.5-2.7Z" fill="#fff"/>
+											</g>
+										  </g>
+										</svg></a>
+									</li>
+									<li class="list-inline-item social_instagram"><a href="#">
+										<svg xmlns="http://www.w3.org/2000/svg" width="22.265" height="22.876" viewBox="0 0 22.265 22.876">
+										  <g id="Instagram_mono" data-name="Instagram mono" transform="translate(11.133 11.438)">
+											<g id="Instagram_mono-2" data-name="Instagram mono" transform="translate(-11.133 -11.438)">
+											  <path id="Trazado_34" data-name="Trazado 34" d="M15.787,22.876H6.478A6.5,6.5,0,0,1,0,16.4V6.478A6.5,6.5,0,0,1,6.478,0h9.309a6.5,6.5,0,0,1,6.478,6.478V16.4A6.493,6.493,0,0,1,15.787,22.876Zm0-1.714A4.783,4.783,0,0,0,20.551,16.4V6.478a4.783,4.783,0,0,0-4.764-4.764H6.478A4.783,4.783,0,0,0,1.714,6.478V16.4a4.783,4.783,0,0,0,4.764,4.764Z" fill="#fff"/>
+											  <path id="Trazado_35" data-name="Trazado 35" d="M117.859,115.434a6.13,6.13,0,1,1-1.8-4.339A6.13,6.13,0,0,1,117.859,115.434Zm-6.163-4.01a4.015,4.015,0,1,0,4.015,4.015A4.015,4.015,0,0,0,111.7,111.424Z" transform="translate(-100.559 -104.082)" fill="#fff"/>
+											  <circle id="Elipse_6" data-name="Elipse 6" cx="1.451" cy="1.451" r="1.451" transform="translate(15.945 3.671)" fill="#fff"/>
+											</g>
+										  </g>
+										</svg></a>
+
+									</li>
+								</ul>
+							</li>
+							<li><a href="mailto:contact@finnsmajobb.no" class="mail">contact@finnsmajobb.no</a></li>
+						</ul>
+					</div>
+					<div class="col-md-5">
+						<div class="logo-footer">
+							<img src="images/footer-logo.svg" alt="MinSmåjobb" style="width: 170.23px; height: 78.38px;"/>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+	<script src="vendor/slick/slick.min.js"></script>
+	<script src="vendor/magnific-popup/magnific-popup.min.js"></script>
+	
+	<script>
+		$('.carouselExampleIndicators').carousel()
+
+		$('#job-post-slider').slick({
+			dots: false,
+			autoplay: true,
+			autoplaySpeed: 8000,
+			prevArrow: '<span class="slider-arrow left"><i class="fas fa-chevron-circle-left"></i></span>',
+			nextArrow:'<span class="slider-arrow right"><i class="fas fa-chevron-circle-right"></i></span>',
+			infinite: true,
+			speed: 500,
+			fade: true,
+			cssEase: 'linear'
+			});
+
+			$('#job-post-slider').magnificPopup({
+				type: 'image',
+				delegate: 'a',
+				gallery:{
+					enabled:true,
+					arrowMarkup: '<button class="mfp-arrow slider-arrow %dir%"></button>',
+					tCounter: '',
+				},
+				callbacks: {
+					buildControls: function() {
+					this.contentContainer.append(this.arrowLeft.add(this.arrowRight));
+					},
+        		    open: function (){   
+						$('.mfp-figure').append('<span class="zoomImg" onclick="magnificZoom()"><i class="fas fa-search-plus"></i></span>');
+					},
+				}
+			});
+			
+			function magnificZoom() {
+				$('.mfp-figure figure').toggleClass('zoom');
+				$('.mfp-image-holder .mfp-close').toggleClass('hasZoom');
+			}
+
+			$(window).on('load', function() {
+				$('#employerRating').modal('show');
+			});
+	</script>
+  </body>
+</html>

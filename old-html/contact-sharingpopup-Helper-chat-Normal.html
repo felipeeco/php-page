@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Finnsmåjobb</title>
+		<!-- Date Picker -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/responsive.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.typekit.net/skn0ayd.css">
+		<script src="https://kit.fontawesome.com/a335a36105.js"></script>
+	</head>
+	<body class="page chat no-back">
+		<!-- body code goes here -->
+		<!-- Modal -->
+		 <div class="modal fade" id="readContract" tabindex="-1" role="dialog" aria-labelledby="readContractLabel" aria-hidden="true">
+			<div class="modal-dialog  message-employer-modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="readContractLabel" style="text-align: center;width: 100%;margin: 22px 0;"><i class="fas fa-shield-check"></i> Når du deler kontaktinfo</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"><i class="far fa-times-circle"></i></span>
+					</button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-2"><img src="images/chat/01.svg" alt=""></div>
+							<div class="col-10"><p>Vår intensjon er å kun belaste gebyr fra hjelpere som får oppdrag men det fungerer kun dersom du velger hjelper på våre nettsider.</p></div>
+						</div>
+						<div class="row">
+							<div class="col-2"><img src="images/chat/02.svg" alt=""></div>
+							<div class="col-10"><p>Når kommunikasjon flyttes ut av vårt nettsted ser vi alt for ofte at avtaler inngås uten at hjelper formellt blir valgt og vi vet ikke hvem som skal betale gebyret for jobben.</p></div>
+						</div>
+						<div class="row">
+							<div class="col-2"><img src="images/chat/03.svg" alt=""></div>
+							<div class="col-10"><p>Det er derfor et befaringsgebyr som hjelperen må betale når direktekontakt avtales.</p></div>
+						</div>
+						<div class="row">
+							<div class="col-2"><img src="images/chat/04.svg" alt=""></div>
+							<div class="col-10"><p>For at hjelpere ikke skal måtte betale gebyr for befaringer som ikke passer ber vi deg avtale tid for befaringen før du deler kontaktinfirmasjon.</p></div>
+						</div>
+						<div class="row">
+							<div class="col-2"><img src="images/chat/05.svg" alt=""></div>
+							<div class="col-10"><p>Dersom avtale gjøres utenfor vårt nettsted er det uansett nyttig om du formellt velger hjelperen på våre nettsider slik at du kan gi og få karakterer for jobben.</p></div>
+						</div>
+						
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary"> I understand</button>
+					</div>
+				</div>
+			</div> 
+		</div>
+		<!-- start of new code -->
+		<!-- end of new code -->
+		<div class="landing">
+			<nav class="navbar navbar-expand-lg container top">
+				<a class="navbar-brand" href="#">
+					<img src="images/logo.svg" alt="MinSmåjobb" style="width: 223.19px;height: 38.56px;">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Vår tjeneste</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Kundeservice</a>
+						</li>
+						<li class="nav-item login">
+							<a href="log-in.html" class="nav-link"><i class="fas fa-user"></i>Log In<i class="fas fa-chevron-down"></i></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<nav class="navbar navbar-expand-lg container loggedin-menu">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent2">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-plus-circle"></i>Publish a job</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-search"></i>Browse jobs</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link active"><i class="far fa-comment"></i>Messages</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<span class="backsingle d-block d-sm-none"><i class="fas fa-arrow-left" aria-hidden="true"></i></span>
+		<div class="content messages">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 conversations">
+					</div>
+					<div class="col-md-9 chatbox">
+						<div class="row">
+							<div class="col-md-8 chat">
+								<div class="alert alert-success" role="alert"  data-toggle="modal" data-target="#readContract"><i class="fas fa-shield-check"></i> <strong>Når du deler kontaktinfo</strong> <a href=""><i class="fas fa-chevron-right"></i></a></div>
+							</div>
+							<!-- start of new code -->
+							<div class="col-md-4 project-info awareded">
+								<div class="extra-details">	
+									
+									<div class="row employer-details">
+										<div class="col-4 profile-picture">
+											<div class="picture-holder user-3246"><div class="onlineholder"><div class="indicator-on"></div></div></div>
+										</div>
+										<div class="col-8 rating-info">
+												<div class="personal-info">
+													<a href=""><span class="name">Fredrik Lien <i class="fas fa-external-link-alt"></i></span></a>
+												</div>
+												<div class="ratign">
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star checked"></span>
+													<span class="fa fa-star"></span>
+												</div>
+										</div>
+									</div>
+									<div class="box-status">
+										<div class="default"><p>Job owners phone number will show if you get the job</p></div>
+									</div>
+									<div class="job-info">
+										<h5>JOB DESCRIPTION</h5>
+										<ul class="list-group">
+											<li class="list-group-item"><i class="fas fa-shipping-fast"></i> <a href=""><strong>Hvaler til Trondheim</strong></a></li>
+											<li class="list-group-item"><i class="fas fa-money-bill-wave-alt"></i> 1250 kr</li>
+											<li class="list-group-item"><i class="fas fa-clock"></i> In a hurry</li>
+											<li class="list-group-item"><i class="fas fa-map-pin"></i> Open map</li>
+										</ul>
+									</div>
+									<div class="disclaimer">
+										<p>If the job is not right for you after all, you can pull back the offer and the reserverd fee of kr. 59..- will be released.</p>
+									</div>
+									<a href="#" class="btn btn-primary">Pull Back</a>
+								</div>
+							</div>
+							<!-- end of new code -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+  </body>
+</html>

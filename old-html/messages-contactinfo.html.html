@@ -1,0 +1,700 @@
+	<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Finnsmåjobb</title>
+		<!-- Date Picker -->
+
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+		<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+		<!-- Bootstrap -->
+		<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/responsive.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.typekit.net/skn0ayd.css">
+		<script src="https://kit.fontawesome.com/a335a36105.js"></script>
+	</head>
+	<body class="page chat no-back" style="overflow-y: hidden;">
+		
+		
+		<div class="modal fade" id="readContract" tabindex="-1" role="dialog" aria-labelledby="readContractLabel" aria-hidden="true">
+			<div class="modal-dialog  message-employer-modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="readContractLabel" style="text-align: center;width: 100%;margin: 22px 0;"><i class="fas fa-shield-check"></i> Når du deler kontaktinfo</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"><i class="far fa-times-circle"></i></span>
+					</button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-2"><img src="images/chat/01.svg" alt=""></div>
+							<div class="col-10"><p>Vår intensjon er å kun belaste gebyr fra hjelpere som får oppdrag men det fungerer kun dersom du velger hjelper på våre nettsider.</p></div>
+						</div>
+						<div class="row">
+							<div class="col-2"><img src="images/chat/02.svg" alt=""></div>
+							<div class="col-10"><p>Når kommunikasjon flyttes ut av vårt nettsted ser vi alt for ofte at avtaler inngås uten at hjelper formellt blir valgt og vi vet ikke hvem som skal betale gebyret for jobben.</p></div>
+						</div>
+						<div class="row">
+							<div class="col-2"><img src="images/chat/03.svg" alt=""></div>
+							<div class="col-10"><p>Det er derfor et befaringsgebyr som hjelperen må betale når direktekontakt avtales.</p></div>
+						</div>
+						<div class="row">
+							<div class="col-2"><img src="images/chat/04.svg" alt=""></div>
+							<div class="col-10"><p>For at hjelpere ikke skal måtte betale gebyr for befaringer som ikke passer ber vi deg avtale tid for befaringen før du deler kontaktinfirmasjon.</p></div>
+						</div>
+						<div class="row">
+							<div class="col-2"><img src="images/chat/05.svg" alt=""></div>
+							<div class="col-10"><p>Dersom avtale gjøres utenfor vårt nettsted er det uansett nyttig om du formellt velger hjelperen på våre nettsider slik at du kan gi og få karakterer for jobben.</p></div>
+						</div>
+						
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary"> I understand</button>
+					</div>
+				</div>
+			</div> 
+		</div>
+
+		<!-- body code goes here -->
+		<div class="landing">
+			<nav class="navbar navbar-expand-lg container top">
+				<a class="navbar-brand" href="#">
+					<img src="images/logo.svg" alt="MinSmåjobb" style="width: 223.19px;height: 38.56px;">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Vår tjeneste</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Kundeservice</a>
+						</li>
+						<li class="nav-item login">
+							<a href="log-in.html" class="nav-link"><i class="fas fa-user"></i>Log In<i class="fas fa-chevron-down"></i></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<nav class="navbar navbar-expand-lg container loggedin-menu">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent2">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-plus-circle"></i>Publish a job</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-search"></i>Browse jobs</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link active"><i class="far fa-comment"></i>Messages</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="content messages">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 mt-3 conversations">
+						<div class="contacts-holder scrollable">
+							<div class="contact-conversation selected">
+								<div class="profile-picture">
+									<img src="images/samples/profile-sample-2.png" alt="">
+									<i class="fas fa-circle user-status online"></i>
+								</div>
+								<div class="contact-details">
+									<h5>
+										Abby
+										<img src="images/icons/sm-business-badge.svg" class="profile-badge-sm" alt="Business Bagde" />
+										<span class="profile-badge-tooltip buss-badge">Bedrift</span>
+									</h5>
+								
+									<span class="jobtitle">3 - seater sofa</span>
+								</div>
+								<div class="offer-message">
+									<i class="fas fa-comments-dollar"></i>
+									<p>900.-</p>
+								</div>
+							</div>
+							<div class="contact-conversation">
+								<div class="profile-picture">
+									<img src="images/samples/profile-sample.png" alt="">
+									<i class="fas fa-circle user-status online"></i>
+								</div>
+								<div class="contact-details">
+									<h5>Michael Bulk</h5>
+									<span class="jobtitle">Washing house</span>
+								</div>
+								<div class="offer-message">
+									<i class="fas fa-comments-dollar"></i>
+									<p>900.-</p>
+								</div>
+							</div>
+							<div class="contact-conversation">
+								<div class="profile-picture">
+									<img src="images/samples/profile-sample-2 2.png" alt="">
+									<i class="fas fa-circle user-status offline"></i>
+								</div>
+								<div class="contact-details">
+									<h5>
+										John 
+										<img src="images/icons/sm-pro-badge.svg" class="profile-badge-sm" alt="Professional Bagde" /> 
+										<span class="profile-badge-tooltip pro-badge">Fagmann</span>
+									
+									</h5>
+									<span class="jobtitle">3 - seater sofa</span>
+								</div>
+								<div class="offer-message">
+									<i class="fas fa-comments-dollar"></i>
+									<p>900.-</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-9 chatbox">
+						<div class="row">
+							<div class="col-md-8  chat">
+								<div class="chat-screen">
+									<div class="bubbles" id="chat-content-data">
+										<div class="alert alert-success" role="alert"  data-toggle="modal" data-target="#readContract"><i class="fas fa-shield-check"></i> <strong>Når du deler kontaktinfo</strong> <a href=""><i class="fas fa-chevron-right"></i></a></div>
+									</div>
+								
+										
+										
+									<div class="chat-input" id="bottomChat">
+										<div class="form-inline">
+											<div class="form-group col-sm-12 px-0">
+												<textarea data-resizetop name="message" id="message" placeholder="Skriv din melding her..." class=""></textarea>
+											</div>
+											<div class="footer-btn">
+												<button type="button"><i class="far fa-paperclip" data-toggle="tooltip" data-placement="top" title="Send a File" data-container=".chat-input"></i></button>
+												<button type="button" class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="footer-menu-dropdown" ><i class="far fa-times" data-toggle="tooltip" data-placement="top" title="More Options" data-container=".chat-input"></i></button>
+												<div class="dropdown-menu" id="footer-dropdown">
+													<button type="button" data-toggle="modal" data-target="#readContract">Contract <i class="fal fa-file-signature"></i></button>
+													<button type="button" data-toggle="modal" data-target="#reportUserModal">Report User <i class="fal fa-exclamation-circle"></i></button>
+													<button type="button" data-toggle="modal" data-target="#inspectionModal">Inspection <i class="fal fa-file-search"></i></button>
+											  	</div>
+											</div>
+											<button type="button" class="send-msg"><i class="fas fa-paper-plane"></i></button>
+										</div>
+										<div class="message-footer">
+											<i class="far fa-comment-alt-exclamation"></i>
+											<p>All kommunikasjon skal skje pa var chat frem til du har valgt en hjelper. Unntak« dersom berfaring er nødvending. - Ved befaring skal alltid tidspunkt avtales med hjelper hr kontaktinformasjon deles. -Tusen takk for at du følger våre tjenesteregler og bidrar til en hyggelig møteplass for alle
+											</p>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="col-md-4 pb-5 project-info"  style="overflow-y: scroll; max-height:calc(100vh - 190px)">	
+								<div class="greybox-holder nofixed-project pb-3">
+									<div class="profile-information d-flex" >
+										<div class="profile-picture position-relative">
+											<img src="images/samples/profile-sample-1.png" alt="">
+											<i class="fas fa-circle user-status online"></i>
+										</div>
+										<div class="rating-info">
+											<h1>
+												Michael Bulk
+												<img src="images/icons/pro-badge.svg" alt="Professional Badge" class="profile-badge" />
+												<span class="profile-badge-tooltip pro-badge">Fagmann</span>
+											</h1>
+											<!-- RATING COMES HERE-->
+											<div class="r-updated">
+												<ul class="ratinglist list-unstyled small-text">
+													<li><img src="images/rating/green/rating-10.svg" alt=""></li>
+													<li><img src="images/rating/green/rating-10.svg" alt=""></li>
+													<li><img src="images/rating/green/rating-10.svg" alt=""></li>
+													<li><img src="images/rating/green/rating-03.svg" alt=""></li>
+													<li><img src="images/rating/green/rating-00.svg" alt=""></li>
+													<li class="rating-number">3.3</li>
+												</ul>
+											</div>
+											<div class="reviews-number small-text"><i class="fa-solid fa-comment"></i> 45 reviews</div>
+											<!-- end of the rating-->
+										</div>
+									</div>
+									<div class="counter-offer-title">
+										<p><i class="fas fa-comments-dollar"></i> COUNTEROFFER</p>
+									</div>
+									<div class="counter-offer-propose">
+										<p><strong>You have received a price proposal for the job: <a href="#">Pick up a 3 - seater sofá</a></strong></p>
+										<span class="proposal d-flex">
+											<i class="fas fa-comments-dollar mr-3"></i>
+											<div>
+												<span class="price">900.- kr</span> 
+												<span class="counter-price"><i class="fas fa-chevron-up"></i> 100</span>
+											</div>
+										</span>
+									</div>
+									<div class="text-center px-3">
+										<small class="border-top mt-0 pt-2">Om det viser seg at jobben ikke passer deg allikevel kan du trekke tilbake tilbudet om hjelp. Det reserverte gebyret kr. 50 vil da bli frigitt.</small>
+									</div>
+									<div class="d-flex counter-offer-btn">
+										<a href="#" class="btn btn-danger mr-2"><i class="far fa-times-circle"></i> Deny</a>
+										<a href="#" class="btn btn-primary"><i class="fas fa-check"></i> Accept</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		 <div class="modal fade" id="readContract" tabindex="-1" role="dialog" aria-labelledby="readContractLabel" aria-hidden="true">
+			<div class="modal-dialog  message-employer-modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="readContractLabel"><i class="fas fa-file-signature"></i> Read Contract</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"><i class="far fa-times-circle"></i></span>
+					</button>
+					</div>
+					<div class="modal-body">
+						<div class="contract-content ">
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+							<p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</p>
+							<p>Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.</p>
+							<p>Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Sed lectus. Donec mollis hendrerit risus. Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed aliquam, nisi quis porttitor congue, elit erat euismod orci, ac</p>
+						</div>
+						<div class="contract-price"><p>Avtalt timepris <strong>25 kr.</strong></p></div>
+						<div class="contract-footer"><p>Leie av utstyr eller kjøp av materiell gjøres av oppdragsgiver om ikke annet er beskrevet i avtalen. Partene er inneforstått med at MinSmåjobb ́s rolle kun er som kontaktformidler og at avtalen er direkte mellom oppdragsgiver og hjelper. Avtale kan kanselleres av begge parter før oppdragets oppstart mot et avbestillingsgebyr <strong>250 kr.</strong></p></div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" data-toggle="modal"  data-dismiss="modal" data-target="#editContract" class="btn  btn-secondary btn-white"><i class="fas fa-edit"></i> Change</button>
+						<button type="button" class="btn btn-secondary"><i class="fas fa-check"></i> Agree</button>
+					</div>
+				</div>
+			</div> 
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="editContract" tabindex="-1" role="dialog" aria-labelledby="editContractLabel" aria-hidden="true">
+			<div class="modal-dialog  message-employer-modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="editContractLabel"><i class="fas fa-file-signature"></i> Edit Contract</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"><i class="far fa-times-circle"></i></span>
+					</button>
+					</div>
+					<div class="modal-body">
+							<textarea class="form-control contract-content"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.
+							</textarea>
+							<div class="contract-price-edit mt-3">
+								<ul class="nav nav-tabs" id="myTab" role="tablist">
+									<li class="nav-item" role="presentation">
+									<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Avtalt timepris</a>
+									</li>
+									<li class="nav-item" role="presentation">
+									<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Avtalt totalpris</a>
+									</li>
+							 	</ul>
+								<div class="tab-content" id="myTabContent">
+									<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+										<span>25 kr.</span>
+									</div>
+									<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+										<span>250 kr.</span>
+									</div>
+								</div>
+							</div>
+						<div class="contract-footer d-flex mt-1">
+							<p>Leie av utstyr eller kjøp av materiell gjøres av oppdragsgiver om ikke annet er beskrevet i avtalen. Partene er inneforstått med at MinSmåjobb ́s rolle kun er som kontaktformidler og at avtalen er direkte mellom oppdragsgiver og hjelper. Avtale kan kanselleres av begge parter før oppdragets oppstart mot et avbestillingsgebyr</p>
+							<div class="side-contract-footer ml-3">
+								<p>avbestillingsgebyr</p>
+								<p class="total-price">250 kr.</p>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer py-1">
+						<button type="button" class="btn  btn-secondary btn-white" data-toggle="modal"  data-dismiss="modal" data-target="#readContract" class="btn  btn-secondary btn-white"><i class="fas fa-chevron-left"></i> Go Back</button>
+						<button type="button" class="btn btn-secondary"><i class="fas fa-share"></i> Send Changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="inspectionModal" tabindex="-1" role="dialog" aria-labelledby="inspectionModalLabel" aria-hidden="true" >
+			<div class="modal-dialog  message-employer-modal px-4">
+				<div class="modal-content">
+					<div class="modal-header pt-4 px-0">
+						<h5 class="modal-title" id="inspectionModalLabel"><i class="fas fa-toolbox"></i><i class="fas fa-walking upper"></i> Inspection agreement</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"><i class="far fa-times-circle"></i></span>
+					</button>
+					</div>
+					<form action="" >
+					<div class="modal-body">
+						<div id="publish-job">
+							<p>Use the chat to !nd a date and time for the inspection and enter the agreed time below to make a binding agreement. You will automaticly receive the needed contact information when the <strong>helper username</strong> confirm the agreement.</p>
+						</div>
+						<div class="form-row">
+
+							<div class="col-4">
+								<label for="date">Date</label>
+								<div class="input-group group-append">
+									<input id="date" name="date" class="dateInput" type="text" placeholder="10/05/2021" />
+									<div class="input-group-append">
+										<span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-4">
+									<label for="time">Time</label>
+									<div class="input-group group-append">
+										<select id="time" name="time" class="form-control">
+											<option value="08:00">08:00</option>
+											<option value="08:30" >08:30</option>
+											<option value="09:00">09:00</option>
+											<option value="09:30">09:30</option>
+											<option value="10:00">10:00</option>
+											<option value="10:30">10:30</option>
+											<option value="11:00">11:00</option>
+											<option value="11:30">11:30</option>
+											<option value="12:00">12:00</option>
+										</select>
+										<span class="input-group-text"><i class="fas fa-clock"></i></span>
+									</div>
+								</div>
+
+							<div class="col-4">
+								<label for="expirationTime">Expiration time</label>
+								<div class="input-group group-append">
+									<select id="expirationTime" name="expirationTime" class="form-control">
+										<option value="3 hours">3 hours</option>
+										<option value="6 hours" >6 hours</option>
+										<option value="9 hours" >9 hours</option>
+										<option value="12 hours" >12 hours</option>
+										<option value="24 hours" >24 hours</option>
+										<option value="48 hours" >48 hours</option>
+									</select>
+									<span class="input-group-text"><i class="fas fa-chevron-down"></i></span>
+								</div>
+							</div>
+
+							<div class="col-4 my-3">
+								<label for="zipcode">Zip code</label>
+								<div class="input-group group-append b-all">
+									<input type="text" name="zipcode" id="zipcode" class="form-control" value="523M32">
+								</div>
+							</div>
+							<div class="col-8 my-3">
+								<label for="state">State</label>
+								<div class="input-group group-append b-all">
+									<input type="text" name="state'" id="state'" class="form-control" placeholder="Møre og Romsdal" disabled>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p>Full address can be excanged after con!rmation</p>
+					
+					<div class="form-group mt-3">
+						<div class="form-check form-check-inline align-items-baseline mr-0">
+							<input class="form-check-input position-relative" style="top:5px" type="checkbox" id="inspectionRules" value="inspectionRules">
+							<label class="form-check-label" for="inspectionRules">I understand that if the helper confirm within the given expiration time you are bounded by the agreement and need to pay the helper a cancellation fee of <span class="maingreen">#inspection fee#</span>. Please don’t give the job to anyone before all invited helpers have been on inspection.</label>
+						</div>
+					</div>
+						<div class="modal-footer">
+						<button type="submit" class="btn btn-primary px-4"> Send for confirmation</button>
+					</div>
+				</div>
+			</div> 
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="acceptContract" tabindex="-1" role="dialog" aria-labelledby="acceptContractModalLabel" aria-hidden="true" >
+			<div class="modal-dialog  message-employer-modal px-4">
+				<div class="modal-content">
+					<div class="modal-header pt-4 px-0">
+						<h5 class="modal-title" id="acceptContractModalLabel"><i class="fas fa-handshake"></i><i class="fas fa-walking upper"></i> Confirm Inspection</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"><i class="far fa-times-circle"></i></span>
+					</button>
+					</div>
+					<form action="" >
+					<div class="modal-body">
+						<div id="publish-job">
+							<p class="pb-3 border-bottom">When you confirm the agreement you will receive mobile number for further direct communication.</p>
+						</div>
+						<label for="state">The location of the inspection is:</label>
+							<div class="input-group group-append mb-2">
+								<input type="text" name="state" id="state" class="form-control" value="5232 PARADIS" disabled>
+								<span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span>
+							</div>
+							<p>Full address can be excanged after confirmation</p>
+						<div class="form-row">
+
+							<div class="col-6">
+								<label for="dateConfirm">Date</label>
+								<div class="input-group group-append">
+									<input id="dateConfirm" name="dateConfirm" class="dateInput" type="text" placeholder="10/05/2021" disabled />
+									<div class="input-group-append">
+										<span class="input-group-text text-light"><i class="fas fa-calendar-alt"></i></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-6">
+								<label for="time">Time</label>
+								<div class="input-group group-append">
+									<select id="time" name="time" class="form-control" disabled>
+										<option value="08:00">08:00</option>
+										<option value="08:30" >08:30</option>
+										<option value="09:00">09:00</option>
+										<option value="09:30">09:30</option>
+										<option value="10:00">10:00</option>
+										<option value="10:30">10:30</option>
+										<option value="11:00">11:00</option>
+										<option value="11:30">11:30</option>
+										<option value="12:00">12:00</option>
+									</select>
+									<span class="input-group-text text-light"><i class="fas fa-clock"></i></span>
+								</div>
+							</div>
+							<div class="col-12 mt-2">
+								<p>This time don’t fit me. <a href="#">Suggest another time</a>.</p>
+							</div>
+
+						</div>
+					</div>
+					
+					
+					<div class="form-group mt-3">
+						<div class="form-check form-check-inline align-items-baseline mr-0">
+							<input class="form-check-input position-relative" style="top:5px" type="checkbox" id="confirmInspectionCheckbox" value="confirmInspectionCheckbox">
+							<label class="form-check-label" for="confirmInspectionCheckbox">I understand that I am responsable for follow up the agreement after confirming. I can clamin am cansellation fee of <span>#unspection fee#</span> if employer cansel the inspection without you to blame and this fee will cover Minsmajobb´s inspection fee.</label>
+						</div>
+					</div>
+						<div class="modal-footer">
+						<button type="submit" class="btn btn-primary px-4"> Confirm agreement</button>
+					</div>
+				</div>
+			</div> 
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="reportUserModal" tabindex="-1" role="dialog" aria-labelledby="reportUserModalLabel" aria-hidden="true">
+			<div class="modal-dialog  message-employer-modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true"><i class="far fa-times-circle"></i></span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="report-user-content">
+							<span class="user-icont-wrapper"><img src="images/samples/profile-sample-1.png" class="report-user-icon" alt=""></span>
+							<h3>Are you sure you want to report <strong>Michael Bulk?</strong></h3>
+							<form action="">
+								<div class="report-user-reason position-relative my-4">
+									<select class="form-control" id="report-options">
+										<option data-default disabled selected>Please Select a Reason</option>
+										<option value="1">Spam</option>
+										<option value="2">Violence</option>
+										<option value="3">Inappropriate Pictures</option>
+										<option value="4">Others</option>
+									</select>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" data-dismiss="modal" class="btn btn-secondary">No</button>
+						<button type="button" class="btn  btn-secondary btn-danger">Yes</button>
+					</div>
+				</form>
+
+				</div>
+			</div> 
+		</div>
+
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+
+	<script> // NEW SCRIPT ABRIL 2021
+			$('#date').datepicker({
+					uiLibrary: 'bootstrap4'
+			});
+
+			$('#dateConfirm').datepicker({
+					uiLibrary: 'bootstrap4'
+			});
+
+			
+	</script>
+	<script>
+		//Custom Number Input
+
+		$('<div class="quantity-nav"><div class="quantity-button quantity-up"><i class="fas fa-chevron-up"></i></div><div class="quantity-button quantity-down"><i class="fas fa-chevron-down"></i></div></div>').insertAfter('.numberInput input');
+    $('.numberInput').each(function() {
+      var spinner = $(this),
+        input = spinner.find('input[type="number"]'),
+        btnUp = spinner.find('.quantity-up'),
+        btnDown = spinner.find('.quantity-down'),
+        min = input.attr('min'),
+        max = input.attr('max');
+
+      btnUp.click(function() {
+        var oldValue = parseFloat(input.val());
+        if (oldValue >= max) {
+          var newVal = oldValue;
+        } else {
+          var newVal = oldValue + 1;
+        }
+        spinner.find("input").val(newVal);
+        spinner.find("input").trigger("change");
+      });
+
+      btnDown.click(function() {
+        var oldValue = parseFloat(input.val());
+        if (oldValue <= min) {
+          var newVal = oldValue;
+        } else {
+          var newVal = oldValue - 1;
+        }
+        spinner.find("input").val(newVal);
+        spinner.find("input").trigger("change");
+      });
+
+    });
+
+
+	</script>
+
+
+
+
+
+	<script>
+		
+		$("#report-options").on({    
+			"change": function() {
+					$(this).blur();
+
+				},
+
+				'focus': function() {
+					$('.report-user-reason').addClass('rotate-icon');
+				},
+
+				"blur": function() {
+					$('.report-user-reason').removeClass('rotate-icon');
+				},
+
+			"keyup": function(e) {
+					if (e.keyCode == 27)
+						$('.report-user-reason').addClass('rotate-icon');
+				}
+			});
+
+
+			$(function () {
+				$('[data-toggle="tooltip"]').tooltip()
+			});
+
+
+			$("#footer-menu-dropdown").on('click', function(){
+				$(this).toggleClass('opened');
+
+				if($("#footer-dropdown").hasClass('show')) {
+					$(this).removeClass('opened');
+				}
+			});
+
+			$("#footer-dropdown button").on('click', function(){
+				$("#footer-menu-dropdown").removeClass('opened');
+			})
+
+			$(document).mouseup(function(e) {
+
+				if($("#footer-dropdown").hasClass('show')) {
+					$("#footer-menu-dropdown").removeClass('opened');
+				}
+			});
+
+
+			$.each($('textarea[data-autoresize]'), function() {
+				var offset = this.offsetHeight - this.clientHeight;
+				var resizeTextarea = function(el) {
+					var s_scrollHeight = el.scrollHeight + offset; 
+					if ($(el).val() == "") {
+						s_scrollHeight = '28';
+					}
+					$(el).css('height', 'auto').css('height', s_scrollHeight);
+				};
+				$(this).on('keyup input', function() {
+					resizeTextarea(this);
+				}).removeAttr('data-autoresize');
+			});  
+
+var initialChatHeight;
+
+window.addEventListener("load", function(event) {
+    
+    function chatSizing() {
+        var chatScreen = document.getElementById('chat-content-data'); 
+        var bottomChat = document.getElementById('bottomChat').offsetHeight;
+        if(bottomChat == 0) {
+            chatScreen.style.paddingBottom = '180px';
+            initialChatHeight = '120px';
+        } else {
+            chatScreen.style.paddingBottom = bottomChat + 'px';
+            initialChatHeight =  bottomChat + 'px';
+        }
+    }
+    chatSizing();
+
+	$.each($('textarea[data-resizetop]'), function() {
+        this.addEventListener('keyup', function (e) {
+            this.style.height = 0;
+            var resizing;
+            var bottomChat = document.getElementById('bottomChat').offsetHeight;
+
+            if(this.scrollHeight < 180) {
+                resizing = bottomChat + this.scrollHeight - 60 + 'px';
+            } else {
+                resizing = bottomChat + 120 + 'px';;
+            }
+            
+            this.style.height = this.scrollHeight + 'px';
+            
+            var chatArea =  document.getElementById('chat-content-data'); 
+            chatArea.style.paddingBottom = resizing;
+            chatArea.scrollTop = chatArea.scrollHeight;
+            
+            if(this.offsetHeight < 30 ) {
+                document.getElementById('chat-content-data').style.paddingBottom = bottomChat + 'px';
+            }
+
+    	}, false);
+    });
+
+	});
+
+	$('textarea[data-resizetop]').on('keydown', function(e) {
+		if (e.which == 13) {
+			document.getElementById('chat-content-data').style.paddingBottom = initialChatHeight;
+		}
+	});
+
+	$('.send-msg').on('click', function(){
+		document.getElementById('chat-content-data').style.paddingBottom = initialChatHeight;
+	});
+
+	</script>
+	
+  </body>
+</html>

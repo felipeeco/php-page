@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Finnsmåjobb</title>
+	<!-- Date Picker -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/pwa.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/skn0ayd.css">
+	<script src="https://kit.fontawesome.com/a335a36105.js"></script>
+</head>
+
+<body>
+	<div class="frame">
+        <div class="header-chat">
+			<a href="messages-mobile.html"><i class="fas fa-arrow-left"></i></a>
+			<div class="chatinformation">
+				<img src="images/samples/sample_profile_2.png" alt="" width="48px">
+				<div class="contact-details">
+					<h5>Jack Nicols</h5>
+					<a class="jobtitle" href="job-post-employerview.html">Washing house</a>
+				</div>
+			</div>
+			<a href="Helper-chat-Normal.html" class="details"><i class="fas fa-list-ul"></i></a>
+		</div>    
+		<ul class="chat-content"  id="chat-content-data">
+            <li style="width:100%">
+               <div class="msj macro counter-offer">
+                <div class="avatar"><img class="img-circle" style="width:100%;" src="images/samples/sample_profile_3.png" /></div>
+                    <div class="text text-l">
+                        <div class=" contract-info">
+                            <div class="counter-offer-title">
+                                <p>You have received an offer</p>
+                            </div>
+                            <div class="counter-offer-content">
+                                <p>Hi, my name is Marcin, I can help you for 900 enough. I have a van car that is perfect for this job. I have a man to help. NB. Has received good references. Regards Marcin</p>
+                                <p><i class="fas fa-suitcase"></i> <strong>Hente 3-seters sofa</strong></p>
+                                <p><i class="fas fa-comments-dollar"></i> <strong>Offer price</strong> <span class="price-info"><span class="price">900.- kr</span> <span class="counter-price"><i class="fas fa-chevron-up"></i> 100</span></span></p>
+                                
+                                <p>No guarantee that <strong>Abby</strong> will do the job for this price but you can contact the helper and discuss both the assignment and price</p>
+                                <div>
+
+                                    <a href="#" class="btn btn-danger"><i class="fas fa-ban"></i> Reject offer</a>
+                                    <a href="#" class="btn btn-primary"><i class="fas fa-check"></i> Open contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</li>
+			
+			<li style="width:100%">
+				<div class="msj macro counter-offer">
+				 <div class="avatar"><img class="img-circle" style="width:100%;" src="images/samples/profile-sample-2 2.png" /></div>
+					 <div class="text text-l">
+						 <div class=" contract-info">
+							 <div class="counter-offer-title">
+								 <p>Information about Tom Knudsen</p>
+							 </div>
+							 <div class="counter-offer-content">
+								 <p>HI, im a 27 yearold male that have good expedence on this kind… Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+								 <p><i class="fas fa-suitcase"></i> <strong>I am free all week after 12:00 except thursday.</strong></p>
+								 <p>Contact the helper and discuss both the assignment and Price.</p>
+								 <div>
+ 
+									 <a href="#" class="btn btn-danger"><i class="fas fa-ban"></i> Reject offer</a>
+									 <a href="#" class="btn btn-primary"><i class="fas fa-check"></i> Open contact</a>
+								 </div>
+							 </div>
+						 </div>
+					 </div>
+				 </div>
+			 </li>
+        </ul>
+		<div class="input-chat chat-input" id="bottomChat">
+			<div class="msj-rta macro">                        
+				<div class="text text-r">
+					<textarea data-resizemobile name="message" id="message" placeholder="Skriv din melding her..." class=""></textarea>
+				</div> 
+				<div>
+					<div class="footer-btn mobile-footer-btn">
+						<button type="button" class="btn_upload_attachment"><i class="far fa-paperclip" data-toggle="tooltip" data-placement="top" title="" data-container=".chat-input" aria-hidden="true" data-original-title="Send a File"></i><span class="sr-only">Send a File</span></button>
+						<input type="file" class="form-control-file hide  upload_attachment" id="upload_attachment" data-id="101" image-name="upload_attachment">
+						<button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="footer-menu-dropdown"><i class="far fa-times" data-toggle="tooltip" data-placement="top" title="" data-container=".chat-input" aria-hidden="true" data-original-title="More Options"></i><span class="sr-only">More Options</span></button>
+						<div class="dropdown-menu" id="footer-dropdown" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(38px, 40px, 0px);">
+							<button type="button" class="btn_readContract" data-content="comming">Lag avtale <i class="fal fa-file-signature" aria-hidden="true"></i></button>
+							<button type="button" class="btn_readContract" data-content="comming">Rapporter  <i class="fal fa-exclamation-circle" aria-hidden="true"></i></button>
+							<button type="button" class="btn_readContract" data-content="comming">Avtal befaring
+							<i clas,s="fal fa-file-search" aria-hidden="true"></i></button>
+						</div>
+						<a href="javascript:;" class="enter-msg send-msg">
+							<span class=" glyphicon glyphicon-share-alt"><i class=" fas fa-paper-plane" aria-hidden="true"></i></span>
+						</a>
+					</div>
+					
+				</div>
+			</div>
+			<div class="message-footer" id="action-message-footer" >
+				<i class="far fa-comment-alt-exclamation" aria-hidden="true"></i>
+				<p>Vi minner om at denne jobben har et befaringsgebyr kr. 29.- som vil bli belastet dersom kontakt avtales
+				utenfor chatten. Unngå unødvendige gebyrer og del kun kontaktinformasjon når befaring er nødvendig. </p>
+			</div>
+			
+			                
+		</div>
+	</div>  
+</body>
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+    <script>
+		
+		window.addEventListener("load", function(event) {
+    
+    function chatSizing() {
+        var chatScreen = document.getElementById('chat-content-data'); 
+        var bottomChat = document.getElementById('bottomChat').offsetHeight;
+        if(bottomChat == 0) {
+            chatScreen.style.paddingBottom = '180px';
+            initialChatHeight = '120px';
+        } else {
+            chatScreen.style.paddingBottom = bottomChat + 'px';
+            initialChatHeight =  bottomChat + 'px';
+        }
+    }
+    chatSizing();
+
+
+    $.each($('textarea[data-resizemobile]'), function() {
+        this.addEventListener('keyup', function (e) {
+			this.style.height = 0;
+			var resizing;
+			var bottomChat = document.getElementById('bottomChat').offsetHeight;
+
+			if(this.scrollHeight < 180) {
+				resizing = bottomChat + this.scrollHeight - 60 + 'px';
+			} else {
+				resizing = bottomChat + 120 + 'px';;
+			}
+			
+			this.style.height = this.scrollHeight + 'px';
+			
+			var chatArea =  document.getElementById('chat-content-data'); 
+			chatArea.style.paddingBottom = resizing;
+			chatArea.scrollTop = chatArea.scrollHeight;
+			
+			if(this.offsetHeight < 30 ) {
+				document.getElementById('chat-content-data').style.paddingBottom = bottomChat + 'px';
+			}
+
+    }, false);
+	});
+});
+$('.send-msg').on('click', function(){
+		document.getElementById('chat-content-data').style.paddingBottom = initialChatHeight;
+	});
+
+	$("#footer-menu-dropdown").on('click', function(){
+    $(this).toggleClass('opened');
+
+    if($("#footer-dropdown").hasClass('show')) {
+		$(this).removeClass('opened');
+	}
+});
+
+$("#footer-dropdown button").on('click', function(){
+    $("#footer-menu-dropdown").removeClass('opened');
+})
+
+$(document).mouseup(function(e) {
+
+    if($("#footer-dropdown").hasClass('show')) {
+        $("#footer-menu-dropdown").removeClass('opened');
+    }
+});
+	</script>
+</html>

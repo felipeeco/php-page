@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Finnsmåjobb</title>
+		<!-- Date Picker -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+		<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+		<!-- Bootstrap -->
+		<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/responsive.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.typekit.net/skn0ayd.css">
+		<style type="text/css">
+		</style>
+		<script src="https://kit.fontawesome.com/a335a36105.js"></script>
+	</head>
+	<body class="page profile no-back">
+		<!-- body code goes here -->
+		<div class="modal fade" id="re-publish-job">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<a class="navbar-brand" href="#">
+							<img src="images/logo.svg" alt="MinSmåjobb" style="width: 223.19px;height: 38.56px;">
+						</a>
+						<button type="button" class="close" aria-label="Close" data-dismiss="modal">
+							<svg xmlns="http://www.w3.org/2000/svg" width="39.456" height="39.456" viewBox="0 0 39.456 39.456">  <g id="Grupo_88" data-name="Grupo 88" transform="translate(19.728) rotate(45)">    <path id="Trazado_87" data-name="Trazado 87" d="M16.206,9.231H12.719V5.744a1.744,1.744,0,0,0-3.487,0V9.231H5.744a1.744,1.744,0,0,0,0,3.487H9.231v3.487a1.744,1.744,0,0,0,3.487,0V12.719h3.487a1.744,1.744,0,0,0,0-3.487Z" transform="translate(2.975 2.975)" fill="rgba(255,255,255,0.44)"/>    <path id="Trazado_88" data-name="Trazado 88" d="M13.95,0A13.95,13.95,0,1,0,27.9,13.95,13.95,13.95,0,0,0,13.95,0Zm0,24.412A10.462,10.462,0,1,1,24.412,13.95,10.462,10.462,0,0,1,13.95,24.412Z" fill="rgba(255,255,255,0.44)"/>  </g></svg>
+						</button>
+					</div>	
+					<div class="modal-body">
+						<div class="white-box information-popup">
+							<div class="display-results">
+								<div class="row result">
+									<div class="col-md-3 image offset-2">
+										<div class="wrap"><img src="images/samples/sample-02.jpg" alt=""></div>
+									</div>
+									<div class="col-md-5">
+										<h1>Washing house</h1>
+										<div class="information flex">
+											<div class="info location"><a href="#" class="address"><i class="fas fa-map-marker-alt"></i> Oslo</a></div>
+											<div class="info category"><a href="" class="caegory-btn"><i class="fas fa-th-large"></i> Washing</a></div>
+											<div class="info date"><a href="#" class="date-link"><i class="fas fa-check-circle"></i>3rd June 2019</a></div>
+										</div>
+										<p class="price">1250 kr</p>
+									</div>
+								</div>
+							</div>
+							<div class="requestInfo-publish">
+								<div class="row">
+									<div class="col-8 offset-2">
+										<hr>
+										<h2>You’re about to repost this Job</h2>
+										<p>You’re about to repost a done project, please select a new date for the due, if you want to change more details before re posting this job, please click <a href="#"><i class="fas fa-edit"></i> edit job</a></p>
+										<form action="">
+											<div class="form-row form-group">
+												<div class="col-md-6">
+													<label for="time">Time</label>
+													<select name="time" id="">
+														<option value="Is it urgent?" disabled selected>Is it urgent?</option>
+														<option value="As soon as possible/ergant">As soon as possible/ergant</option>
+														<option value="Before a date">Before a date</option>
+														<option value="On a date">On a date</option>
+														<option value="To be agreed">To be agreed</option>
+													</select>
+												</div>
+												<div class="col-md-6">
+													<label for="dateStart">Date</label>
+													<input id="datepicker" placeholder="Click and Select a Date" type="date"/>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="buttons inline">
+								<a href="edit-job.html" class="btn btn-primary"><i class="fas fa-edit"></i> Edit Job</a>
+								<a href="#" class="btn btn-secondary" role="button" data-toggle="modal" data-target="#re-publish-job"><i class="fas fa-redo-alt"></i> Re post this job</a>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="landing">
+			<nav class="navbar navbar-expand-lg container top">
+				<a class="navbar-brand" href="#">
+					<img src="images/logo.svg" alt="MinSmåjobb" style="width: 223.19px;height: 38.56px;">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Vår tjeneste</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Kundeservice</a>
+						</li>
+						<li class="nav-item login">
+							<a href="log-in.html" class="nav-link"><i class="fas fa-user"></i>Log In<i class="fas fa-chevron-down"></i></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<nav class="navbar navbar-expand-lg container loggedin-menu">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent2">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-plus-circle"></i>Publish a job</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-search"></i>Browse jobs</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link"><i class="far fa-comment"></i>Messages</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="content notfound">
+			<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-7 order-md-2">
+					<img src="images/404image.jpg" alt="" style="width: 100%">
+				</div>
+				<div class="col-md-5 404info">
+					<h1>Vi beklager!</h1>
+					<h3>Denne småjobben er ikke lenger tilgjengelig.</h3>
+					<p>Dette betyr enten at jobben er besatt, utløpt eller kansellert.</p>
+					<a href="#" class="btn btn-primary">Finn en lignende jobb</a>
+				</div>
+			</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<h5>Do</h5>
+						<ul class="list-unstyled">
+							<li><a href="">Publish a job</a></li>
+							<li><a href="">Browse jobs</a></li>
+							<li><a href="">Messages</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<h5>Explore</h5>
+						<ul class="list-unstyled">
+							<li><a href="">Our service</a></li>
+							<li><a href="">Customer care</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h5>Connect</h5>
+						<ul class="list-unstyled">
+							<li>
+								<ul class="list-inline">
+									<li class="list-inline-item social_facebook"><a href="#">
+										<svg xmlns="http://www.w3.org/2000/svg" width="23.5" height="23.5" viewBox="0 0 23.5 23.5">
+										  <g id="Facebook" transform="translate(0)">
+											<path id="Trazado_31" data-name="Trazado 31" d="M21.3,0H2.2A2.2,2.2,0,0,0,0,2.2V21.3a2.2,2.2,0,0,0,2.2,2.2H12.6V14.4H9.5V10.9h3.1V8.2c0-3,1.8-4.7,4.5-4.7h2.8V6.9H18c-1.5,0-1.7.7-1.7,1.7v2.3h3.5l-.5,3.5H16.2v9.1h5.1a2.2,2.2,0,0,0,2.2-2.2V2.2A2.2,2.2,0,0,0,21.3,0Z" fill="#fff"/>
+										  </g>
+										</svg></a>
+
+									</li>
+									<li class="list-inline-item social_twitter"><a href="#">
+										<svg xmlns="http://www.w3.org/2000/svg" width="25.1" height="20.366" viewBox="0 0 25.1 20.366">
+										  <g id="twitter" transform="translate(-42 -1.445)">
+											<g id="twitter-icon">
+											  <path id="Trazado_32" data-name="Trazado 32" d="M67.1,3.8a10.3,10.3,0,0,1-3,.8,5.2,5.2,0,0,0,2.3-2.9A10.3,10.3,0,0,1,63.1,3a5.2,5.2,0,0,0-8.8,4.7A14.6,14.6,0,0,1,43.7,2.3a5.2,5.2,0,0,0,1.6,6.9A5.1,5.1,0,0,1,43,8.5a5.2,5.2,0,0,0,4.1,5.1,5.2,5.2,0,0,1-2.3.1,5.2,5.2,0,0,0,4.8,3.6A10.4,10.4,0,0,1,42,19.5a14.7,14.7,0,0,0,22.6-13,10.5,10.5,0,0,0,2.5-2.7Z" fill="#fff"/>
+											</g>
+										  </g>
+										</svg></a>
+									</li>
+									<li class="list-inline-item social_instagram"><a href="#">
+										<svg xmlns="http://www.w3.org/2000/svg" width="22.265" height="22.876" viewBox="0 0 22.265 22.876">
+										  <g id="Instagram_mono" data-name="Instagram mono" transform="translate(11.133 11.438)">
+											<g id="Instagram_mono-2" data-name="Instagram mono" transform="translate(-11.133 -11.438)">
+											  <path id="Trazado_34" data-name="Trazado 34" d="M15.787,22.876H6.478A6.5,6.5,0,0,1,0,16.4V6.478A6.5,6.5,0,0,1,6.478,0h9.309a6.5,6.5,0,0,1,6.478,6.478V16.4A6.493,6.493,0,0,1,15.787,22.876Zm0-1.714A4.783,4.783,0,0,0,20.551,16.4V6.478a4.783,4.783,0,0,0-4.764-4.764H6.478A4.783,4.783,0,0,0,1.714,6.478V16.4a4.783,4.783,0,0,0,4.764,4.764Z" fill="#fff"/>
+											  <path id="Trazado_35" data-name="Trazado 35" d="M117.859,115.434a6.13,6.13,0,1,1-1.8-4.339A6.13,6.13,0,0,1,117.859,115.434Zm-6.163-4.01a4.015,4.015,0,1,0,4.015,4.015A4.015,4.015,0,0,0,111.7,111.424Z" transform="translate(-100.559 -104.082)" fill="#fff"/>
+											  <circle id="Elipse_6" data-name="Elipse 6" cx="1.451" cy="1.451" r="1.451" transform="translate(15.945 3.671)" fill="#fff"/>
+											</g>
+										  </g>
+										</svg></a>
+
+									</li>
+								</ul>
+							</li>
+							<li><a href="mailto:contact@finnsmajobb.no" class="mail">contact@finnsmajobb.no</a></li>
+						</ul>
+					</div>
+					<div class="col-md-5">
+						<div class="logo-footer">
+							<img src="images/footer-logo.svg" alt="MinSmåjobb" style="width: 170.23px; height: 78.38px;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+	<script>
+		$('#datepicker').datepicker({
+		uiLibrary: 'bootstrap4'
+		});
+	</script>
+  </body>
+</html>

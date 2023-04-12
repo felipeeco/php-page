@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* PWA Micro animaions */
+
+.scroll-me{
+	animation: scrollmedown 1s;
+}
+
+@keyframes scrollmedown{
+	0%{
+		padding-top: calc(100vh - 390px);
+	}50%{
+		padding-top: calc(100vh - 490px);
+	}100%{
+		padding-top: calc(100vh - 390px);
+	}
+}
+

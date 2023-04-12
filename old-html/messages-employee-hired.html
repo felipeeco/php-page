@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Finnsmåjobb</title>
+		<!-- Date Picker -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/responsive.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.typekit.net/skn0ayd.css">
+		<script src="https://kit.fontawesome.com/a335a36105.js"></script>
+	</head>
+	<body class="page chat no-back">
+		<!-- body code goes here -->
+		<!-- start of new code -->
+		<div class="modal fade paddmeoff" id="bannotpossible">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="white-box information-popup">
+							<img src="images/cancel-notpossible.svg" alt="" style="width: 51.83px;height: 47.95px; display:block; margin: auto;"><br>
+							<h2>Er du sikker på at du ikke ønsker denne jobben?</h2><br>
+							<p>Oppdragsgiver vil bli fjernet fra kontaktlisten din og det reserverte gebyret vil bli frigitt.</p>
+							<br>
+							<a href="#" class="btn btn-primary" style="margin: auto; display: block; max-width: 60px;">Ok</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade paddmeoff" id="bannotpossible1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">	
+						<div class="white-box information-popup">
+							<img src="images/possible-cancel.svg" alt="" style="width: 51.83px;height: 47.95px; display:block; margin: auto;"><br>
+							<h2>Det kan se ut som det er utvekslet kontaktinformasjon</h2><br>
+							<p>Det er ikke mulig å trekke tilbake tilbud om hjelp dersom kontaktinformasjon er utvekslet. Det reserverte gebyret kan bli belastet deg dersom ingen andre får jobben.</p>
+							<p>Om du ikke kan eller vil utføre jobben ber vi deg skrive en melding til oppdragsgiver og informere om dette.</p>
+							<br>
+							<div class="actions" style="text-align: center;">
+								<a href="#" class="btn btn-primary" style="margin: auto; display: inline-block; text-align: center;">Avbryt</a>
+								<a href="#" class="btn btn-danger" style="margin: auto; display: inine-block; text-align: center;"><i class="fas fa-ban"></i> Slett kontakt</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end of new code -->
+		<div class="landing">
+			<nav class="navbar navbar-expand-lg container top">
+				<a class="navbar-brand" href="#">
+					<img src="images/logo.svg" alt="MinSmåjobb" style="width: 223.19px;height: 38.56px;">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Vår tjeneste</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Kundeservice</a>
+						</li>
+						<li class="nav-item login">
+							<a href="log-in.html" class="nav-link"><i class="fas fa-user"></i>Log In<i class="fas fa-chevron-down"></i></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<nav class="navbar navbar-expand-lg container loggedin-menu">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent2">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-plus-circle"></i>Publish a job</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-search"></i>Browse jobs</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link active"><i class="far fa-comment"></i>Messages</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="content messages">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 conversations">
+					</div>
+					<div class="col-md-9 chatbox">
+						<div class="row">
+							<div class="col-md-8 chat">
+							</div>
+							<!-- start of new code -->
+							<div class="col-md-4 project-info awareded">	
+								<div class="row employer-details">
+									<div class="col-md-4 profile-picture">
+										<div class="picture-holder"><div class="onlineholder"><div class="indicator-on"></div></div></div>
+									</div>
+									<div class="col-md-8 rating-info">
+										<div class="personal-info">
+											<span class="name">Michael Bulk</span>
+										</div>
+										<!-- RATING COMES HERE-->
+										<div class="r-updated">
+											<ul class="ratinglist list-unstyled small-text">
+												<li><img src="images/rating/green/rating-10.svg" alt=""></li>
+												<li><img src="images/rating/green/rating-10.svg" alt=""></li>
+												<li><img src="images/rating/green/rating-10.svg" alt=""></li>
+												<li><img src="images/rating/green/rating-03.svg" alt=""></li>
+												<li><img src="images/rating/green/rating-00.svg" alt=""></li>
+												<li class="rating-number">3.3</li>
+											</ul>
+										</div>
+										<div class="reviews-number small-text"><i class="fa-solid fa-comment"></i> 45 reviews</div>
+										<!-- end of the rating-->
+									</div>
+								</div>
+								<a href="#" class="pj-image"><img src="images/samples/sample-01.jpg" alt="" class="projct-image"></a>
+								<h1>Washing house <i class="fas fa-external-link-alt"></i></h1>
+								<a href="" class="addres"><i class="fas fa-map-marker-alt"></i> Light Rd. 69876, Oslo</a>
+								<div class="payment-information accepted ongoing">
+									<h5>PAYMENT</h5>
+									<p class="price">kr. 185/time</p>
+									<p><em>Innen 10.10.2020</em></p>
+								</div>
+								<div class="cancelation_otion">
+									<p>Om det viser seg at jobben ikke passer deg allikevel kan du trekke tilbake tilbudet om hjelp. Det reserverte gebyret <strong>kr. 50</strong> vil da bli frigitt.</p>
+									<a href="" class="btn btn-danger" role="button" data-toggle="modal" data-target="#bannotpossible"><i class="fas fa-ban"></i> Trekk tilbake</a>
+								</div>
+							</div>
+							<!-- end of new code -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+  </body>
+</html>

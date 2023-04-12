@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Get Notified</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/skn0ayd.css">
+	<script src="https://kit.fontawesome.com/a335a36105.js"></script>
+  </head>
+  <body>
+  	<!-- body code goes here -->
+	<header>
+		<div class="container">
+	 	  <div class="icon-holder">
+				<i class="fas fa-plus-circle"></i>
+			</div>
+		  <div class="title-holder">
+				<h1>Publish your job <br>	<small>It's completely free</small></h1>
+			</div>
+	  </div>
+</header>
+  <div class="container">
+	  <h1>Select a category you’d like to post in</h1>	
+	<div class="whitebox">
+		<div class="iconcategory-style">
+			<div class="row">
+				<div class="col-md-3">
+					<h1><i class="fas fa-shipping-fast"></i> Transport</h1>
+					<ul class="sub-categories">
+						<li><a href="#"> Hente &amp; levere</a></li>
+						<li><a href="#"> Flytting</a></li>
+						<li><a href="#"> Bortkjøring</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h1><i class="fas fa-broom"></i> Rengjøring</h1>
+					<ul class="sub-categories">
+						<li><a href="#"> Vaskehjelp</a></li>
+						<li><a href="#"> Flyttevask</a></li>
+						<li><a href="#"> Fasadevask</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h1><i class="fas fa-seedling"></i> Hagearbeid</h1>
+					<ul class="sub-categories">
+						<li><a href="#"> Planting &amp; hagestell</a></li>
+						<li><a href="#"> Graving og bæring</a></li>
+						<li><a href="#"> Snømåking</a></li>
+
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h1><i class="fas fa-car"></i> Bil &amp; Båt</h1>
+					<ul class="sub-categories">
+						<li><a href="#"> Rens &amp; polering</a></li>
+						<li><a href="#"> Lakk &amp; maling</a></li>
+						<li><a href="#"> Feilsøking</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<h1><i class="fas fa-hammer"></i> Oppussing</h1>
+					<ul class="sub-categories">
+						<li><a href="#"> Tapet &amp; Maling</a></li>
+						<li><a href="#"> Mur &amp; flis</a></li>
+						<li><a href="#"> Snekker &amp; montering</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h1><i class="fas fa-heart"></i> Personlig</h1>
+					<ul class="sub-categories">
+						<li><a href="#"> Barnepass</a></li>
+						<li><a href="#"> Dyrepass</a></li>
+						<li><a href="#"> Aktivitetspartner</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h1><i class="fas fa-graduation-cap"></i> Utdanning</h1>
+					<ul class="sub-categories">
+						<li><a href="#"> Leksehjelp</a></li>
+						<li><a href="#"> Kurs &amp; kultur</a></li>
+						<li><a href="#"> Øvelseskjøring</a></li>
+
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h1><i class="fas fa-laptop-code"></i> Data</h1>
+					<ul class="sub-categories">
+						<li><a href="#"> Hardware</a></li>
+						<li><a href="#"> Web &amp; IT</a></li>
+						<li><a href="#"> Software</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<h1><i class="fas fa-ruler-combined"></i> Tekstil &amp; Søm</h1>
+					<ul class="sub-categories">
+						<li><a href="#"> Klær</a></li>
+						<li><a href="#"> Skotøy</a></li>
+						<li><a href="#"> Interiør</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<h1><i class="fas fa-spa"></i> Velvære</h1>
+					<ul class="sub-categories">
+						<li><a href="#"> Hårklipp &amp; farge</a></li>
+						<li><a href="#"> Sminke og negler</a></li>
+						<li><a href="#"> Massasje &amp; terapi</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</div>
+  </div>
+	
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.3.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+	  <script>
+	  	$("#selectall").click(function () {
+		  $(".check").prop('checked', $(this).prop('checked'));
+	  	});
+	  </script>
+  </body>
+</html>

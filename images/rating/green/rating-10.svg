@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28.241" height="26.977" viewBox="0 0 28.241 26.977">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Trazado_1027" data-name="Trazado 1027" d="M16.218-12.187l3.447,6.976L27.379-4.09a1.685,1.685,0,0,1,.935,2.876l-5.58,5.379,1.32,7.666a1.689,1.689,0,0,1-2.449,1.776l-6.9-3.571-6.9,3.62a1.689,1.689,0,0,1-2.45-1.776l1.32-7.666L1.1-1.212a1.686,1.686,0,0,1,.935-2.876L9.747-5.21l3.447-6.976A1.688,1.688,0,0,1,16.218-12.187Z" transform="translate(588.299 147.5)" fill="#3fc69a"/>
+    </clipPath>
+  </defs>
+  <g id="rating-10" transform="translate(-588.885 -134.375)" clip-path="url(#clip-path)">
+    <path id="Unión_11" data-name="Unión 11" d="M-8303.148-20848.023v0H-8306v0h-2.855v0h-2.85v0h-2.856v0h-2.855v0h-2.85v0h-5.412v0h-2.855v-.225h-1.593v-28.775h32.374v28.775h-2.541v.225Z" transform="translate(8917.422 21010.725)" fill="#3fc69a"/>
+  </g>
+</svg>

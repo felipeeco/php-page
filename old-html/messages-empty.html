@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Finnsmåjobb</title>
+		<!-- Date Picker -->
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<!-- Bootstrap -->
+		<link href="../css/bootstrap-4.3.1.css" rel="stylesheet">
+		<link href="../css/style.css" rel="stylesheet">
+		<link href="../css/responsive.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.typekit.net/skn0ayd.css">
+		<script src="https://kit.fontawesome.com/a335a36105.js"></script>
+	</head>
+	<body class="page chat no-back">
+		<!-- body code goes here -->
+		<div class="landing">
+			<nav class="navbar navbar-expand-lg container top">
+				<a class="navbar-brand" href="#">
+					<img src="images/logo.svg" alt="MinSmåjobb" style="width: 223.19px;height: 38.56px;">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Vår tjeneste</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Kundeservice</a>
+						</li>
+						<li class="nav-item login">
+							<a href="log-in.html" class="nav-link"><i class="fas fa-user"></i>Log In<i class="fas fa-chevron-down"></i></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<nav class="navbar navbar-expand-lg container loggedin-menu">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent2">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-plus-circle"></i>Publish a job</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-search"></i>Browse jobs</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link active"><i class="far fa-comment"></i>Messages</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="content messages">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3 conversations">
+						<div class="contacts-holder scrollable">
+							<div class="contact-conversation selected">
+								<img src="images/samples/admin-picture.png" alt="">
+								<div class="contact-details">
+									<h5>Mr. Admin</h5>
+									<span class="jobtitle">Jeg er her for deg</span>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-md-9 chatbox">
+						<div class="row">
+							<div class="col-md-8 chat">
+								<div class="chat-screen">
+									<div class="bubbles">
+									<div class="alert alert-dark" role="alert"><svg xmlns="http://www.w3.org/2000/svg" width="18.285" height="18.285" viewBox="0 0 18.285 18.285">  <g id="Grupo_177" data-name="Grupo 177" transform="translate(-10349 -1527)">    <path id="Trazado_166" data-name="Trazado 166" d="M17.143,8a9.143,9.143,0,1,0,9.143,9.143A9.143,9.143,0,0,0,17.143,8Zm0,16.457a7.314,7.314,0,1,1,7.314-7.314A7.314,7.314,0,0,1,17.143,24.457Z" transform="translate(10341 1519)" fill="#fff"/>    <path id="Trazado_167" data-name="Trazado 167" d="M44.914,28a.914.914,0,0,0-.914.914v4.571a.914.914,0,0,0,1.829,0V28.914A.914.914,0,0,0,44.914,28Z" transform="translate(10313.229 1503.571)" fill="#fff"/>    <circle id="Elipse_41" data-name="Elipse 41" cx="0.914" cy="0.914" r="0.914" transform="translate(10357.229 1538.885)" fill="#fff"/>  </g></svg><strong>Du kan ikke chatte med meg.</strong><br> Men vi svarer så rask vi kan om du kontakter oss.</div>
+										<div class="bubble outgoing">
+											<div class="row">
+												<div class="col-sm-1">
+													<img src="images/samples/admin-picture.png" alt="" class="avatar">
+												</div>
+												<div class="col-sm-11">
+													<div class="bubble-line">
+														<h1>Hei, du! Jeg er admin</h1>	
+														<p>eg er her for å fortelle deg at kontaktlisten din er tom og at det er to måter for deg å få meldinger og kontakter i meldingsboksen din.</p>
+														<h3>1. LEGG UT EN SMÅJOBB</h3>
+														<p>Når du legger ut en småjobb vil alle hjelpere som er interessert i jobben bli lagt til på venstre siden du kan diskutere småjobben med hver enkelt hjelper før du bestemmer deg. - Det er helt graits å legge ut småjobber forresten.</p>
+														<h3>2. TILBY HJELP</h3>
+														<p>Du finner tilgjengelige småjobber under “Finn Småjobb” og tilbyr enkelt din hjelp på hver enkelt annonse. Oppdragsgiveren vil da bli lagt til som kontakt og du kan diskutere småjobben før du blir valgt som hjelper.</p>
+														<h3>Hva mer...?</h3>
+														<p>Ah, ja! Vi ønsker at vår markedsplass skal være et hyggelig sted å møtes om småjobber og ber alle vise respekt for hverandre og besvare hverandres meldinger. Smil til verden og den smiler tilbake!</p>
+														<p>Smil til verden og den smiler tilbake! :)</p>
+														<p>Vennlig hilsen Admin</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="chat-input">
+										<div class="form-inline">
+											<div class="form-group col-sm-11">
+												<textarea name="" id="" rows="1" placeholder="Enter your message here..." class=""></textarea>
+											</div>
+											<button type="button"><i class="fas fa-paper-plane"></i></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 project-info admin">	
+								<div class="greybox-holder nofixed-project">
+									<div class="profile-information centered">
+										<div class="profile-picture">
+											<div class="picture-holder user-4322321" style="max-width: 190px;"></div>
+											<h1>Mr. Admin</h1>
+											<hr>
+											<p>Ta gjerne kontakt med oss om du har spørsmål</p>
+										</div>
+									</div>
+									<div class="payment-information">
+										<div class="offer-help">
+											<a href="messages-employerview-hired.html" class="btn btn-primary">Kontakt oss</a>
+										</div>
+									</div>
+								</div>
+							</div>
+					
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+  </body>
+</html>

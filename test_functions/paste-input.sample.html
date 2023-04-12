@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Documento sin título</title>
+</head>
+
+<body>
+	<script>
+	function copyToClipboard(element) {
+	  var $temp = $("<input>");
+	  $("body").append($temp);
+	  ("#input").val($(element).text()).select();
+	  document.execCommand("copy");
+
+	}
+	</script>
+	
+<p id="text">Hello</p>
+	<input type="text" id="input">
+<button onclick="copyToClipboard('#text')">Paste</button>
+</body>
+</html>

@@ -1,0 +1,1004 @@
+<!doctype html>
+<!--V 2.0
++ Helpera Grid Updates
++ Filter Limit active helpers added
+- Filter icons Updated to Font Awesome 6
+-->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Finnsmåjobb | Browse</title>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<!-- Bootstrap -->
+	<link href="../css/bootstrap-4.3.1.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
+	<link href="../css/responsive.css" rel="stylesheet">
+	<link href="../css/pwa.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/skn0ayd.css">
+	<script src="https://kit.fontawesome.com/a335a36105.js"></script>
+</head>
+<body class="pwa-body">
+	<header id="page-header">
+		<div class="d-flex justify-content-between">
+			<div>
+				<img src="../images/logo.svg" alt="" class="logo">
+			</div>
+			<div class="text-right">
+				<a  href="#" role="button" id="dropdownNotification" class="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<i class="fas fa-bell position-relative"><span class="new-notification"></span></i>
+				</a>
+				<a href="javascript:;" aria-label="Toggle navigation" onclick="openNav()" class=""><i class="far fa-bars"></i></a>
+				<div class="dropdown-menu dropdown-menu-right dropdown-notification" aria-labelledby="dropdownNotification">
+					<div class="notification-container">
+						<a class="dropdown-item" href="#">
+							<div class="n	otification-info new">
+								<h6>Er Jobben ferdig?</h6>
+								<p>Ranger hjelperen!</p>
+								<p class="notification-time"><i class="fas fa-clock"></i> 5 minutes ago</p>
+							</div>
+							<div class="notification-img"><img src="../images/samples/sample-03-sm.png" alt="" /></div>
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="notification-info new">
+								<h6>Er du ferdig med jobben?</h6>
+								<p>Ranger hjelperen!</p>
+								<p class="notification-time"><i class="fas fa-clock"></i> 10 minutes ago</p>
+							</div>
+							<div class="notification-img"><img src="../images/samples/sample-03-sm.png" alt="" /></div>
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="notification-info new">
+								<h6>Er du ferdig med jobben?</h6>
+								<p>Ranger hjelperen!</p>
+								<p class="notification-time"><i class="fas fa-clock"></i> 10 minutes ago</p>
+							</div>
+							<div class="notification-img"><img src="../images/samples/sample-03-sm.png" alt="" /></div>
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="notification-info">
+								<h6>Er du ferdig med jobben?</h6>
+								<p>Ranger hjelperen!</p>
+								<p class="notification-time"><i class="fas fa-clock"></i> 10 minutes ago</p>
+							</div>
+							<div class="notification-img"><img src="../images/samples/sample-03-sm.png" alt="" /></div>
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="notification-info">
+								<h6>Er Jobben ferdig?</h6>
+								<p>Ranger hjelperen!</p>
+								<p class="notification-time"><i class="fas fa-clock"></i> 20 minutes ago</p>
+							</div>
+							<div class="notification-img"><img src="../images/samples/sample-03-sm.png" alt="" /></div>
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="notification-info new">
+								<h6>Er du ferdig med jobben?</h6>
+								<p>Ranger hjelperen!</p>
+								<p class="notification-time"><i class="fas fa-clock"></i> 10 minutes ago</p>
+							</div>
+							<div class="notification-img"><img src="../images/samples/sample-03-sm.png" alt="" /></div>
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="notification-info new">
+								<h6>Er du ferdig med jobben?</h6>
+								<p>Ranger hjelperen!</p>
+								<p class="notification-time"><i class="fas fa-clock"></i> 10 minutes ago</p>
+							</div>
+							<div class="notification-img"><img src="../images/samples/sample-03-sm.png" alt="" /></div>
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="notification-info">
+								<h6>Er du ferdig med jobben?</h6>
+								<p>Ranger hjelperen!</p>
+								<p class="notification-time"><i class="fas fa-clock"></i> 10 minutes ago</p>
+							</div>
+							<div class="notification-img"><img src="../images/samples/sample-03-sm.png" alt="" /></div>
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="notification-info">
+								<h6>Er Jobben ferdig?</h6>
+								<p>Ranger hjelperen!</p>
+								<p class="notification-time"><i class="fas fa-clock"></i> 20 minutes ago</p>
+							</div>
+							<div class="notification-img"><img src="../images/samples/sample-03-sm.png" alt="" /></div>
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="notification-info new">
+								<h6>Er du ferdig med jobben?</h6>
+								<p>Ranger hjelperen!</p>
+								<p class="notification-time"><i class="fas fa-clock"></i> 10 minutes ago</p>
+							</div>
+							<div class="notification-img"><img src="../images/samples/sample-03-sm.png" alt="" /></div>
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="notification-info new">
+								<h6>Er du ferdig med jobben?</h6>
+								<p>Ranger hjelperen!</p>
+								<p class="notification-time"><i class="fas fa-clock"></i> 10 minutes ago</p>
+							</div>
+							<div class="notification-img"><img src="../images/samples/sample-03-sm.png" alt="" /></div>
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="notification-info">
+								<h6>Er du ferdig med jobben?</h6>
+								<p>Ranger hjelperen!</p>
+								<p class="notification-time"><i class="fas fa-clock"></i> 10 minutes ago</p>
+							</div>
+							<div class="notification-img"><img src="../images/samples/sample-03-sm.png" alt="" /></div>
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="notification-info">
+								<h6>Er Jobben ferdig?</h6>
+								<p>Ranger hjelperen!</p>
+								<p class="notification-time"><i class="fas fa-clock"></i> 20 minutes ago</p>
+							</div>
+							<div class="notification-img"><img src="../images/samples/sample-03-sm.png" alt="" /></div>
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="notification-info new">
+								<h6>Er du ferdig med jobben?</h6>
+								<p>Ranger hjelperen!</p>
+								<p class="notification-time"><i class="fas fa-clock"></i> 10 minutes ago</p>
+							</div>
+							<div class="notification-img"><img src="../images/samples/sample-03-sm.png" alt="" /></div>
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="notification-info new">
+								<h6>Er du ferdig med jobben?</h6>
+								<p>Ranger hjelperen!</p>
+								<p class="notification-time"><i class="fas fa-clock"></i> 10 minutes ago</p>
+							</div>
+							<div class="notification-img"><img src="../images/samples/sample-03-sm.png" alt="" /></div>
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="notification-info new">
+								<h6>Er du ferdig med jobben?</h6>
+								<p>Ranger hjelperen!</p>
+								<p class="notification-time"><i class="fas fa-clock"></i> 10 minutes ago</p>
+							</div>
+							<div class="notification-img"><img src="../images/samples/sample-03-sm.png" alt="" /></div>
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="notification-info new">
+								<h6>Er du ferdig med jobben?</h6>
+								<p>Ranger hjelperen!</p>
+								<p class="notification-time"><i class="fas fa-clock"></i> 10 minutes ago</p>
+							</div>
+							<div class="notification-img"><img src="../images/samples/sample-03-sm.png" alt="" /></div>
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="notification-info">
+								<h6>Er du ferdig med jobben?</h6>
+								<p>Ranger hjelperen!</p>
+								<p class="notification-time"><i class="fas fa-clock"></i> 10 minutes ago</p>
+							</div>
+							<div class="notification-img"><img src="../images/samples/sample-03-sm.png" alt="" /></div>
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="notification-info">
+								<h6>Er Jobben ferdig?</h6>
+								<p>Ranger hjelperen!</p>
+								<p class="notification-time"><i class="fas fa-clock"></i> 20 minutes ago</p>
+							</div>
+							<div class="notification-img"><img src="../images/samples/sample-03-sm.png" alt="" /></div>
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="notification-info new">
+								<h6>Er du ferdig med jobben?</h6>
+								<p>Ranger hjelperen!</p>
+								<p class="notification-time"><i class="fas fa-clock"></i> 10 minutes ago</p>
+							</div>
+							<div class="notification-img"><img src="../images/samples/sample-03-sm.png" alt="" /></div>
+						</a>
+						<a class="dropdown-item" href="#">
+							<div class="notification-info new">
+								<h6>Er du ferdig med jobben?</h6>
+								<p>Ranger hjelperen!</p>
+								<p class="notification-time"><i class="fas fa-clock"></i> 10 minutes ago</p>
+							</div>
+							<div class="notification-img"><img src="../images/samples/sample-03-sm.png" alt="" /></div>
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</header>
+
+	<div id="mySidenav" class="sidenav">
+		<div class="nav-profile">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<img src="../images/samples/profile-sample.png" alt="" width="40">
+			<div>
+				<h2>Lars</h2> 
+				<a href="#" class="logout"><i class="fas fa-sign-out"></i> Logg ut</a>
+			</div>
+		</div>
+  
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item   ">
+				<a class="nav-link" href="#"><i class="fal fa-plus-circle"></i> Legg ut småjobb</a>
+			</li>
+	
+			<li class="nav-item  ">
+				<a class="nav-link" href="#"><i class="fal fa-search"></i> Søk</a>
+			</li>
+	
+			<li class="nav-item  ">
+				<a class="nav-link" href="#"><i class="fal fa-comment"></i> Meldinger</a>
+			</li>
+			
+			<li class="nav-item  ">
+				<a class="nav-link" href=""><i class="fal fa-suitcase"></i> Mine småjobber</a>
+			</li>
+		</ul>
+	
+		<hr>
+	
+		<ul class="navbar-nav mr-auto nav-light">
+			<li class="nav-item   ">
+				<a class="nav-link" href="#">Profil</a>
+			</li>
+			<li class="nav-item   ">
+				<a class="nav-link" href="#">Innstillinger</a>
+			</li>
+			<li class="nav-item   ">
+				<a class="nav-link" href="#">Vurderinger</a>
+			</li>
+			<li class="nav-item   ">
+				<a class="nav-link" href="#">Betalinger</a>
+			</li>
+			<li class="nav-item   ">
+				<a class="nav-link" href="#">Om oss</a>
+			</li>
+			<li class="nav-item   ">
+				<a class="nav-link" href="#">Tjenesteavtale</a>
+			</li>
+			<li class="nav-item   ">
+				<a class="nav-link" href="#">Kundeservice</a>
+			</li>
+		</ul>
+	
+	</div>
+	<div class="modal fade filtering-modal" tabindex="-1" role="dialog" id="sorteringModal">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-body white-box" style="padding: 30px !important">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="far fa-times"></i></button>
+				<h1>Sortering</h1>
+				
+				<ul class="sorter-filter">
+					<li><a href="#" class="active">Siste</a></li>
+					<li><a href="#">Eldste</a></li>
+					<li><a href="#">Pris</a></li>
+				</ul>
+				
+				<a href="" class="btn btn-primary" style="margin: auto; display: block;">Apply sorting</a>
+			</div>
+		  </div>
+		</div>
+	</div>
+<div class="modal fade filtering-modal" tabindex="-1" role="dialog" id="activeHelpersModal">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-body white-box text-center" style="padding: 30px !important">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute;right: 25px;"><i class="far fa-times"></i></button>
+				<img src="../images/helpers-filter.png" alt="" style="margin: auto; display: block; vertical-align: baseline">
+				<br>
+				<!--TOGGLE-->
+				<div class="custom-control custom-switch">
+					<input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+					<label class="custom-control-label" for="customSwitch1"></label>
+				</div><br>
+				<h1 class="text-center">Show <span style="color: var(--green)">Helpers active the last <i class="fa-regular fa-calendar-circle-user"></i> 90 days.</span></h1>
+				<p>This option will only show the helpers active on our platform in the last 90 days, this help you filter helpers who are committed with the platform.</p>
+				<a href="" class="btn btn-primary" style="margin: auto; display: block;">Save</a>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+	<div class="modal fade filtering-modal" tabindex="-1" role="dialog" id="typeJobModal">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-body white-box" style="padding: 30px !important">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="far fa-times"></i></button>
+				<h1>Type småjob</h1>
+				<div class="filter-form mt-5 mb-4">
+					<div class="accordion" id="accordionExample">
+						<div class="filter-group">
+							<div class="filter-title" id="headingOne">
+							<h2 class="mb-0">
+								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								<i class="fas fa-shipping-fast"></i> Transport <span>3</span>
+								</button>
+							</h2>
+							</div>
+							<div id="collapseOne" class="collapse collapsed" aria-labelledby="headingOne" data-parent="#accordionExample">
+							<div class="filter-body form-group">
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="defaultCheck1" checked>
+									<label for="defaultCheck1" class="form-check-label">Frakt</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="defaultCheck2" checked>
+									<label for="defaultCheck2" class="form-check-label">Flytting</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="defaultCheck3" checked>
+									<label for="defaultCheck3" class="form-check-label">Bortkjøring</label>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="filter-group">
+							<div class="filter-title" id="headingTwo">
+							<h2 class="mb-0">
+								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								<i class="fas fa-broom"></i> Rengjøring
+								</button>
+							</h2>
+							</div>
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+							<div class="filter-body form-group">
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Husvask">
+									<label for="Husvask" class="form-check-label">Husvask</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Flyttevask">
+									<label for="Flyttevask" class="form-check-label">Flyttevask</label>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="filter-group">
+							<div class="filter-title" id="headingThree">
+							<h2 class="mb-0">
+								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								<i class="fas fa-seedling"></i> Hagearbeid
+								</button>
+							</h2>
+							</div>
+							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+							<div class="filter-body form-group">
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Planting">
+									<label for="Planting" class="form-check-label">Planting og hagestell</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Graving">
+									<label for="Graving" class="form-check-label">Graving og utearbeid</label>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="filter-group">
+							<div class="filter-title" id="headingThree">
+							<h2 class="mb-0">
+								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								<i class="fas fa-car"></i> Bil & Båt
+								</button>
+							</h2>
+							</div>
+							<div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+							<div class="filter-body form-group">
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Maling">
+									<label for="Maling" class="form-check-label">Maling</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Snekring">
+									<label for="Snekring" class="form-check-label">Snekring</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Reparasjon">
+									<label for="Reparasjon" class="form-check-label">Reparasjon og</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="vedlikehold">
+									<label for="vedlikehold" class="form-check-label">vedlikehold</label>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="filter-group">
+							<div class="filter-title" id="headingThree">
+							<h2 class="mb-0">
+								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								<i class="fas fa-hammer"></i> Oppussing  <span>1</span>
+								</button>
+							</h2>
+							</div>
+							<div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+							<div class="filter-body form-group">
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Maling">
+									<label for="Maling" class="form-check-label">Maling</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Snekring">
+									<label for="Snekring" class="form-check-label">Snekring</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Reparasjon">
+									<label for="Reparasjon" class="form-check-label">Reparasjon og</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="vedlikehold">
+									<label for="vedlikehold" class="form-check-label">vedlikehold</label>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="filter-group">
+							<div class="filter-title" id="headingThree">
+							<h2 class="mb-0">
+								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								<i class="fas fa-heart"></i> Personlig
+								</button>
+							</h2>
+							</div>
+							<div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+							<div class="filter-body form-group">
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Maling">
+									<label for="Maling" class="form-check-label">Maling</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Snekring">
+									<label for="Snekring" class="form-check-label">Snekring</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Reparasjon">
+									<label for="Reparasjon" class="form-check-label">Reparasjon og</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="vedlikehold">
+									<label for="vedlikehold" class="form-check-label">vedlikehold</label>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="filter-group">
+							<div class="filter-title" id="headingThree">
+							<h2 class="mb-0">
+								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								<i class="fas fa-graduation-cap"></i> Utdanning
+								</button>
+							</h2>
+							</div>
+							<div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+							<div class="filter-body form-group">
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Maling">
+									<label for="Maling" class="form-check-label">Maling</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Snekring">
+									<label for="Snekring" class="form-check-label">Snekring</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Reparasjon">
+									<label for="Reparasjon" class="form-check-label">Reparasjon og</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="vedlikehold">
+									<label for="vedlikehold" class="form-check-label">vedlikehold</label>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="filter-group">
+							<div class="filter-title" id="headingThree">
+							<h2 class="mb-0">
+								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								<i class="fas fa-laptop-code"></i> Data
+								</button>
+							</h2>
+							</div>
+							<div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+							<div class="filter-body form-group">
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Maling">
+									<label for="Maling" class="form-check-label">Maling</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Snekring">
+									<label for="Snekring" class="form-check-label">Snekring</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Reparasjon">
+									<label for="Reparasjon" class="form-check-label">Reparasjon og</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="vedlikehold">
+									<label for="vedlikehold" class="form-check-label">vedlikehold</label>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="filter-group">
+							<div class="filter-title" id="headingThree">
+							<h2 class="mb-0">
+								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								<i class="fas fa-ruler-combined"></i> Tekstil & søm
+								</button>
+							</h2>
+							</div>
+							<div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+							<div class="filter-body form-group">
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Maling">
+									<label for="Maling" class="form-check-label">Maling</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Snekring">
+									<label for="Snekring" class="form-check-label">Snekring</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Reparasjon">
+									<label for="Reparasjon" class="form-check-label">Reparasjon og</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="vedlikehold">
+									<label for="vedlikehold" class="form-check-label">vedlikehold</label>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="filter-group">
+							<div class="filter-title" id="headingThree">
+							<h2 class="mb-0">
+								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								<i class="fas fa-spa"></i> Velvære
+								</button>
+							</h2>
+							</div>
+							<div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+							<div class="filter-body form-group">
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Maling">
+									<label for="Maling" class="form-check-label">Maling</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Snekring">
+									<label for="Snekring" class="form-check-label">Snekring</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Reparasjon">
+									<label for="Reparasjon" class="form-check-label">Reparasjon og</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="vedlikehold">
+									<label for="vedlikehold" class="form-check-label">vedlikehold</label>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="filter-group">
+							<div class="filter-title" id="headingThree">
+							<h2 class="mb-0">
+								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								<i class="fas fa-glass-cheers"></i> Event
+								</button>
+							</h2>
+							</div>
+							<div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+							<div class="filter-body form-group">
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Maling">
+									<label for="Maling" class="form-check-label">Maling</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Snekring">
+									<label for="Snekring" class="form-check-label">Snekring</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Reparasjon">
+									<label for="Reparasjon" class="form-check-label">Reparasjon og</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="vedlikehold">
+									<label for="vedlikehold" class="form-check-label">vedlikehold</label>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div class="filter-group">
+							<div class="filter-title" id="headingThree">
+							<h2 class="mb-0">
+								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									<i class="fas fa-balance-scale-right"></i> Økonomi
+								</button>
+							</h2>
+							</div>
+							<div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+							<div class="filter-body form-group">
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Maling">
+									<label for="Maling" class="form-check-label">Maling</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Snekring">
+									<label for="Snekring" class="form-check-label">Snekring</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="Reparasjon">
+									<label for="Reparasjon" class="form-check-label">Reparasjon og</label>
+								</div>
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="vedlikehold">
+									<label for="vedlikehold" class="form-check-label">vedlikehold</label>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<a href="" class="btn btn-primary" style="margin: auto; display: block;">Apply <span class="selected">3</span> filters</a>
+			</div>
+		  </div>
+		</div>
+	</div>
+
+
+	<div class="modal fade filtering-modal" tabindex="-1" role="dialog" id="searchModal">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<form >
+				<div class="form-group m-0">
+					<label for="name">Search by name</label>
+					<div class="input-group mb-2">
+						<form>
+							<button type="reset" class="clear do-not-hide-keyboard" id="btn_clear"></button>
+							<input type="search" name="search" class="form-control" id="input_clear" placeholder="Search" autofocus>
+						</form>
+						<!--<div class="input-group-append">
+							<div class="input-group-text"><i class="fal fa-search"></i></div>
+						</div>-->
+					</div>
+				</div>
+			</form>
+		  </div>
+		</div>
+	</div>
+
+
+
+
+	<div id="filter-job-nav">
+		<ul class="nav nav-pills nav-fill mb-0">
+			<li class="nav-item">
+			  <a class="nav-link" href="#"><i class="fas fa-suitcase"></i> Småjobber</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link active" href="#"><i class="fal fa-hand-paper"></i> Hjelpere</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="search-job-form pb-0">
+		<div class="container">
+			<div id="stateNotSelected"> 
+				<div>
+					<i class="fad fa-map-marker-slash float-left"></i>
+					<h2>Vi ser ikke hvor du er</h2>
+					<p><a href="#">Logg inn</a> eller fortell oss hvor du er i feltet til høyre.</p>
+				</div>
+				<div>
+					<form class="job-location-form">
+						<div class="form-group m-0">
+							<input type="text" name="location" placeholder="Skriv gate eller sted">
+							<div class="dropdown ml-auto">
+								<button class="btn dropdown-toggle btn-dropdown" type="button" id="statesList" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="far fa-chevron-down"></i></button>
+								<div class="dropdown-menu" id="stateListSelection" aria-labelledby="statesList">
+									<button class="dropdown-item" type="button">Akershus</button>
+									<button class="dropdown-item" type="button">Finnmark</button>
+									<button class="dropdown-item" type="button">Møre og Romsdal</button>
+									<button class="dropdown-item" type="button">Oslo</button>
+									<button class="dropdown-item" type="button">Svalbard</button>
+									<button class="dropdown-item" type="button">Trøndelag</button>
+									<button class="dropdown-item" type="button">Østfold</button>
+									<button class="dropdown-item" type="button">Aust agder</button>
+									<button class="dropdown-item" type="button">Hedmark</button>
+									<button class="dropdown-item" type="button">Nordland</button>
+									<button class="dropdown-item" type="button">Rogaland</button>
+									<button class="dropdown-item" type="button">Telemark</button>
+									<button class="dropdown-item" type="button">Vestfold</button>
+									<button class="dropdown-item" type="button">Buskerud</button>
+									<button class="dropdown-item" type="button">Hordaland</button>
+									<button class="dropdown-item" type="button">Oppland</button>
+									<button class="dropdown-item" type="button">Sogn og Fjordane</button>
+									<button class="dropdown-item" type="button">Troms</button>
+									<button class="dropdown-item" type="button">Vest-Agder</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="row d-none" id="stateWasSelected">
+				<div class="col-12">
+					<div class="job-location-info px-4">
+						<div class="text-center">
+							<h2>Juster avstand for søket</h2>
+							<p>Innen <span id="valueDistance"></span> km fra <strong>Oslo, Norway</strong></p>
+						</div>
+						<div class="range">
+							<input type="range" min="1" max="100" value="50" class="slider" id="distanceRange">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg-white container mt-4">
+			<div class="filter-information  py-3 mb-3 border-bottom">
+				<h2>Showing <span class="d-block">All Jobs</span></h2>
+				<div class="filter-content">
+					<button type="button" class="btn filter-btn active" data-toggle="modal" data-target="#activeHelpersModal">
+						<i class="fa-regular fa-calendar-circle-user"></i>
+						<!--<i class="fa-solid fa-circle new-feature"></i>-->
+					</button>
+					<button type="button" class="btn filter-btn" data-toggle="modal" data-target="#sorteringModal">
+						<i class="fa-regular fa-sort"></i>
+					</button>
+					<button type="button" class="btn filter-btn active" data-toggle="modal" data-target="#typeJobModal">
+						<i class="fa-regular fa-grid-2"></i>
+						<span class="counter">20</span>
+					</button>
+					<button type="button" class="btn filter-btn" data-toggle="modal" data-target="#searchModal">
+						<i class="fa-regular fa-magnifying-glass"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>		
+	<div class="bg-white pb-3">
+		<div class="container">
+			<ul class="helperslist">
+				<li class="helpers text-center">
+				<div class="helper-info">
+					<div class="helper-activity idle">Active <strong>2 Hours Ago</strong></div>
+					<div class="helper-image">
+						<a href="https://minsmajobb.no/services/details/2963">
+							<img src="https://minsmajobb.no/assets/uploads//Oleandreas-1581876198.png" alt="">
+							<div class="onlineholder"><div class="indicator-on recent"></div></div>
+						</a>
+					</div>
+					<div class="helper-name">
+						<h1>Ole andreas</h1>
+					</div>
+					<div class="helper-grid-rating">
+						<div class="ratign">
+							<span class="fa fa-star checked" aria-hidden="true"></span>
+							<div class="rating-text">4.9</div>
+						</div>
+						<div class="helper-location">
+							<span href="javascript:;" class="helper-location-txt"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Vestland</span>
+						</div>
+					</div>
+					<div class="helper-services-oferred oferred-2">
+						<i class="fas fa-shipping-fast" aria-hidden="true"></i><i class="fas fa-hammer" aria-hidden="true"></i> 
+					</div>
+					<div class="hourly-rate">
+						<span>Timebetaling <strong>Avtales</strong></span>
+					</div>
+					</div>
+				</li>
+				<li class="helpers text-center">
+				<div class="helper-info">
+					<div class="helper-activity active-now"><strong>Active Now</strong></div>
+					<div class="helper-image">
+						<a href="https://minsmajobb.no/services/details/2963">
+							<img src="https://minsmajobb.no/assets/uploads//Oleandreas-1581876198.png" alt="">
+							<div class="onlineholder"><div class="indicator-on"></div></div>
+						</a>
+					</div>
+					<div class="helper-name">
+						<h1>Ole andreas</h1>
+					</div>
+					<div class="helper-grid-rating">
+						<div class="ratign">
+							<span class="fa fa-star checked" aria-hidden="true"></span>
+							<div class="rating-text">4.9</div>
+						</div>
+						<div class="helper-location">
+							<span href="javascript:;" class="helper-location-txt"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Vestland</span>
+						</div>
+					</div>
+					<div class="helper-services-oferred oferred-2">
+						<i class="fas fa-shipping-fast" aria-hidden="true"></i><i class="fas fa-hammer" aria-hidden="true"></i> 
+					</div>
+					<div class="hourly-rate">
+						<span>Timebetaling <strong>Avtales</strong></span>
+					</div>
+					</div>
+				</li>
+				<li class="helpers text-center">
+				<div class="helper-info">
+					<div class="helper-activity unactive">Active <strong>Yesterday</strong></div>
+					<div class="helper-image">
+						<a href="https://minsmajobb.no/services/details/2963">
+							<img src="https://minsmajobb.no/assets/uploads//Oleandreas-1581876198.png" alt="">
+						</a>
+						<div class="onlineholder"><div class="indicator-off"></div></div>
+					</div>
+					<div class="helper-name">
+						<h1>Ole andreas</h1>
+					</div>
+					<div class="helper-grid-rating">
+						<div class="ratign">
+							<span class="fa fa-star checked" aria-hidden="true"></span>
+							<div class="rating-text">4.9</div>
+						</div>
+						<div class="helper-location">
+							<span href="javascript:;" class="helper-location-txt"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Vestland</span>
+						</div>
+					</div>
+					<div class="helper-services-oferred oferred-2">
+						<i class="fas fa-shipping-fast" aria-hidden="true"></i><i class="fas fa-hammer" aria-hidden="true"></i> 
+					</div>
+					<div class="hourly-rate">
+						<span>Timebetaling <strong>Avtales</strong></span>
+					</div>
+					</div>
+				</li>
+				<li class="helpers text-center">
+				<div class="helper-info">
+					<div class="helper-activity active-now"><strong>Active Now</strong></div>
+					<div class="helper-image">
+						<a href="https://minsmajobb.no/services/details/2963">
+							<img src="https://minsmajobb.no/assets/uploads//Oleandreas-1581876198.png" alt="">
+						</a>
+						<div class="onlineholder"><div class="indicator-on"></div></div>
+					</div>
+					<div class="helper-name">
+						<h1>Ole andreas</h1>
+					</div>
+					<div class="helper-grid-rating">
+						<div class="ratign">
+							<span class="fa fa-star checked" aria-hidden="true"></span>
+							<div class="rating-text">4.9</div>
+						</div>
+						<div class="helper-location">
+							<span href="javascript:;" class="helper-location-txt"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Vestland</span>
+						</div>
+					</div>
+					<div class="helper-services-oferred oferred-2">
+						<i class="fas fa-shipping-fast" aria-hidden="true"></i><i class="fas fa-hammer" aria-hidden="true"></i> 
+					</div>
+					<div class="hourly-rate">
+						<span>Timebetaling <strong>Avtales</strong></span>
+					</div>
+					</div>
+				</li>
+				<br>
+				<br>
+				<br>
+				<br>
+			</ul>
+		</div>
+	</div>
+
+
+	<script src="../js/popper.min.js"></script> 
+	<script src="../js/bootstrap-4.3.1.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.18/dist/js/bootstrap-select.min.js"></script>
+
+	<script>
+		function openNav() {
+		  document.getElementById("mySidenav").style.width = "320px";
+		}
+
+		function closeNav() {
+		  document.getElementById("mySidenav").style.width = "0";
+		}
+
+		$('#stateListSelection button').on('click', function(){
+			var contentButton = $(this).text();
+			$('#stateNotSelected').addClass('d-none');
+			$('#stateWasSelected').removeClass('d-none');
+		});
+
+		const $valueSpan = $('#valueDistance');
+		const $value = $('#distanceRange');
+		$valueSpan.html($value.val());
+		$value.on('input change', () => {
+			$valueSpan.html($value.val());
+		});
+
+
+	</script>
+	
+	<script>
+		
+        function openNav() {
+            document.getElementById("mySidenav").classList.add("open");
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").classList.remove("open");
+        }
+
+	</script>
+	<!-- <script>
+		var slider = document.getElementById("myRange");
+		var output = document.getElementById("demo");
+		output.innerHTML = slider.value;
+
+		slider.oninput = function() {
+		  output.innerHTML = this.value;
+		}
+	</script> -->
+	<script>
+		$(function() {                       //run when the DOM is ready
+		  $("#filter, .close, .applyfilter").click(function() {  //use a class, since your ID gets mangled
+			$(".box-bar").removeClass("d-block");    
+			$( ".box-bar" ).slideToggle( "slow" );
+			$( ".new-filters" ).slideToggle( "slow" );
+			$( ".iffilteron" ).slideToggle( "slow" );
+		  });
+		});
+		
+		$(function searchopen() {                       //run when the DOM is ready
+		  $("#search, .search-btn").click(function() {  //use a class, since your ID gets mangled
+			//$(".box-bar").removeClass("d-block");    
+			$( ".search-holder" ).slideToggle( "" );
+			 document.getElementById("search-title").focus();
+		  });
+		});
+	</script>
+	<script>
+	var cw = $('.image-holder').width();
+		$('.image-holder').css({
+			'height': cw + 'px'
+		});
+		$('button.clear').hide();
+		$('input[name=search]').keyup(function(){
+		  if($(this).val().length)
+			$('button.clear').show();
+		  else
+			$('button.clear').hide();
+		});
+		
+		const targetDiv = document.getElementById("btn_clear");
+		const btn = document.getElementById("btn_clear");
+		btn.onclick = function () {
+		  if (targetDiv.style.display !== "none") {
+			targetDiv.style.display = "none";
+		  } else {
+			targetDiv.style.display = "block";
+		  }
+		};
+	</script>
+	<script>
+	const acceptsInput = (elem) => {
+		  if (!elem) { return false }
+
+		  let tag = elem.tagName
+		  return tag == 'INPUT' || tag == 'SELECT' || tag == 'TEXTAREA' || elem.isContentEditable || elem.tabIndex >= 0
+		}
+
+		document.addEventListener('touchend', (e) => {
+		  let target = e.target
+		  let dontDiscardKeyboard = target.classList.contains('do-not-hide-keyboard')
+
+		  // On iOS tapping anywhere doesn’t
+		  // automatically discard keyboard
+		  if (dontDiscardKeyboard) {
+		   e.preventDefault()
+		   // DO ACTION HERE
+			  $('button.clear').hide();
+		  } else if (!acceptsInput(target)) {
+		   document.activeElement.blur()
+		  }
+		})
+	</script>
+</body>
+</html>

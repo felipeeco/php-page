@@ -1,0 +1,282 @@
+	<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Finnsmåjobb</title>
+		<!-- Date Picker -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/responsive.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.typekit.net/skn0ayd.css">
+		<script src="https://kit.fontawesome.com/a335a36105.js"></script>
+	</head>
+	<body class="page chat no-back" style="overflow-y: hidden;">
+		<!-- body code goes here -->
+		<div class="landing">
+			<nav class="navbar navbar-expand-lg container top">
+				<a class="navbar-brand" href="#">
+					<img src="images/logo.svg" alt="MinSmåjobb" style="width: 223.19px;height: 38.56px;">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Vår tjeneste</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Kundeservice</a>
+						</li>
+						<li class="nav-item login">
+							<a href="log-in.html" class="nav-link"><i class="fas fa-user"></i>Log In<i class="fas fa-chevron-down"></i></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<nav class="navbar navbar-expand-lg container loggedin-menu">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent2">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-plus-circle"></i>Publish a job</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#"><i class="fas fa-search"></i>Browse jobs</a>
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link active"><i class="far fa-comment"></i>Messages</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="content messages">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 mt-3 conversations">
+						<div class="contacts-holder scrollable">
+							<div class="contact-conversation selected">
+								<div class="profile-picture">
+									<i class="fas fa-headset nocontact" aria-hidden="true"></i>
+								</div>
+								<div class="contact-details">
+									<h5>
+										Kunderservice
+									</h5>
+									<span class="jobtitle">Vi er her for deg</span>
+								</div>
+								
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-md-9 chatbox">
+						<div class="row">
+							<div class="col-md-8  chat">
+								<div class="chat-screen">
+									<div class="bubbles">
+										<div class="nocontact-info">
+											<img src="images/icons/user-chat.svg" class="user-img" />
+											<h2>Du har ingan kontakter akkurat nå..</h2>
+											<p>Interesserte hjelpere vil bli lagt til i kontaktlisten din når du legger ut en småjobb. Om du er en hjelper og ser etter arbeid vil oppdragsgivere du kontakter bli lagt til kontaktlisten din.</p>
+											<p class="line-text">Kom i gang!</p>
+											<div class="d-lg-flex">
+
+												<a href="#" class="btn btn-dark mr-3 mb-3 mb-lg-0"><i class="fas fa-flag" aria-hidden="true"></i> Legg ut jobb</a>
+												<a href="#" class="btn btn-primary"><i class="fas fa-search" aria-hidden="true"></i> Finn en jobb</a>
+											</div>
+										</div>
+										
+									</div>
+									<div class="chat-input">
+										<div class="form-inline">
+											<div class="form-group col-sm-12 px-0">  
+												<textarea data-resizetop name="message" id="message" placeholder="Skriv din melding her..." class=""></textarea>
+											</div>
+											
+											 
+											
+												<!---->
+												
+												<div class="footer-btn">
+													<button type="button" class="btn_upload_attachment"><i class="far fa-paperclip" data-toggle="tooltip" data-placement="top" title="" data-container=".chat-input" aria-hidden="true" data-original-title="Send a File"></i><span class="sr-only">Send a File</span></button>
+													<input type="file" class="form-control-file hide  upload_attachment" id="upload_attachment" data-id="101" image-name="upload_attachment">
+													
+													 
+													<button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="footer-menu-dropdown"><i class="far fa-times" data-toggle="tooltip" data-placement="top" title="" data-container=".chat-input" aria-hidden="true" data-original-title="More Options"></i><span class="sr-only">More Options</span></button>
+													<div class="dropdown-menu" id="footer-dropdown" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(38px, 40px, 0px);">
+														<button type="button" class="btn_readContract" data-content="comming" >Lag avtale <i class="fal fa-file-signature" aria-hidden="true"></i></button>
+														<button type="button" class="btn_readContract" data-content="comming">Rapporter  <i class="fal fa-exclamation-circle" aria-hidden="true"></i></button>
+														<button type="button" class="btn_readContract"  data-content="comming">Avtal befaring
+
+                                                        <i class="fal fa-file-search" aria-hidden="true"></i></button>
+													</div>
+													 
+													
+												</div>
+												
+												<!---->
+												
+												<button type="button" class="enter-msg send-msg" ><i class="fas fa-paper-plane"></i></button>
+											 
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 pb-5 project-info"  style="overflow-y: scroll; max-height:calc(100vh - 190px)">	
+								<div class="greybox-holder nofixed-project pb-3">
+									<div class="profile-information nocontact" >
+										<i class="fas fa-headset" aria-hidden="true"></i>
+										<h1>Kunderservice</h1>
+										<hr>
+										<p>Vi er her for degVi er her for degVi er her for deg</p>
+									</div>
+									<div class="mx-lg-4 mx-2">
+										<a href="#" class="btn btn-primary">Kontakt Oss</a>
+									</div>
+								
+								</div>
+								<br><br>
+
+							
+							</div>
+					
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+
+	<script>
+		
+		$("#report-options").on({    
+			"change": function() {
+					$(this).blur();
+
+				},
+
+				'focus': function() {
+					$('.report-user-reason').addClass('rotate-icon');
+				},
+
+				"blur": function() {
+					$('.report-user-reason').removeClass('rotate-icon');
+				},
+
+			"keyup": function(e) {
+					if (e.keyCode == 27)
+						$('.report-user-reason').addClass('rotate-icon');
+				}
+			});
+
+
+			$(function () {
+				$('[data-toggle="tooltip"]').tooltip()
+			});
+
+
+			$("#footer-menu-dropdown").on('click', function(){
+				$(this).toggleClass('opened');
+
+				if($("#footer-dropdown").hasClass('show')) {
+					$(this).removeClass('opened');
+				}
+			});
+
+			$("#footer-dropdown button").on('click', function(){
+				$("#footer-menu-dropdown").removeClass('opened');
+			})
+
+			$(document).mouseup(function(e) {
+
+				if($("#footer-dropdown").hasClass('show')) {
+					$("#footer-menu-dropdown").removeClass('opened');
+				}
+			});
+
+						
+			$.each($('textarea[data-autoresize]'), function() {
+				var offset = this.offsetHeight - this.clientHeight;
+				var resizeTextarea = function(el) {
+					var s_scrollHeight = el.scrollHeight + offset; 
+					if ($(el).val() == "") {
+						s_scrollHeight = '28';
+					}
+					$(el).css('height', 'auto').css('height', s_scrollHeight);
+				};
+				$(this).on('keyup input', function() {
+					resizeTextarea(this);
+				}).removeAttr('data-autoresize');
+			});  
+
+
+			$.each($('textarea[data-resizemobile]'), function() {
+				this.addEventListener('keyup', function (e) {
+				this.style.height = 0;
+				var resizing;
+				if(this.scrollHeight < 170) {
+					resizing = this.scrollHeight + 'px';
+				} else {
+					resizing = '190px';
+				}
+				this.style.height = this.scrollHeight + 'px';
+				var chatArea =  document.getElementById('chat-content-data'); 
+				chatArea.style.paddingBottom = resizing;
+				chatArea.scrollTop = chatArea.scrollHeight;
+				
+				if(this.offsetHeight < 30 ) {
+					document.getElementById('chat-content-data').style.paddingBottom = '0px';
+				}
+
+			}, false);
+			});
+
+			$.each($('textarea[data-resizetop]'), function() {
+			// document.querySelectorAll('[data-resizetop]').addEventListener('keyup', function () {
+				this.addEventListener('keyup', function (e) {
+				this.style.height = 0;
+				var resizing;
+				if(this.scrollHeight < 170) {
+					resizing = this.scrollHeight - 50 + 'px';
+				} else {
+					resizing = '130px';
+				}
+				this.style.height = this.scrollHeight + 'px';
+				document.getElementById('chat-content-data').style.paddingBottom = resizing;
+
+				if(this.offsetHeight < 30 ) {
+					document.getElementById('chat-content-data').style.paddingBottom = '0px';
+				}
+
+			}, false);
+			});
+
+
+			$('textarea[data-resizetop]').on('keydown', function(e) {
+				if (e.which == 13) {
+					document.getElementById('chat-content-data').style.paddingBottom = '0px';
+				}
+			});
+
+			$('.send-msg').on('click', function(){
+				document.getElementById('chat-content-data').style.paddingBottom = '0px';
+			});
+
+
+
+	</script>
+	
+  </body>
+</html>
