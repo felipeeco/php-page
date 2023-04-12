@@ -1,5 +1,5 @@
 <div class="input-chat">
-	<input type="text" class="form-control" placeholder="No personal information allowed" autocomplete="off">
+	<textarea type="text" class="form-control" placeholder="No personal information allowed" autocomplete="off" rows="1" data-autoresize></textarea>
 	<button class="more" href="#" role="button" id="chatMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-plus icon-md"></i>
 		<div class="dropdown-menu dropdown-menu-right rounded shadow" aria-labelledby="chatMenuLink" style="transform: translateY(-266px);">
 			<a class="dropdown-item" href="#">Be om avtale<i class="fas fa-file-signature"></i></a>
@@ -12,6 +12,21 @@
 	</button>
 	<button class="green send"><i class="fa-solid fa-arrow-up icon-md"></i></button>
 </div>
+<script>
+	//resize textarea
+	function addAutoResize() {
+		document.querySelectorAll('[data-autoresize]').forEach(function (element) {
+			element.style.boxSizing = 'border-box';
+			var offset = element.offsetHeight - element.clientHeight;
+			element.addEventListener('input', function (event) {
+			event.target.style.height = 'auto';
+			event.target.style.height = event.target.scrollHeight + offset + 'px';
+			});
+			element.removeAttribute('data-autoresize');
+		});
+	}
+	addAutoResize();
+</script>
 <!--<div class="input-chat chat-input" id="bottomChat">
 	<div class="msj-rta macro">                        
 		<div class="text text-r">
