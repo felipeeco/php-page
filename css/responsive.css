@@ -782,7 +782,7 @@ Version: 6.9 - Sep 2022
 		width: 100%;
 	}
 	.content.messages .chatbox .chat-screen .bubbles {
-		height: calc(100vh - 300px);
+		height: calc(100vh - 166px);
 	}
 	.content.messages .chatbox .message-footer  {
 		bottom: 15px;
@@ -825,7 +825,7 @@ Version: 6.9 - Sep 2022
 		font-size: 24px;
 	}
 	.content.messages .chatbox .chat-screen .bubbles {
-		height: calc(100vh - 335px);
+		height: calc(100vh - 165px);
 	}
 	.frame > div.input-chat:last-of-type  {
         position: fixed !important;
