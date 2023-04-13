@@ -3667,6 +3667,15 @@ input.identified.visa {
   margin: 0;
 }
 
+.contact-conversation a {
+  display: flex;
+}
+
+.contact-conversation a .profile-picture img {
+  width: 50px;
+  height: auto;
+}
+
 .col-md-3.conversations
   .contacts-holder.scrollable
   .contact-conversation.selected {
@@ -3702,7 +3711,6 @@ input.identified.visa {
 }
 
 .contacts-holder.scrollable .contact-conversation img {
-  width: 30%;
   border-radius: 900px;
   float: left;
   max-width: 50px;
