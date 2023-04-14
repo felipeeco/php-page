@@ -13065,3 +13065,7 @@ textarea#message {border-radius: 21px;resize: none;min-height: 36px;}
 	width: 101%;
   margin-left: -5px;
 }
+
+#multiCollapseExample2 h1, #multiCollapseExample2 p{
+  color: var(--dark);
+}
