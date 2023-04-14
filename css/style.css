@@ -100,9 +100,10 @@ a:hover {
   font-family: filson-soft !important;
 }
 
-
+/*color added for overwrite the current gradient-bg settings, if creating conflict please target the paragraph instead */
 .white-bg{
-	background-color: white !important;
+  background-color: white !important;
+  color: var(--dark);
 }
 
 .bg-gradient, .gradient-bg {
@@ -13064,8 +13065,4 @@ textarea#message {border-radius: 21px;resize: none;min-height: 36px;}
 	position: absolute;
 	width: 101%;
   margin-left: -5px;
-}
-
-#multiCollapseExample2 h1, #multiCollapseExample2 p{
-  color: var(--dark);
 }
