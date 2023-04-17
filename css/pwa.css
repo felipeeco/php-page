@@ -10,6 +10,7 @@ Version: 11.0.1
 :root {
 	
 }
+*/
 
 @media screen and (max-width: 767px){
 	/*overrall stye*/
@@ -2890,7 +2891,7 @@ Version: 11.0.1
 	}
 	
 	.action-btn-link-job-li {
-/*     only for appearance of the job type modal in browse jobs, if causing conflicts, delete */
+		/*     only for appearance of the job type modal in browse jobs, if causing conflicts, delete */
 		padding: 0 !important;
 		color: var(--dark) !important; 
 	}
@@ -2912,10 +2913,19 @@ Version: 11.0.1
 	 /* .bg-grey*/ ul.nav.nav-pills li a, .grey-bg ul.nav.nav-pills li a{
         background: none;
     }
+
+	.modal {
+		background: transparent;
+    	backdrop-filter: none;
+	}
+
+	.modal-backdrop {
+		background-color: #00000069;
+	}
 	
 	.modal-content > div:first-child{
-		border-top-left-radius: 2rem;
-		border-top-right-radius: 2rem;
+		border-top-left-radius: 0rem;
+		border-top-right-radius: 0rem;
 	/*    background: red !important;*/
 	}
 
@@ -2927,16 +2937,16 @@ Version: 11.0.1
 	}s
 	
 	.custom-control-input:checked, .custom-control-input{
-    position: relative;
-}
-#customSwitch1 {}
-.custom-control.custom-switch { }
+    	position: relative;
+	}
+	#customSwitch1 {}
+	.custom-control.custom-switch { }
 
-custom-switch-lg.custom-control.custom-switch label{
-    font-size: 19px !important;
-    line-height: 40px !important ;
-    text-indent: 30px;
-}
+	custom-switch-lg.custom-control.custom-switch label{
+		font-size: 19px !important;
+		line-height: 40px !important ;
+		text-indent: 30px;
+	}
 	
 	custom-switch-lg.custom-control.custom-switch i {
     display: inline;
@@ -2945,10 +2955,10 @@ custom-switch-lg.custom-control.custom-switch label{
 
 
 
-.tab-content .tab-pane {
-/*     min-height: calc(100vh - 270px); */
-/* wee need to check if this is relevant to other screen */
-}
+	.tab-content .tab-pane {
+	/*     min-height: calc(100vh - 270px); */
+	/* wee need to check if this is relevant to other screen */
+	}
 	
 	.form-control-date{
 		-webkit-appearance: none !important;
@@ -2961,41 +2971,107 @@ custom-switch-lg.custom-control.custom-switch label{
 	}
 	
 	.subscrition-options .checked.current i{
-	padding: 0 7px;margin-right: 0;
+		padding: 0 7px;margin-right: 0;
 	}
 	
 	.posted-label-preview{
-	width:100%;
+		width:100%;
 	}
 
+	#meesagesloading-pwa {
+		display: none;
+	}
 
-#profile .list-group .list-group-item, #profile .list-group .list-group-item a{
-	text-align: left;
-	color: var(--dark);
-}
+	#profile .top-p {
+		margin-bottom: 4px;
+		font-family: 'Roboto';
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 18px;
+		color: #707070;
+	}
 
-#profile .list-group .list-group-item i{
-	color: var(--green);
-}
+	#profile .bottom-p {
+		font-family: 'Roboto';
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 14px;
+		margin-bottom: 0px;
+		color: #9A9A9A;
+	}
 
-.text.file{
-	display: flex;flex-direction: row;align-items: center;padding: 10px;gap: 15px;
-}
+	#profile .modal-dialog {
+		margin: 0rem;
+	}
 
-.text.file p{
-	margin-bottom:0px !important;
-}
+	#profile .r-updated ul li:last-child {
+		display: none;
+	}
 
-.text.file .file-actions{
-	display: flex;flex-direction: row;align-items: center;padding: 0px;gap: 10px;
-}
+	#profile .reviews-number {
+		text-align: left;
+	}
+
+	#profile .modal-body {
+		padding: 20px;
+	}
+
+	#profile .personal-info .name {
+		font-family: filson-soft, sans-serif;
+		font-weight: 700;
+		font-size: 27px;
+		text-align: center;
+		color: #465b61;
+		line-height: 1;
+		word-break: break-word;
+		font-style: normal;
+	}
+
+	#profile .picture-holder {
+		width: 50px !important;
+		height: 50px  !important;
+	}
+
+	#profile .indicator-off {
+		display: none;
+	}
+
+	#profile .list-group .list-group-item {
+		padding: 6px 0px 6px 0px;
+		font-weight: 400;
+		font-size: 15px;
+		font-family: 'Filson Soft', Roboto;
+	}
+
+	#profile .list-group .list-group-item i {
+		margin-right: 5px;
+	}
+
+	#profile .list-group .list-group-item, #profile .list-group .list-group-item a{
+		text-align: left;
+		color: var(--dark);
+	}
+
+	#profile .list-group .list-group-item i{
+		color: var(--green);
+	}
+
+	.text.file{
+		display: flex;flex-direction: row;align-items: center;padding: 10px;gap: 15px;
+	}
+
+	.text.file p{
+		margin-bottom:0px !important;
+	}
+
+	.text.file .file-actions{
+		display: flex;flex-direction: row;align-items: center;padding: 0px;gap: 10px;
+	}
 	
 }
-	
 /*END PWA BASIC*/
 
 /*STARTS SUPER SMALL*/
-
 @media screen and (max-width: 374px){
 	.price-info {
 		display: block;

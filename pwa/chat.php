@@ -61,22 +61,32 @@ $title = "Meldinger"; /*PAGE TITLE*/
 			<div class="modal-body grey-bg">
 				<div class="form-info white">Oppdragsgiver mobilnummer vil vise her om du får jobben</div>
 				<br>
-				<p class="text-left">OM SMÅJOBBEN</p>
+				<p class="text-left top-p">OM SMÅJOBBEN</p>
 				<ul class="list-group">
-					<li class="list-group-item"><i class="fas fa-shipping-fast"></i> <a href="https://minsmajobb.no/finn/detail/28613"><strong>Rengjøre Tesla model S for salg</strong></a></li>
-					<li class="list-group-item"><i class="fas fa-money-bill-wave-alt"></i>
-						kr.&nbsp;220/time                         </li>
-					<li class="list-group-item"><i class="fas fa-clock"></i>
-						Tidspunkt avtales                        </li>
-					<li class="list-group-item btn-map-info-popup " data-id="28613"><i class="fas fa-map-pin  "></i> Åpne kart </li>
+					<li class="list-group-item">
+            <i class="fa-solid fa-broom"></i>
+              Rengjøre Tesla model S for salg
+            </a>
+          </li>
+					<li class="list-group-item">
+            <i class="fa-solid fa-money-bill-wave"></i>
+						kr.&nbsp;220/time                         
+          </li>
+					<li class="list-group-item">
+            <i class="fa-solid fa-clock"></i>
+						Tidspunkt avtales                        
+          </li>
+					<li class="list-group-item btn-map-info-popup " data-id="28613">
+            <i class="fa-solid fa-location-dot"></i> Åpne kart 
+          </li>
 				</ul>
-				<p class="text-left"><small>Dersom kontaktinformasion ikke er delt kan du trekke tilbake tilbudet om hjelp</small></p>
+				<p class="text-left bottom-p">Dersom kontaktinformasion ikke er delt kan du trekke tilbake tilbudet om hjelp</p>
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="meesagesloading" style="display: block;">
+<div class="meesagesloading" id="meesagesloading-pwa">
 	<div class="loading-infoholder" style="margin-top: 50%;">
 		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
 		<lottie-player src="https://lottie.host/2cfc82b7-397b-4de4-a403-96a767bbe977/3GbvlQlrJi.json" background="transparent" speed="1" style="width: 200px; height: 200px; margin: auto;" loop autoplay></lottie-player>
