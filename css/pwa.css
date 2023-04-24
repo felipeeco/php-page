@@ -2923,7 +2923,7 @@ Version: 11.0.1
 		background-color: #00000069;
 	}
 	
-	.modal-content > div:first-child{
+	#profile .modal-header{
 		border-top-left-radius: 0rem;
 		border-top-right-radius: 0rem;
 	/*    background: red !important;*/
