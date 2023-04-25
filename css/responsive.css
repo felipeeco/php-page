@@ -1019,3 +1019,11 @@ Version: 6.9 - Sep 2022
     background-size: contain !important;
   }
 }
+
+@media (max-width: 320px){
+	#chatdata .contact-details {
+		width: 85px;
+		white-space: nowrap;
+		overflow: hidden;
+	  }
+}

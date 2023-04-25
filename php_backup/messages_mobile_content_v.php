@@ -960,7 +960,9 @@ if ($user_count > 0)
 
 <div class="frame" id="chatdata"  style="display:none;" >
 	<div class="header-chat">
-		<a href="javascript:;" class="mobile-get-user-list"><i class="fas fa-arrow-left"></i></a>
+		<a href="javascript:;" class="mobile-get-user-list">
+			<i class="fas fa-chevron-left"></i>
+		</a>
 		
 		<!-------------------->
 		<div class="chatinformation" id="chat-info">  

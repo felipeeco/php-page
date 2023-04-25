@@ -1,7 +1,10 @@
-<ul class="chat-content" id="chat-content-data">    <li class="alert alert-success mt-3 action-chat_rules" data-content="helper_chat_rules" role="alert">
+<ul class="chat-content" id="chat-content-data">    
+		<li class="alert alert-success mb-3 action-chat_rules" data-content="helper_chat_rules" role="alert">
 		<i class="fas fa-shield-check" aria-hidden="true"></i>
 		Les våre chatt regler
-		<a href="javascript:;"><i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+			<a href="javascript:;" class='arrow-box'>
+				<i class="fas fa-chevron-right" aria-hidden="true"></i>
+			</a>
 		</li>
 
 				<input type="hidden" value="3347" name="user_id" id="user_id">

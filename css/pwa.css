@@ -3067,6 +3067,16 @@ Version: 11.0.1
 	.text.file .file-actions{
 		display: flex;flex-direction: row;align-items: center;padding: 0px;gap: 10px;
 	}
+
+	#chat-content-data .action-chat_rules {
+		padding-bottom: 5px;
+    	padding-top: 5px;
+	}
+
+	#chat-content-data .arrow-box {
+		position: absolute;
+    	right: 10px;
+	}
 	
 }
 /*END PWA BASIC*/
