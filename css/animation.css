@@ -12,11 +12,6 @@
 }
 
 /*PWA*/
-.scroll-me{
-	animation: scrollmedown 1s;
-	animation-delay:1s;
-}
-
 @keyframes scrollmedown{
 	0%{
 		padding-top: calc(100vh - 390px);
@@ -27,6 +22,31 @@
 	}100%{
 		padding-top: calc(100vh - 390px);
 	
+	}
+}
+
+@keyframes scrollmedownResponsiveMiniCellPhone{
+	0%{
+		padding-top: calc(100vh - 300px);
+	
+	}50%{
+		padding-top: calc(100vh - 390px);
+	
+	}100%{
+		padding-top: calc(100vh - 300px);
+	
+	}
+}
+
+.scroll-me{
+	animation: scrollmedown 1s;
+	animation-delay:1s;
+}
+
+@media screen and (max-width: 380px){
+	.scroll-me{
+		animation: scrollmedownResponsiveMiniCellPhone 1s;
+		animation-delay:1s;
 	}
 }
 

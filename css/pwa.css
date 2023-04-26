@@ -3179,10 +3179,6 @@ Version: 11.0.1
 	.rateus-modal ul.rating-profiles li{
 	min-width: 80px;
 	}
-
-	.scroll-me {
-		padding-top: calc(100vh - 300px);
-	}
 }
 
 @media screen and (max-height: 500px) and (max-width: 900px) {
