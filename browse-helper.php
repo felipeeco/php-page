@@ -272,7 +272,7 @@ $profilePicter_URI = 'images/samples/profile-sample-1.png';
 										</div>
 										<div class="helper-name">
 											<h1>
-												Stine Tveit
+												Stine Tveit Stine Tveit
 												<img src="images/icons/pro-badge.svg" alt="Pro Badge" class="profile-badge"/>
 												<span class="profile-badge-tooltip pro-badge">Fagmann</span>
 											</h1>
@@ -367,7 +367,7 @@ $profilePicter_URI = 'images/samples/profile-sample-1.png';
 											<!-- end of the rating-->
 										</div>
 										<div class="helper-name">
-											<h1>Stine Tveit</h1>
+											<h1>Stine Tveit Stine Tveit</h1>
 										</div>
 										<div class="helper-location">
 											<a href="#"><i class="fas fa-map-marker-alt"></i> Oslo</a>

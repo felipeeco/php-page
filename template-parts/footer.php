@@ -45,6 +45,6 @@
 	<script src="js/popper.min.js"></script> 
 	<script src="js/bootstrap-4.3.1.js"></script>
 	<script src="js/new-job.js"></script>
-	<?php echo ($insert_scrtip);?>
+	<?php //  echo ($insert_scrtip);?>
   </body>
 </html>

@@ -12477,6 +12477,9 @@ Version: 6.3
 }
 
 .display-results.helpergrid .helper-info .helper-name {
+  text-align: center;
+  margin: auto;
+  width: 180px;
 }
 
 .display-results.helpergrid .helper-info .helper-name h1 {
@@ -12486,6 +12489,57 @@ Version: 6.3
   line-height: 34px;
   text-align: center;
   /* color: #465b61; */
+  width: 180px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.display-results.helpergrid .helper-info .helper-name h1 .profile-badge{
+  position: absolute;
+  right: 25px;
+}
+
+@media (min-width: 375px){
+  .display-results.helpergrid .helper-info .helper-name h1 .profile-badge{
+    right: 45px;
+  }
+}
+
+@media (min-width: 425px){
+  .display-results.helpergrid .helper-info .helper-name h1 .profile-badge{
+    right: 70px;
+  }
+}
+
+@media (min-width: 750px){
+  .display-results.helpergrid .helper-info .helper-name h1 .profile-badge{
+    right: 40px;
+  }
+}
+
+@media (min-width: 1000px){
+  .display-results.helpergrid .helper-info .helper-name {
+    width: 130px;
+  }
+
+  .display-results.helpergrid .helper-info .helper-name h1 {
+    width: 130px;
+  }
+
+  .display-results.helpergrid .helper-info .helper-name h1 .profile-badge{
+    right: 15px;
+  }
+}
+
+@media (min-width: 1300px){
+  .display-results.helpergrid .helper-info .helper-name {
+    width: 190px;
+  }
+
+  .display-results.helpergrid .helper-info .helper-name h1 {
+    width: 190px;
+  }
 }
 
 .display-results.helpergrid .helper-info .helper-location {
