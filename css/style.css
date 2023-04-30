@@ -314,6 +314,18 @@ font-family: var(--mainFont);
   color: white !important;
 }
 
+.btn-transparent {
+  background: transparent;
+  color: white !important;
+  border: 3px solid white;
+}
+
+.btn-transparent-black {
+  background: transparent;
+  color: var(--secondaryDark) !important;
+  border: 3px solid var(--secondaryDark);
+}
+
 .btn-link {
   text-decoration: none !important;
   text-align: center;
@@ -6357,6 +6369,94 @@ h1 i {
   text-align: center;
   color: #fff;
 }
+
+/* ///////// easy-invoicing-green and easy-invoicing-white CSS ///////////////////// */
+.easy-invoicing-green .landing, .easy-invoicing-white .landing {
+  background: linear-gradient(
+      to right,
+      rgba(59, 202, 153, 0.9),
+      rgba(59, 185, 202, 0.9)
+    );
+  padding: 0 0 245px !important;
+  margin: 0 0 -245px !important;
+}
+
+.easy-invoicing-white .landing .background-box{
+  background-color: #F7F7F7;
+}
+
+.easy-invoicing-green .container .box-left .easy-invoicing-logo,
+.easy-invoicing-white .container .box-left .easy-invoicing-logo {
+  margin-left: -65px;
+  width: 382px;
+  height: auto;
+}
+
+.easy-invoicing-green .container .box-right,
+.easy-invoicing-white .container .box-right {
+  padding-top: 60px;
+}
+
+.easy-invoicing-green .container .box-right img,
+.easy-invoicing-white .container .box-right img {
+  width: auto;
+  height: 287px;
+}
+
+.easy-invoicing-green .container .box-video,
+.easy-invoicing-white .container .box-video {
+  margin-top: 160px;
+}
+
+.easy-invoicing-green .container .row,
+.easy-invoicing-white .container .row {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.easy-invoicing-green .container .box-video h3,
+.easy-invoicing-white .container .box-video h3 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.easy-invoicing-green .landing h1,
+.easy-invoicing-white .landing h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 35px;
+  margin-top: -18px;
+}
+
+.easy-invoicing-green .landing p,
+.easy-invoicing-white .landing p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 23px;
+  width: 80%;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.easy-invoicing-white .landing h1,
+.easy-invoicing-white .landing p,
+.easy-invoicing-white .container .box-video h3{
+  color: var(--secondaryDark);
+}
+
+.easy-invoicing-green .landing a,
+.easy-invoicing-white .landing a {
+  padding: 15px 30px;
+}
+
+.easy-invoicing-green .landing a.btn-transparent,
+.easy-invoicing-white .landing a.btn-transparent {
+  margin-left: 10px;
+}
+/* ///////// easy-invoicing-green and easy-invoicing-white CSS ///////////////////// */
 
 .cateogries .newjob-content .category-panel .categoryImageWrap {
   height: 160px;

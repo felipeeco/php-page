@@ -3078,6 +3078,70 @@ Version: 11.0.1
 		position: absolute;
     	right: 10px;
 	}
+
+
+	/*///////// easy-invoicing-pwa /////////// */
+
+	.easy-invoicing-pwa .row {
+		padding: 0px 0 !important;
+	}
+
+	.easy-invoicing-pwa .main-image {
+		overflow: hidden;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+
+	.easy-invoicing-pwa .description-box .easy-invoicing-logo {
+		margin: auto;
+		max-width: 290px;
+	}
+
+	.easy-invoicing-pwa .description-box h1 {
+		margin: auto;
+		max-width: 290px;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 24px;
+		margin-top: -16px;
+		margin-left: 50px;
+	}
+
+	.easy-invoicing-pwa .description-box p {
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 23px;
+		margin-top: 20px;
+	}
+
+	.easy-invoicing-pwa .video-box {
+		margin-top: 90px;
+	}
+
+	.easy-invoicing-pwa .video-box h3 {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 30px;
+		text-align: center;
+	}
+
+	.call-to-action {
+		height: 100px;
+		background-color: var(--secondaryDark);
+		margin-top: 90px;
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
+	}
+
+	.call-to-action .btn-transparent {
+		margin-right: 10px;
+	}
 	
 }
 /*END PWA BASIC*/
@@ -3193,5 +3257,11 @@ Version: 11.0.1
     .newjob-content .form-footer .btn {
         margin: 10px auto; 
     }
+}
+
+@media (max-width: 320px){
+	.call-to-action .btn {
+		font-size: 14px;
+	}
 }
 

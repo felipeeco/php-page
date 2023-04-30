@@ -641,6 +641,18 @@ Version: 6.9 - Sep 2022
 	.payment-info label {
 		font-size: 15px !important;
 	}
+
+	.easy-invoicing-green .container .box-right,
+	.easy-invoicing-green .container .box-left,
+	.easy-invoicing-white .container .box-right,
+	.easy-invoicing-white .container .box-left {
+		text-align: center;
+	}
+
+	.easy-invoicing-green .landing h1,
+	.easy-invoicing-white .landing h1 {
+		margin-top: 0px;
+	}
 }
 @media (max-width: 991px){
 	
