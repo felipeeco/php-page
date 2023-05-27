@@ -1,17 +1,10 @@
 @charset "UTF-8";
 /* 
 CSS Document STYLECSS
-Version: 10.0.1
-8.0 - SETTING GRID SUPPORT ADDED 
-9.0 . New Dashboard for PWA - header sytle changed
-9.0.1 - removed the slider styling, ws affecting the star rating.
-9.0.2 - confim rating style support
-9.0.3 - fixed the taking picture modal styles replaced with fixed
+Version: 11.0.0
 -- MAYOR UPDATE
-10.0.0 - ADDED SUPPORT FOR NEW CREATE JOB PAGE // may cause crash for the current create job page
-10.0.0 - WE'RE HINGERING COLOR NOW, PLEASE REVIEW IF SOMEWHERE THE TEXT DON'T DISPLAY CORRECTLY !!!! ⚠️⚠️
-10.0.0 - ADDING SUPPORT FOR 3 STYLES OF INFO.FORM DIV, LIGHT, DARK AND DEFUALT. 
-10.0.1 - Support tfor self agreement modal
+11.0.0
+Outline BTN
 
 */
 :root {
@@ -434,9 +427,15 @@ a.btn-primary.white {
 }
 
 .btn-outline-light {
-  color: var(--darkgrey);
-  background: white;
-  border-color: var(--secondary-light);
+  color: WHITE;
+  background: transparent;
+  border-color: white;
+    /**CATION UPDATED IS NEED SLIF BTN USE SOLID BTN CLASSS**/
+}
+
+.btn-outline-light:hover{
+    background: rgba(255, 255, 255, 0.17);
+    color:white;
 }
 
 .btn-outline-dark {
@@ -6370,93 +6369,6 @@ h1 i {
   color: #fff;
 }
 
-/* ///////// easy-invoicing-green and easy-invoicing-white CSS ///////////////////// */
-.easy-invoicing-green .landing, .easy-invoicing-white .landing {
-  background: linear-gradient(
-      to right,
-      rgba(59, 202, 153, 0.9),
-      rgba(59, 185, 202, 0.9)
-    );
-  padding: 0 0 245px !important;
-  margin: 0 0 -245px !important;
-}
-
-.easy-invoicing-white .landing .background-box{
-  background-color: #F7F7F7;
-}
-
-.easy-invoicing-green .container .box-left .easy-invoicing-logo,
-.easy-invoicing-white .container .box-left .easy-invoicing-logo {
-  margin-left: -65px;
-  width: 382px;
-  height: auto;
-}
-
-.easy-invoicing-green .container .box-right,
-.easy-invoicing-white .container .box-right {
-  padding-top: 60px;
-}
-
-.easy-invoicing-green .container .box-right img,
-.easy-invoicing-white .container .box-right img {
-  width: auto;
-  height: 287px;
-}
-
-.easy-invoicing-green .container .box-video,
-.easy-invoicing-white .container .box-video {
-  margin-top: 160px;
-}
-
-.easy-invoicing-green .container .row,
-.easy-invoicing-white .container .row {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.easy-invoicing-green .container .box-video h3,
-.easy-invoicing-white .container .box-video h3 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 30px;
-}
-
-.easy-invoicing-green .landing h1,
-.easy-invoicing-white .landing h1 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 35px;
-  line-height: 35px;
-  margin-top: -18px;
-}
-
-.easy-invoicing-green .landing p,
-.easy-invoicing-white .landing p {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-size: 20px;
-  line-height: 23px;
-  width: 80%;
-  font-weight: 400;
-  margin-bottom: 30px;
-}
-
-.easy-invoicing-white .landing h1,
-.easy-invoicing-white .landing p,
-.easy-invoicing-white .container .box-video h3{
-  color: var(--secondaryDark);
-}
-
-.easy-invoicing-green .landing a,
-.easy-invoicing-white .landing a {
-  padding: 15px 30px;
-}
-
-.easy-invoicing-green .landing a.btn-transparent,
-.easy-invoicing-white .landing a.btn-transparent {
-  margin-left: 10px;
-}
-/* ///////// easy-invoicing-green and easy-invoicing-white CSS ///////////////////// */
 
 .cateogries .newjob-content .category-panel .categoryImageWrap {
   height: 160px;
@@ -13223,3 +13135,20 @@ textarea#message {border-radius: 21px;resize: none;min-height: 36px;}
 	width: 101%;
   margin-left: -5px;
 }
+
+
+
+/* ///////// easy-invoicing-green and easy-invoicing-white CSS ///////////////////// */
+
+.easy-invoicing-green .container .easy-invoicing-logo, .easy-invoicing-white .container .easy-invoicing-logo {
+	margin-left: -65px;
+	width: 382px;
+	height: auto;
+	margin-bottom: -20px;
+}
+
+.easy-invoicing-green .gradient-bg {
+	background: url("../images/easy-invoicing/watermark.png") no-repeat bottom right, var(--gradient) !important;
+}
+
+/* ///////// easy-invoicing-green and easy-invoicing-white CSS ///////////////////// */
